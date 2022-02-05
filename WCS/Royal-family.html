@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width"/>
+    <title>Web Development Tech Challenge</title>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+  </head>
+
+  <header>
+    <!-------navigation bar on each page, structured as a list using the ul and li tags, linked to relevant pages in your website  ------->
+    <!-- Navigation Section-->
+    <nav>
+      <img class="logo-img" src="logo.png" alt="logo">
+        <ul class="navbar"> <!--Navigation bar-->
+          <li><a class="active" href="index.html">About</a></li>
+          <li><a href="Royal-Family.html">Royal Family</a></li>
+          <li><a href="Royal-Assets.html">Royal Assets</a></li>
+          <li><a href="Contact-Us.html">Contact us</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <body>
+    <!--Content goes here-->
+
+    <!-- contents of Royal-Family page -->
+    <h2 id="rfh2">
+      The Royal Family
+    </h2>
+
+    <section class="rfcontents">
+       <!-- A ‘Royal Family’ page, displaying the top 3 members of the royal family, placed side by side (Hint: try using Flexbox for the positioning) -->
+        <!-- Add this to a seperate page, e.g. royal-family.html
+		Images and text aligned next to each other -->
+      <div> <!-- item1  -->
+              <div class="photosrf">
+                  <img src="images/King.jpg" alt="King Aeetes">
+                  <span>King Aeetes</span>
+              </div> <!--end of photosrf-->
+
+      </div> <!--end of item1 on the tile-->
+      <div> <!-- item2 -->
+              <div class="photosrf">
+                  <img src="images/Princess.jpg" alt="Princess Madeas">
+                  <span>Princess Madeas</span>
+              </div> <!--end of photosrf-->
+      </div>
+      <div> <!-- item3  -->
+            <div class="photosrf">
+                <img src="images/Queen-Idyia.jpg" alt="Queen Idyia">
+                <span>Queen Idyia</span>
+            </div> <!--end of photosrf-->
+      </div>
+    </section>
+
+    <!-- Connect the Javascript file -->
+    <script src="script.js"></script>
+  </body>
+</html>

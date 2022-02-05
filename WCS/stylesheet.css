@@ -1,0 +1,167 @@
+/**********  ***********/
+*{
+    box-sizing:border-box;
+    margin:0;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 18px;}
+/********** Header and Navigation bar ***********/
+header {
+    height:122px;
+    width:100%;
+    background-color: rgb(77, 69, 54);
+    position:relative;
+    padding:10px;
+}
+.logo-img {
+    background-color: rgb(212, 207, 156);
+    border: 1px solid rgb(77, 69, 54);
+    float:left;
+    margin-left:20px;
+}
+.navbar {
+    overflow: hidden;
+    position:absolute;
+    top: 20px;
+    Right:20px;
+    list-style: none;
+}
+.navbar li {
+    float: left;
+    overflow: hidden;
+    color:rgb(212, 207, 156);
+    text-align: center;
+    padding:2px;
+    margin:20px;
+}
+.navbar li:hover {
+    text-decoration: underline;
+    color: rgb(248, 232, 109);
+    border:0.25px dotted rgb(248, 232, 109);
+}
+.navbar li a:link, .navbar li a:visited {
+    text-decoration: none;
+    color: rgb(212, 207, 156);
+}
+/********** End of Header and Navigation bar ***********/
+
+/********** Body Main Page ***********/
+body {
+    background-color: white;
+}
+h1 {
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: center;
+    color: rgb(212, 207, 156);
+    background: url('images/wood.jpg') no-repeat;
+    background-size: cover;
+    height:130px;
+    padding:40px;
+}
+.mpcontents {
+    padding:15px;
+    margin-top: 15px;
+    width:95%;
+}
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(77, 69, 54);
+    margin:15px;
+}
+.mpcontents > p {
+    width:95%;
+    margin-bottom:20px;
+}
+/********** End of Body Main Page ***********/
+
+/********** Body Royal Family Page **********/
+#rfh2 {
+    text-align: center;
+}
+.rfcontents {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+.photosrf {
+    position: relative;
+    margin-right: 30px;
+}
+.photosrf > img {  
+    width:150px;
+    height:300px;
+    object-fit:cover;
+}
+.photosrf span {
+    position: absolute;
+    bottom:0;
+    right:0;
+    width:100%;
+    background-color: black;
+    opacity: 0.8;
+    color:rgb(201, 166, 69);
+    text-align: center;
+}
+/********** End of Body Royal Family Page **********/
+
+/********** Body Royal Assets Page **********/
+#krassets {
+    Margin:15px;
+    text-align: center;
+}
+.assetstable {
+    border: 1px solid rgb(77, 69, 54);
+    margin-left: auto;
+    margin-right: auto;
+}
+.table-headers {
+    color:rgb(77, 69, 54);
+    background-color: rgb(212, 207, 156);
+    text-align: left;
+}
+th, td {
+    padding:3px;
+    border: 1px solid rgb(77, 69, 54);
+}
+/********** End of Body Royal Assets Page **********/
+#h2-contact {
+    margin: 40px;
+}
+#form-div {
+    margin: 10px 40px 15px 40px;
+}
+#contactp {
+    color:rgb(201, 166, 69);
+    margin-bottom: 10px;
+}
+#Name, #Email,#Message {
+    display: flex;
+    justify-content:space-between;
+    width: 50%;
+    margin-left: 100px;
+    margin-top: -15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#Message {
+  padding: 12px;
+  height: 150px;
+  overflow:scroll;
+}
+/********** Responsiveness ***********/
+/***** Large ******/
+@media (min-width:992px) {
+
+
+}
+/***** Medium ******/
+@media (min-width:766px) and (max-width:991px) {
+
+}
+/***** Small ******/
+@media (max-width:765px) {
+
+    
+}
