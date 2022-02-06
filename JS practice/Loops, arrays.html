@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS practice</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {font-size: 20px;}
+            body {margin : 20px;}
+            #riirii {color: red;}
+        </style>
+    </head>
+
+    <body>
+        JavaScript practice
+
+        (run console)
+
+        <p id="aidi"></p>
+        
+        <p id="riirii"></p>
+        <button onclick=riri()>Click Me</button>
+        
+
+        <script>
+            // inserting text into html
+            document.getElementById("aidi").innerHTML = 
+            "Numbers, even negative ones are "+ Boolean(1+2) + "<br/>"
+            + "Except Zero, it is " + Boolean(0)
+
+            function riri () {
+                document.getElementById("riirii").innerHTML = "text appears upon click";
+                alert("you just clicked");
+            }
+            
+
+            ////////////////////// loops using 'for'
+            // for ( initial value, condition to check,incrementing ++ / decrementing -- )
+            for ( var i=0 ; i<10 ; i++ ) {
+                console.log("i = "+ i);
+            }
+            for ( var x=4 ; x<=7 ; x++ ) {
+                console.log( "x * "+ (x*2) );
+            }
+
+
+
+            ////////////////////// arrays
+            var colors = ['Red', 'Blue', 'Yellow', 'Green'];
+
+            for ( var y=0 ; y < colors.length ; y++ ) { 
+                console.log("color is " + colors[y]);
+            }
+
+
+
+            ////////////////////// specific loop to work with arrays (the for ... of loop)
+            var food = ['grapes', 'cheese', 'bread', 'olives'];
+            // in here i am creating a variable, that will go through the array until the end of the array
+            for ( var eachItem of food ) {
+                console.log ( eachItem + " is/are food" );
+            }
+
+
+
+            ////////////////////// strings as arrays
+            // this will spell out EACH LETTER of the statement/string
+            var statement = "a string can be treated as an array";
+            
+            for ( var o = 0 ; o<statement.length; o++) {
+                console.log( statement [o])
+            } // i can replace this with (for...of..variable)
+
+
+
+            ////////////////////// While loop
+            // we start of with an incrementor variable, another variable as an empty string
+            // increment the incrementor that is less than 10
+            // += means : each time this thing runs, adds a line to what ran before (all in the same console.log)
+            // we write the outcome in while, then add the condition after ;
+            var incrementor = 0;
+            var text = "";
+            var ticksss = ""
+            
+            while ( incrementor < 10 ) {
+                text += "The incrementor has gone up to " + incrementor + "\n"; incrementor ++
+            }
+            console.log ( text );
+
+            // to change to a template literal, use a tick mark ` not a quote mark, and put the variable inside ${}
+            // while ( incrementor < 10 ) {
+            //     ticksss += `using ticks to ${incrementor} \n`; incrementor ++
+            // }
+            // console.log ( ticksss );
+            // NOT WORKING
+
+        </script>
+    </body>
+</html>
