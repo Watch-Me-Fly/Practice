@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS practice</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {
+                text-align: center;
+                box-sizing: border-box;
+            }
+            h1 {
+                color : rgb(163, 145, 121);
+            }
+            .inst {
+                color : grey;
+            }
+            .container {
+                background-color: antiquewhite;
+                width: 60%;
+                padding : 5px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 30px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>JavaScript practice</h1>
+
+        <p class= "inst">(run console)</p>
+        <div>
+            <div class = "container">
+                <h2>Sequence</h2>
+                <p>first do this, then do that</p>
+            </div> <!--sequence-->
+        </div>
+
+        <script>
+            ////////////////////// Sequence
+            // first do this, then do that
+
+            // string method (converting to upper/lower case)
+            let myString = "This Is real, This is ME";
+            console.log(myString);
+            let myUpperString = myString.toUpperCase();
+            console.log(myUpperString);
+            let myLowerString = myString.toLowerCase();
+            console.log(myLowerString);
+
+                    // searching for the word 'real' by number of letters in the string (case sensitive)
+                    var realLocation = myString.search('real');
+                    console.log('char number marking the start of the word (real) = ' + realLocation);
+                    // to type down -or make a substring- of myString, starting from one point to another (to define) or to define number of characters
+                    var specialWord = myString.substr(realLocation, 4);
+                    console.log("found the word : "+ specialWord);
+                    specialWord = specialWord.toUpperCase();
+                    // this is going to replace 'real' with uppercase 'REAL' and recreate the sentence
+                    var newString = myString.replace('real', specialWord);
+                    console.log(newString);
+        </script>
+    </body>
+</html>

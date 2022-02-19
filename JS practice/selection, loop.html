@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS practice</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {
+                text-align: center;
+                box-sizing: border-box;
+            }
+            h1 {
+                color : rgb(163, 145, 121);
+            }
+            .inst {
+                color : grey;
+            }
+            .container {
+                background-color: antiquewhite;
+                width: 60%;
+                padding : 5px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 30px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>JavaScript practice</h1>
+
+        <p class= "inst">(run console)</p>
+        <div>
+            <div class = "container">
+                <h2>Selection</h2>
+                <p>if a condition is met, do this, otherwise, do that</p>
+            </div> <!--Selection-->
+            <div class = "container">
+                <h2>Loop</h2>
+                <p>While this condition is true, do this</p>
+            </div> <!--Loop-->
+        </div>
+
+        <script>
+            // using template literal goes this way : `${}`
+            
+            let foods = ["Chicken", "Cheese", "Onions", "Bread"];
+            let myString = "I am craving some";
+            console.log(`${"now"} ${myString} ${foods[0]}`);
+
+            ////////////////////// Loop
+            // (While this condition is true, do this)
+            // the simple 'for' loop
+            for (i=0; i<foods.length; i++) {
+                console.log(`${myString} ${foods[i]}`);
+            }
+            // 'for-of' loop
+            for (var x of foods) {
+                console.log(`${"for of ="} ${myString} ${x}`);
+            }
+            
+            ////////////////////// Selection
+            // (if a condition is met, do this, otherwise, do that)
+            // in JS we can determine if odd or even by "modulus operator" % sign
+            for (i=0; i<foods.length; i++) {
+                var remainder = i % 2; // divides each item by 2 and checks remainder
+                if (remainder === 0) { // only if division is exactly equal to zero (even number)
+                    var foodUpper = foods[i].toUpperCase();
+                    console.log(`${"modulus operator active"} ${myString} ${foodUpper}`);
+                }
+                else {
+                    console.log(`${"MO---inactive"} ${myString} ${foods[i]}`);
+                }
+            }
+            
+            // to simplify
+            // 1 - define variables
+            var animals = ["dogs", "cats", "racoons", "elephants"];
+            var animStrings = "example of animals types : ";
+            // make a selection within a loop
+            for (var a=0; a<animals.length; a++) {
+                // condition of selective "if" includes a variable (equal to "remainder" in the example above)
+                if (a % 2 === 0) {
+                    console.log(`${animStrings} ${animals[a].toUpperCase()}`);
+                }
+                else {
+                    console.log(`${animStrings} ${animals[a]}`);
+                }
+            }
+        </script>
+    </body>
+</html>

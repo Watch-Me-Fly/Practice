@@ -80,19 +80,20 @@
             // we write the outcome in while, then add the condition after ;
             var incrementor = 0;
             var text = "";
-            var ticksss = ""
+            var ticksss = "";
             
-            while ( incrementor < 10 ) {
-                text += "The incrementor has gone up to " + incrementor + "\n"; incrementor ++
-            }
-            console.log ( text );
-
-            // to change to a template literal, use a tick mark ` not a quote mark, and put the variable inside ${}
             // while ( incrementor < 10 ) {
-            //     ticksss += `using ticks to ${incrementor} \n`; incrementor ++
+            //     text += "The incrementor has gone up to " + incrementor + "\n"; incrementor ++
             // }
-            // console.log ( ticksss );
-            // NOT WORKING
+            // console.log ( text );
+            
+            
+            // to change to a template literal, use a tick mark ` not a quote mark, and put the variable inside ${}
+            while ( incrementor < 10 ) {
+                ticksss += `using ticks to ${incrementor} \n`; incrementor ++
+            }
+            console.log ( ticksss );
+
 
         </script>
     </body>
