@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Functions in JS</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            * {margin:0;}
+            h1 {text-align: center; margin: 30px;}
+            .container {
+                width: 40%;
+                margin-top: 10px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 20px;
+                background-color: brown;
+                color:white;
+            }
+            .codeEx {
+                margin-top: 10px;
+                padding: 20px;
+                background-color: white;
+                color: rgb(6, 19, 196);
+            }
+            .spaceTab {
+                margin-left: 10px;
+                color: rgb(20, 196, 4);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main-content">
+            <h1>Functions</h1>
+
+            <div class="container">
+                <h2>Reusable sets of instrucions</h2>
+                <div class="codeEx">
+                    function name() {
+                        <p class="spaceTab">
+                        do something;<br/>
+                        do something else;<br/>
+                        do another thing
+                        </p>
+                    }<br/>
+                    name();<br/>
+                </div> <!-- codeEx-->
+            </div> <!-- container -->
+
+            <div class="container">
+                <h2>Passing In and Returning Data</h2>
+                <div class="codeEx">
+                    function name ( param1, param2 ) {
+                        <p class="spaceTab">
+                        do something with parameters;<br/>
+                        <b>return</b> results;
+                        </p> }
+                </div> <!-- codeEx-->
+            </div> <!-- container -->
+
+        </div> <!-- main content -->
+
+        <script>
+            ///// basic syntax of function
+            function doStuff() {
+                var myString = "here is a message";
+                var upperString = myString.toUpperCase();
+                console.log(myString);
+                console.log(upperString);
+            }
+            doStuff(); // to invoke / call / run - the function
+
+            ///// Passing In Data
+            // adding message parameter / arguments between ()
+            function lowerMsg ( message ) {
+                var lowerMsg = message.toLowerCase();
+                console.log(lowerMsg);
+            }
+            lowerMsg('HELLO');
+
+            // add numbers together
+            function addNum ( num1, num2 ) {
+                var sum = num1 + num2;
+                console.log(sum);
+            }
+            addNum (4, 5);
+
+            ///// Returning Data
+            function returnSum ( num3, num4 ) {
+                var tota = num3 + num4;
+                return tota;
+            }
+            console.log( returnSum (4, 98));
+        </script>
+    </body>
+</html>
