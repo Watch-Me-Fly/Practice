@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Functions in JS</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            * {margin:0; padding-bottom: 20px;}
+            h1 {text-align: center; margin: 30px;}
+            #container1 {
+                width: 40%;
+                margin-top: 10px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 20px;
+                background-color: rgb(53, 119, 75);
+                color:white;
+            }
+            .container {
+                width: 35%;
+                margin-top: 10px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 20px;
+                background-color: rgb(98, 179, 74);
+                color:white;
+            }
+            .codeEx {
+                margin-top: 10px;
+                padding: 20px;
+                background-color: white;
+                color: rgb(7, 7, 7);
+            }
+            .spaceTab {
+                margin-left: 10px;
+                color: rgb(4, 110, 196);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main-content">
+            <h1>Uself Functions Examples</h1>
+
+            <div id="container1">
+                <h2>Generating Random Numbers</h2>
+                <div class="codeEx">
+                    Numbers go from 0 to decimals before 1, (do not go all the way to 1). <br/>
+                    NOT REALLY random because it uses an algorithm to generate numbers.
+                    <br/><br/>
+                        <p class="spaceTab">
+                            Console.log( <b>Math.random ()</b> );                      
+                        </p>
+                </div> <!-- codeEx-->
+            </div> <!-- container -->
+
+            <div class="container">
+                <h2>Step 1</h2>
+                <div class="codeEx">
+                    Create function, Define values.
+                        <p class="spaceTab">
+                        <br/>function name (<b> min, max </b>) { <br/>... <br/>}</p>
+                </div> <!-- codeEx-->
+            </div> <!-- container -->
+
+            <div class="container">
+                <h2>Step 2</h2>
+                <div class="codeEx">
+                    Generating a random number between 0 & 1, then multiple that with the number of possible values.
+                        <p class="spaceTab">
+                        <br/>
+                        Math.random();
+                        </p>
+                </div> <!-- codeEx-->
+            </div> <!-- container -->
+
+            <div class="container">
+                <h2>Step 3</h2>
+                <div class="codeEx">
+                    Round down the random number so it becomes whole with no decimals
+                        <p class="spaceTab">
+                        <br/>
+                        Math.floor();
+                        </p>
+                </div> <!-- codeEx-->
+            </div> <!-- container -->
+
+            <div class="container">
+                <h2>Step 4</h2>
+                <div class="codeEx">
+                    Take the random number generated and add the min number.
+                        <p class="spaceTab">
+                        <br/>
+                        
+                        </p>
+                </div> <!-- codeEx-->
+            </div> <!-- container -->
+
+            <div class="container">
+                <h2>Step 5</h2>
+                <div class="codeEx">
+                    Making the function useful
+                        <p class="spaceTab">
+                        <br/>
+                        <b>return</b> var;
+                        </p>
+                </div> <!-- codeEx-->
+            </div> <!-- container -->
+
+        </div> <!-- main content -->
+
+        <script>
+            // capital M in math
+            // between 0 to a decimal before 1
+            console.log( Math.random() + " is a completely random number under 1 but above 0"); 
+
+            // example exercise
+            function randomInt( min, max ) {
+                var numOfValues = max - min + 1;
+                console.log( "Numbers between min and max is : "+ numOfValues ); 
+
+                var randomNum = Math.random();
+                var randomVal = randomNum * numOfValues;
+                // creates a random number between 0 and the number resulting from first variable :
+                console.log( "random number is : " + randomVal ); 
+
+                var roundedRandomVal = Math.floor( randomVal );
+                console.log( "number rounded up is : " + roundedRandomVal );
+
+                var finalNum = min + roundedRandomVal;
+                console.log( "Adding min number : "+ finalNum );
+            }
+            randomInt( 3, 80 );
+
+            // Step 5
+            var food = ['bread', 'cheese', 'lettuce', 'ham']; // it starts from 0 to 3 in the array
+            function randomIf (min, max) {
+                // var numOfFood = max - min + 1;
+                // var randomFood = Math.random();
+                // var ranVal = randomFood * numOfFood;
+                // var roundRV = Math.floor(ranVal);
+                // var finalF = min - roundRV;
+                // return FinalF;
+
+                // shortened version :
+                return Math.floor((max - min + 1) * Math.random() ) + min;
+            }
+            // This will give me a random food everytime
+            console.log( food[randomIf (0, 3) ]);
+        </script>
+    </body>
+</html>
