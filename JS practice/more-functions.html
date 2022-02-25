@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>More on Functions</title>
+    </head>    
+    <body>
+        <div id="hello">
+            
+        </div>
+        <script>
+            // functions can be assigned to variables
+            // can be anonymous (called a function expression)
+            // example 1
+            var greeting = function () {
+                console.log("hello from the other side");
+            }
+            greeting();
+            // example 2
+            var howGreet = function () {
+                var name= prompt("What is your name ?", "");
+                console.log(`hello ${name}, how are you today?`);
+            }
+            howGreet ();
+
+            // fehrenheit to celsius
+            // (32°F − 32) × 5/9 = 0°C
+            function toCelsius(f) {
+                return (5/9) * ( f -32);
+            }
+            document.getElementById("hello").innerHTML =
+            toCelsius(89);
+
+
+        </script>
+    </body>
+</html>
