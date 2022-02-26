@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>JS function challenges </title>
+
+        <style>
+            .container {
+                border : 1px black solid;
+                margin : 10px;
+                padding : 10px;
+            }
+            .innerBox {
+                border : 0.5px grey dotted;
+                padding : 10px;
+            }
+            p {
+                color : teal;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Challenge 10</h2>
+            <div class="innerBox">
+                <p>
+                    Write a function called hello() that outputs a greeting in
+                    the console when the function runs.
+                </p>
+            </div> <!-- innerBox -->
+        </div> <!-- container -->
+
+        <div class="container">
+            <h2>Challenge 11</h2>
+            <div class="innerBox">
+                <p>
+                    change hello() so that it takes a parameter, 
+                    and when you run the function, you pass in the name of
+                    a person and the function outputs the greeting to the
+                    console
+                </p>
+            </div> <!-- innerBox -->
+        </div> <!-- container -->
+
+        <div class="container">
+            <h2>Challenge 12</h2>
+            <div class="innerBox">
+                <p>
+                    add a prompt requesting the user for their name, 
+                    and assign the result to a variable.
+                    Then pass that variable into the hello() function so
+                    that the console greets the person by name.
+                </p>
+            </div> <!-- innerBox -->
+        </div> <!-- container -->
+
+        <div class="container">
+            <h2>Challenge 13</h2>
+            <div class="innerBox">
+                <p>
+                    For this challenge handle the situation that happens if 
+                    the user clicks cancel on the prompt, or does not enter 
+                    text in the prompt. <br/>
+                    If the user does one of those two actions, have the hello()
+                    function log to the console "You didn't give me your name". 
+                    <br/>
+                    Otherwise, have the console log the greeting.<br/>
+                    hint: What do you get if, in challenge 12, you
+                    click cancel or put no text in the prompt
+                </p>
+            </div> <!-- innerBox -->
+        </div> <!-- container -->
+
+        <div class="container">
+            <h2>Challenge 14</h2>
+            <div class="innerBox">
+                <p>
+                    Update the hello() function so that it returns a value
+                    rather than outputs directly to the console.<br/>
+                    I used a variable: var greeting; and returned that variable
+                    at the end of the function.<br/>
+                    Then outside the function write a call to the console that
+                    logs the greeting returned by the function. 
+                </p>
+            </div> <!-- innerBox -->
+        </div> <!-- container -->
+
+        <div class="container">
+            <h2>Challenge 15</h2>
+            <div class="innerBox">
+                <p>
+                    Add an array of foods and put 3-5 elements in the array.
+                    <br/>Then make a new function called hospitality(); 
+                    after the hello(); function.<br/>
+                    The new function will take two parameters, a name and a 
+                    gift, which will be an array. Have this function run the 
+                    hello() function and output the result to the console. <br/>
+                    Then have it loop through the gift array and offer a gift 
+                    to the visitor by name and output that to the console.
+                </p>
+            </div> <!-- innerBox -->
+        </div> <!-- container -->
+
+        <div class="container">
+            <h2>Challenge 16</h2>
+            <div class="innerBox">
+                <p>
+                    Add the function that gets random integers from the 
+                    functions lecture.<br/>
+                    Update the hospitality() function so that, instead of
+                    looping through the whole array, randomly picks one element 
+                    from the array and offers that to the user.
+                </p>
+            </div> <!-- innerBox -->
+        </div> <!-- container -->
+
+        <script>
+            // challenge 10-13
+                // var yourName = prompt("your name ?", "");
+                // function hello(name) {
+                //     if (name == "" || name == null) {
+                //     console.log(`We didn't get your name yet`);
+                //     } else {
+                //         console.log(`Hello, and Welcome ${name} !`);
+                //     }
+                // }
+                // hello(yourName);
+            // challenge 14
+                var yourName = prompt("your name ?", "");
+                function hello(name) {
+                    var hellllo;
+                    if (name == "" || name == null) {
+                        hellllo = "We didn't get your name yet";
+                    } else {
+                        hellllo = "Hello, and Welcome " + name + " !" ;
+                    }
+                    return hellllo;
+                }
+            // challenge 15
+                var foods = ['cheese', 'fruit', 'chicken', 'dessert', 'candy'];
+                function hospitality1(name, gift) {
+                    console.log(hello(yourName));
+                    for (var i = 0; i < foods.length; i++ ) {
+                        console.log(`Hello ${name}, would you like some ${foods[i]}`);
+                    }
+                }
+                hospitality1(yourName, foods);
+            // challenge 16
+                function randoFo(min, max) {
+                    return Math.floor( ( max - min + 1 ) * Math.random() )+ min;
+                }
+                function hospitality(name, gift) {
+                    console.log( hello(yourName) );
+                    var randomGift = gift[ randoFo(0, foods.length-1) ];
+                    console.log(`${yourName}, would you like some ${randomGift} ?`);
+                }
+                hospitality(yourName, foods);
+        </script>
+    </body>
+</html>
