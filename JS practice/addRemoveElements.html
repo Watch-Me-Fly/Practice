@@ -7,17 +7,45 @@
     </head>
 
     <body>
-        <div>
-            <h2>
-                adding and removing elements
-            </h2>
-            <p>
-                first paragraph
+        <div id="contDiv">
+            <h2> adding and removing elements </h2>
+            <p style="color: rgb(0, 183, 255);">
+                <b>adding elements</b><br/>
+                to add element : var.createElement(' element type ');<br/>
+                to add text : var.createTextNode(" ");<br/>
+                to connect element to this text : .appendChild();
+            </p>
+            <p style="color: orange;">
+                <b>deleting elements</b><br/>
+                .removeChild ( variable.children [number] ) ;<br/>
+            </p>
+            <p style="color:rgb(226, 10, 10);">
+                a paragraph to be removed
             </p>
         </div>
 
         <script>
+            /////// adding
             
+            // var addP = document
+            //     .createElement('p');
+            // var myText = document
+            //     .createTextNode("here is a fourth added paragraph");
+            // addP.appendChild(myText);
+            // var myContainer = document.getElementById('contDiv');
+            // myContainer.appendChild(addP);
+
+            // another way to write this addition
+            var addP = document
+                .createElement('p')
+                .appendChild(document
+                .createTextNode("here is a fourth added paragraph")
+                );
+            document.getElementById('contDiv').appendChild(addP);
+
+            /////// removing
+            var myDiv = document.getElementById('contDiv');
+            myDiv.removeChild(myDiv.children[3]);
         </script>
     </body>
 </html>
