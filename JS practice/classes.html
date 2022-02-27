@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Classes</title>  
+        
+        <style>
+            .container {
+                color: white;
+                background-color: rgb(0, 34, 128);
+                margin : 10px;
+                padding : 10px;
+                text-align: center;
+            }
+            .innerBox {
+                background-color: white;
+                padding : 10px;
+            }
+            p {
+                text-align: left;
+                color : rgb(6, 145, 226);
+                margin: 5px;
+                padding: 5px;
+            }
+            .codePiece {
+                color: rgb(255, 115, 0);
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <h2>Classes</h2>
+            <div class="innerBox">
+                <p><b class="codePiece">class</b> name of class starting with 
+                    capital letter<b class="codePiece"> {</b></p>
+                <p><b class="codePiece">constructor (</b>names of properties 
+                go inside, separated by commas (,) <b class="codePiece">) {</b></p>
+                <p>use <b class="codePiece"> this.property = property</b> to 
+                indicate that the property in here is the same as the property
+                received from instructor</p>
+                <p><b class="codePiece"> } </b></p>
+                <p><b class="codePiece"> } </b></p>
+            </div> <!--innerBox-->
+        </div> <!-- container -->
+
+        <script>
+            class Book {
+                constructor(title, author, pages) {
+                    // we specify what to do with these info
+                    this.title = title;
+                    this.author = author;
+                    this.pages = pages;
+                }
+            }
+            // defining objects
+            let myBook = new Book ('The story of Tau', 'Will Alexandre', 250 );
+            let mySecondBook = new Book ('The second book', 'different author', 'much longer');
+
+            console.log(myBook, mySecondBook);
+        </script>
+    </body>
+</html>
