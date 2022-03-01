@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <title>Events in Js</title>
+        <style>
+            body {
+                min-height: 1800px;
+            }
+            .container {
+                padding : 10px;
+                width: 60%;
+                margin: 10px auto 0 auto;
+                background-color: rgb(137, 204, 182);
+            }
+            p {
+                margin : 10px;
+                padding : 10px;
+                background-color: white;
+            }
+            .mouse {
+                width:50px;
+                height:50px;
+                background-color: black;
+                margin:10px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="container">
+            <h2>Event listener</h2>
+            <p>.onclick is different from .addEventListener</p>
+            <p>in .addEventListener ('event to listen to as a method', function)</p>
+            <p style="color:red;">the latter is much used currently</p>
+            <p>event.target refers to (which object triggered that event)</p>
+            <button>do something!</button>
+        </div>
+        
+        <div class="container">
+            <h2>preventing default behavior</h2>
+            <p>.preventDefault(); </p>
+            <p>to prevent the browser from doing its natural behavior</p>
+            <p><a href="https://google.com">google something</a></p>
+        </div>
+
+        <div class="container">
+            <h2>submit event</h2>
+            <div style="background-color: blue; color: white; padding: 5px;">
+                <form method="get">
+                    <label>your name <input type="text" name="name"></label>
+                    <input type="submit" value="send">
+                </form>
+            </div>
+            <p>inhibit default behavior, retreive info using .value</p>
+            <p>insert action after</p>
+        </div>
+        <div class="container">
+            <h2 id="h2mouse">mouse over / mouse out</h2>
+            <div>
+                <p class="mouse"></p>
+            </div>
+        </div>
+        <div class="container">
+            <h2>scroll event</h2>
+            <p>scroll event listener</p>
+            <p>.pageXOffset or .pageYOffset</p>
+        </div>
+
+        <script>
+                // var btn = document.querySelector('button');
+                // function somth() {
+                //     alert("hello !");
+                // }
+                // btn.onclick= somth;
+            // or
+                // document.querySelector('button').onclick= function () {
+                //     alert("hello !");
+                // }
+            // samething but w/ event listener method
+            // adding the event object, than .target
+            // the word event can have any desired name
+                document.querySelector('button')
+                .addEventListener('click', function (event) {
+                    event.target.style.backgroundColor = "red";
+                    alert("hello !");
+                    }
+                );
+            
+            // preventing natural browser behavior
+                document.querySelector('a')
+                .addEventListener('click', function (event) {
+                    event.preventDefault();
+                    alert("don't leave !");
+                    }
+                );
+
+            // sumbit event in forms
+                document.querySelector('form')
+                    .addEventListener('submit', function(e) {
+                        e.preventDefault();
+                        // to retreive the value of the input
+                        var nameEntered = document.querySelector('input').value;
+                        // the action that i want
+                        alert(`so your name is ${nameEntered} ?`);
+                        }
+                    );
+            
+            // Mouse events
+                var heading = document.querySelector('#h2mouse');
+                var box = document.querySelector('.mouse');
+                    
+                box.addEventListener('mouseover', function() {
+                    heading.innerHTML="Mouse is over the box";
+                    box.style.backgroundColor = "blue";
+                    }
+                );
+                box.addEventListener('mouseout', function () {
+                    heading.innerHTML="Mouse is no longer on the box";
+                    box.style.backgroundColor = "black";
+                    }
+                );
+                // to return things to default page text once we roll over the
+                // header :
+                heading.addEventListener('mouseover', function() {
+                    heading.innerHTML= "mouse over / mouse out";
+                    }
+                );
+            
+            //scroll event
+                var pageTop; // defining it outside requires js to only update
+                // the value instead of recreating it w/ every scroll
+                window.addEventListener('scroll', function() {
+                    pageTop = window.pageYOffset;
+                    console.log(pageTop);
+                    }
+                );
+
+            // watching for window recising
+                window.addEventListener('resize', function() {
+                        console.log(`page width is ${window.innerWidth} and page height is ${window.innerHeight}`);
+                        }
+                    );
+
+            // detecting keydown events
+                // document.addEventListener('keydown', function ()  {
+                //         alert('a key was pressed');
+                //     }
+                // );
+            // to know which key was pressed : using .wich property (gives me #)
+            // .key property specifies which key in letters
+                    document.addEventListener('keydown', function(event) {
+                        alert(`the ${event.key} key was pressed`)
+                        }
+                    );
+        </script>
+    </body>
+</html>
