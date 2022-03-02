@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <title>Document</title>
+        <style>
+            h1, h2 {text-align: center; color: rgb(114, 41, 114);}
+            body {height: 3000px;}
+            .container {
+                width: 50%;
+                margin: 10px auto 0 auto;
+                padding: 10px;
+                background-color: rgb(204, 204, 204);
+            }
+            .innerBox p {
+                margin:5px;
+                padding: 10px;
+                background-color: white;
+            }
+            .hint { color: grey; }
+            #box {
+                width:50px;
+                height:50px;
+                background-color: rgb(114, 41, 114);
+                transition: all 0.5s;
+            }
+            .Big {
+                width : 200px !important; 
+                height : 200px !important; 
+                background-color: blue !important;
+            }
+            .one {background-color: rgb(238, 238, 222); transition: all 3s;}
+            .two {background-color: rgb(211, 211, 178); transition: all 3s;}
+            .three {background-color: rgb(170, 170, 128); transition: all 3s;}
+            .four {background-color: rgb(139, 139, 100); transition: all 3s;}
+            .five {background-color: rgb(102, 102, 70); transition: all 3s;}
+            #clrch {width: 100%; height: 100px;}
+            .colorChange1 {background-color: rgb(173, 236, 114); transition: all 2s;}
+            .colorChange2 {background-color: blueviolet; transition: all 2s;}
+            .colorChange3 {background-color: coral; transition: all 2s;}
+            .colorChange4 {background-color: cornflowerblue; transition: all 2s;}
+            .colorChange5 {background-color: darkorange; transition: all 2s;}
+        </style>
+    </head>
+    <body class="one">
+        <div>
+            <h1>JavaScript Event Challenges (22 - 30) </h1>
+            <div class="container">
+                <div class="innerBox">
+                    <h2>Challenge 22</h2>
+                    <p id="btnP">Make an HTML file with a paragraph and a button. <br/>
+                        When you click the button, make the paragraph turn green
+                        .<br/>
+                        For now put script tags at the bottom of the page, 
+                        before the closing body tag.
+                    </p>
+                    <button>Make everything green and Add paragraphs</button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="innerBox">
+                    <h2>Challenge 23</h2>
+                    <p>Add a few more paragraphs. When you click the button, 
+                        all the paragraphs turn green.</p>
+                    <p class="hint">hint : loop querySelectorAll</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="innerBox" id="oneMoreP">
+                    <h2>Challenge 24</h2>
+                    <p>Change the HTML so that there is a div around one 
+                        paragraph. Make it so that when you click the button a
+                        new paragraph is added to the div, with the text,
+                        "A new paragraph" in it.</p>
+                    <p class="hint">
+                        hint : .createElement, .createTextNode, .appendChild</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="innerBox">
+                    <h2>Challenge 25</h2>
+                    <p class="beRemv">add an additional button that removes the last paragraph 
+                        from the div</p>
+                    <p class="hint beRemv">
+                        hint : .removeChild(var.children[var.length-1])</p>
+                    <button id="rmvbtn">Remove paragraphs</button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="innerBox">
+                    <h2>Challenge 26</h2>
+                    <p>change the first paragraph so that it says, "This is
+                        paragraph number 1". <br/>
+                        Each time the user presses the add paragraph button, 
+                        the number at the end of the statement increments.<br/>
+                        When the user clicks the remove paragraph button, it
+                        functions as normal, but alerts the user if they try to
+                        delete the last paragraph</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="innerBox">
+                    <h2>Challenge 27</h2>
+                    <p>In a form. When the user submits a number, change the
+                        size of the font for the h1 to be equal to the number
+                        they submitted in pixels.<br/>
+                        If no number is entered, or something other than a 
+                        number is entered, alert that the user must enter a number.
+                    </p>
+                    <p class="hint">hint : To make this work you will have to
+                        prevent the default behavior for the form submission</p>
+                    <form method="get">
+                        <label>Enter a number <input type="text"> </label>
+                        <input type="submit" value="send number">
+                    </form>
+                </div>
+            </div>
+            <div class="container">
+                <div class="innerBox">
+                    <h2>Challenge 28</h2>
+                    <p>create the HTML
+                        and CSS on the right. Then write a
+                        script that when you hover the
+                        mouse over the div, it adds the
+                        class "big".</p>
+                    <p>Write a second event handler for
+                        when the mouse goes off the div, it
+                        removes the class "big".</p>
+                    <div id="box"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="innerBox">
+                    <h2>Challenge 29</h2>
+                    <p>Write a script that changes
+                        the class on the body tag
+                        for each 500 pixels the user
+                        scrolls. At 500px down the
+                        page the body gets class
+                        two, and at 1000 it gets
+                        class three, etc</p>
+                    <p class="hint">You can use if/else
+                        statements, but try using a
+                        switch statement</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="innerBox">
+                    <h2>Challenge 30</h2>
+                    <p>write a script that changes the class on
+                        a tag based on the key that was pressed</p>
+                    <p>If someone presses a different key, give them a
+                        nasty alert message.</p>
+                    <p class="hint">Use the switch statement
+                            again</p>
+                    <div id="clrch" class="colorChange1"></div>
+                    <p>Press the B key to turn the box 
+                        <span class="colorChange1">green</span></p>
+                    <p>Press the V key to turn the box 
+                        <span class="colorChange2">violet</span></p>
+                    <p>Press the C key to turn the box 
+                        <span class="colorChange3">coral</span></p>
+                    <p>Press the F key to turn the box 
+                        <span class="colorChange4">blue</span></p>
+                    <p>Press the G key to turn the box 
+                        <span class="colorChange5">orange</span></p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Challenge 22
+                var para = document.querySelector('#btnP');
+                var btn = document.querySelector('button');
+                btn.addEventListener('click', function () {
+                    para.style.color = "green";
+                    }
+                );
+
+            // Challenge 23
+                var allPara = document.querySelectorAll('p');
+                btn.addEventListener('click', function () {
+                    for (var p = 0; p < allPara.length; p++) {
+                        allPara[p].style.color = "green";
+                        }
+                    }
+                );
+
+            // Challenge 24 & 26
+                var divAddP = document.querySelector('#oneMoreP') ;
+                var numOfPs = 2;
+
+                btn.addEventListener('click', function() {
+                    numOfPs++;
+                    var newP = document.createElement('p');
+                    var pText = document
+                            .createTextNode(`This is paragraph number ${numOfPs}`);
+                    newP.appendChild(pText);
+                    divAddP.appendChild(newP);
+                    }
+                );
+            
+            // Challenge 25 (removing paragraphs)
+                var remv = document.querySelector('#rmvbtn');
+                remv.addEventListener('click', function() {
+                    var divP = document.querySelectorAll('.beRemv');
+
+                    divAddP.removeChild(divAddP.children[divP.length-1]);   
+                }
+            );
+
+            // Challenge 27 (change H1 size)
+                document.querySelector('form')
+                    .addEventListener('submit', function(event) {
+                        event.preventDefault();
+                        var myNum = // parseInt is to convert to number
+                            parseInt(document.querySelector('input').value);
+
+                        if (myNum) { // this is boolean
+                            document.querySelector('h1')
+                                        .style.fontSize = myNum +"px";
+                            } else {
+                                alert('please enter a number');
+                            }
+                        }
+                );
+
+            // Challenge 28 (enlarging box)
+                var boxHv = document.querySelector('#box');
+                boxHv.addEventListener('mouseover', function() {
+                        boxHv.className="Big";
+                    }
+                );
+                boxHv.addEventListener('mouseout', function() {
+                        boxHv.removeAttribute('class');
+                    }
+                );
+
+            // Challenge 29 (change background color with scroll)
+            var pageTop;
+            var bdy = document.querySelector('body');
+            
+            window.addEventListener('scroll', function() {
+                    pageTop = window.pageYOffset;
+
+                    switch(true) {
+                        case pageTop < 500 : bdy.className="one"; break;
+                        case pageTop < 1000 : bdy.className="two"; break;
+                        case pageTop < 1500 : bdy.className="three"; break;
+                        case pageTop < 2500 : bdy.className="four"; break;
+                        default : bdy.className="five";
+                    }
+                }
+            );
+
+            // Challenge 30 (change color based on clicked key)
+            var clrChBox = document.querySelector('#clrch');
+            
+            document.addEventListener('keydown', function(e) {
+                    var keyPressed = e.which;
+
+                    switch(keyPressed) {
+                        case 66: clrChBox.className="colorChange1"; break;
+                        case 86: clrChBox.className="colorChange2"; break;
+                        case 67: clrChBox.className="colorChange3"; break;
+                        case 70: clrChBox.className="colorChange4"; break;
+                        case 71: clrChBox.className="colorChange5"; break;
+                        default: alert("you didn't click a valid color changing key");
+                    }
+                }
+            );
+
+        </script>
+    </body>
+</html>
