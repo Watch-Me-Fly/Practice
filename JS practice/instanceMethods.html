@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instance Methods</title>
+</head>
+<body>
+    <div>Open console</div>
+
+    <script>
+        class BankAccount {
+            constructor(owner, balance) {
+            this.owner = owner;
+            this.balance = balance;
+                }
+            showBalance() {
+                console.log('Balance: ' + this.balance + ' EUR');
+                }    
+            deposit(amount) {
+                console.log('Depositing ' + amount + ' EUR');
+                this.balance += amount;
+                this.showBalance();
+                }
+            withdraw(amount) {
+                if (amount > this.balance) {
+                    console.log('Withdrawal denied!');
+                } else {
+                    console.log('Withdrawing ' + amount + ' EUR');
+                    this.balance -= amount;
+                    this.showBalance();
+                    }
+                }
+        }
+
+        const newAccount = new BankAccount('Will Alexander', 500);
+        newAccount.showBalance();
+        newAccount.deposit(20);
+        newAccount.withdraw(140);
+
+    </script>
+</body>
+</html>
