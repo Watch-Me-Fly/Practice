@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>other loops</title>
+
+</head>
+<body>
+    <div>for in, for of loops</div>
+    <div>open console</div>
+    <script>
+        let passengers = [
+            'Will',
+            'Sarah',
+            'Audrey',
+            'Tau'
+        ];
+        // for (let p = 0; p <passengers.length; p++) {
+        //     console.log(`Boarding ${passengers[p]}`);}
+
+        // is simplified this way :
+        for ( let x in passengers ) {
+            console.log(`Boarding ${passengers[x]}`);}
+
+        // in the case where we do not need to know the index number
+        let passengers2 = [ 
+            {name: 'Will',
+            ticketNumber: 20987},
+            {name: 'Sarah',
+            ticketNumber: 20837},
+            {name: 'Audrey',
+            ticketNumber: 19744},
+            {name: 'Tau',
+            ticketNumber: 54896}
+        ]
+        // instead of giving the index inside [] with variable, 
+        // gives the element itself
+        for ( let psgr of passengers2 ) {
+            console.log
+            (`Boarded - Name : ${psgr.name}, Ticket Number ${psgr.ticketNumber}`);
+        }
+
+        // the while keeps on going until the condition is no longer met
+        let seatsLeft = 10;
+        let passengersStillToBoard = 8;
+        let passengersBoarded = 0;
+
+        while (seatsLeft > 0 && passengersStillToBoard > 0) {
+            passengersBoarded++;
+            seatsLeft--;
+            passengersStillToBoard--;
+        }
+        console.log(`${passengersBoarded} passengers boarded`);
+    </script>
+</body>
+</html>
