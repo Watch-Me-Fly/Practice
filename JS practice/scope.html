@@ -5,11 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scope</title>
+    <style>
+        body {
+            width: 50%;
+            margin: 30px auto 30px auto;
+            text-align: center;
+        }
+        .red {
+            color: red;
+        }
+        .blue {
+            color: blue;
+        }
+        .green {
+            color: green;
+        }
+        .red, .blue, .green {
+            display: inline;
+            background-color: white;
+            padding: 2px;
+        }
+        div {
+            background-color: rgb(74, 143, 143);
+            color: white;
+            padding: 5px;
+            margin: 10px;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>avoiding general scope declaration</h1>
+    <div>
+        <h2>IIFE method</h2>
+        to avoid a general scope declaration of value <br/><br/>
+            <p class="red">    ( 
+                <p class="blue">   function () {}
+                    <p class="green">   ( )     </p>
+                </p>
+                <p class="red"> );</p>
+            </p>
+            <p>The parenthisis () just after the function allow to invode it
+                as soon as the page is loaded.
+            </p>
+    </div>
+
+    <div>
+        <h2>Strategy 2 : Use strict method</h2>
+        <p class="blue">"use stricte";</p>
+        <p>keeps me from forgetting to add the word "var" to define a
+            variable by showing an error if no "var" added</p>
+        <p>if we combine the two methods, we will be making sure that variables
+            are staying within the proper Scope
+        </p>
+    </div>
+
+    <div>
+        <h2>Strategy 3 : Const and Let</h2>
+        instead of <p class="red">var</p>
+        <p><p class="red">const</p> does not allow a change of value</p>
+        <p><p class="red">let</p> allows a change, but has a block-evel scope</p>
+    </div>
+
+    <div>
+        <h2>Hoisting</h2>
+        by default : js hoist variables (meaning they can be used before 
+        them being declared)
+        <p><p class="red">YOU SHOULD</p> declare a vriable
+         <p class="red">FIRST</p></p>
+        <p><p class="blue">open console</p></p>
+    </div>
     <script>
-        
+        "use stricte";
+        newVar = "not properly defined";
+        console.log(newVar);
+
+
+        console.log(cheese); //console.logging before declaring (hoisting)
+        var cheese = "emmental";
     </script>
 </body>
 </html>
