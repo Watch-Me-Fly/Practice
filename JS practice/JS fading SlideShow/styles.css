@@ -2,6 +2,12 @@ body, p { margin: 0; padding: 0; }
 
 body { padding: 100px; background: #000; }
 
+h1 {
+	color: white;
+	text-align: center;
+	text-shadow : 2px 1px 1px grey;
+}
+
 #content {
 	margin: 100px auto 20px auto;
 	border: 10px solid #4C4C4C;
@@ -51,7 +57,8 @@ p { text-align: center; }
 /* doing animation in css is smoother than doing it with js */
 /* necissate adding an image on top of another  */
 .fadeinimg {
-	animation : fadein 2s;
+	animation : fadein 1s;
+	width : 100%;
 }
 @keyframes fadein {
 	from {
