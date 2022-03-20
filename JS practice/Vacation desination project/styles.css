@@ -1,0 +1,65 @@
+/* general */
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+
+    font-family : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+    padding : 20px;
+}
+/* header & its contents */
+header {
+    padding : 50px;
+    background-color : cornflowerblue;
+    text-align : center;
+    color : white;
+    margin-bottom : 20px;
+}
+h1, h2, h3, h4, p {
+    margin-bottom : 1em;
+}
+header p {
+    font-size: 1.4em;
+}
+u {
+    color : rgb(255, 230, 0);
+}
+/* main */
+main {
+    max-width : 800px;
+    padding : 20px;
+    margin : auto;
+    display : flex;
+    justify-content : space-between;
+}
+/* form */
+form {
+    width : 40%;
+}
+label {
+    display : block;
+    margin-bottom : 0.5em;
+}
+input, textarea, #distantionDetailsForm button{
+    display : block;
+    width: 100%;
+    margin-bottom: 1em;
+    border : 1px solid #666;
+    padding : 10px;
+}
+/* article */
+main article {
+    width : 45%;
+}
+#title {
+    text-align : center;
+}
+#destinations-container {
+    padding : 10px;
+    background-color: rgb(236, 234, 234);
+}
+img {
+    width: 100%;
+}
