@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            width: 60%;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>Error messages display here</h3>
+        <p id="content"></p>
+    </div>
+    <div>
+        <h3>Live following coordinates</h3>
+        <p id="live"></p>
+    </div>
+    <script>
+        (function () {
+            var x = document.getElementById('content');
+
+            function getLocation() {
+
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                } else {
+                    x.innerHTML = "Geolocation is not supported by this browser";
+                }
+
+            }
+
+            function showPosition(position) {
+
+                console.log(`User's position is ==
+                Latitude: ${position.coords.latitude}
+                Longitude : ${position.coords.longitude}`);
+
+            }
+
+            getLocation();
+
+            function showError(error) {
+
+                switch(error.code) {
+
+                    case error.PERMISSION_DENIED:
+                        x.innerHTML = "User denied the request for geolocation"
+                        break;
+                    case error.POSITION_UNAVAILABLE:
+                        x.innerHTML = "Location information is not available"
+                        break;
+                    case error.TIMEOUT: 
+                        x.innerHTML = "The request to get user location timed out." 
+                        break; 
+                    case error.UNKNOWN_ERROR: 
+                        x.innerHTML = "An unknown error occurred." 
+                        break;
+
+                }
+
+            }
+
+            
+
+        })();
+
+    </script>
+</body>
+</html>
