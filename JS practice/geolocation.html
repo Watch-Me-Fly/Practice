@@ -1,78 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            width: 60%;
-            margin: 20px auto;
-        }
-    </style>
-</head>
-<body>
-    <div>
-        <h3>Error messages display here</h3>
-        <p id="content"></p>
-    </div>
-    <div>
-        <h3>Live following coordinates</h3>
-        <p id="live"></p>
-    </div>
-    <script>
-        (function () {
-            var x = document.getElementById('content');
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                padding: 0; margin: 0;
+            }
+            body {
+                width: 70%;
+                text-align: center;
+                margin: 20px auto;
+            }
+            .container {
+                border: 1px solid black;
+                padding: 20px;
+                margin: 20px;
+            }
+            .red {
+                color: red;
+                margin: 10px;
+            }
+
+        </style>
+
+        <title>Document</title>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <h4>this is where the location is appearing</h4>
+                <div id="entry" class="red"></div>
+                <button type="button" onclick="getLocation();">show my location</button>
+            </div>
+
+            <div class="container">
+                <h4>Where errors appear</h4>
+                <div id="errorDiv" class="red"></div>
+            </div>
+
+            <!-- <div class="container">
+                <h4>Where position is watched</h4>
+                <div id="watchDiv" class="red"></div>
+                <button type="button" onclick="movingGeo();">Watching position</button>
+            </div> -->
+        </main>
+        <script>
+            var entryDiv = document.getElementById('entry');
+            var errDiv = document.getElementById('errorDiv');
+            var watching = document.getElementById('watchDiv');
 
             function getLocation() {
-
                 if (navigator.geolocation) {
-                    navigator.geolocation.getCurrentPosition(showPosition);
+                    navigator.geolocation.getCurrentPosition(showPosition, showError);
                 } else {
-                    x.innerHTML = "Geolocation is not supported by this browser";
+                    entryDiv.innerHTML = "Browser does not support geolocation";
                 }
-
             }
-
+            // function movingGeo() {
+            //     if (navigator.geolocation) {
+            //         navigator.geolocation.watchPosition(showPosition, showError);
+            //     } else { 
+            //         watchDiv.innerHTML = "Geolocation is not supported by this browser.";
+            //     }
+            // }
             function showPosition(position) {
-
-                console.log(`User's position is ==
-                Latitude: ${position.coords.latitude}
-                Longitude : ${position.coords.longitude}`);
-
+                entryDiv.innerHTML = 
+                `<b>Your current position is : </b><br/>
+                Latitude = ${position.coords.latitude}, <br/>and longitude = ${position.coords.longitude}`;
             }
-
-            getLocation();
 
             function showError(error) {
-
                 switch(error.code) {
-
                     case error.PERMISSION_DENIED:
-                        x.innerHTML = "User denied the request for geolocation"
+                        errDiv.innerHTML = "User denied the request for Geolocation."
                         break;
                     case error.POSITION_UNAVAILABLE:
-                        x.innerHTML = "Location information is not available"
+                        errDiv.innerHTML = "Location information is unavailable."
                         break;
-                    case error.TIMEOUT: 
-                        x.innerHTML = "The request to get user location timed out." 
-                        break; 
-                    case error.UNKNOWN_ERROR: 
-                        x.innerHTML = "An unknown error occurred." 
+                    case error.TIMEOUT:
+                        errDiv.innerHTML = "The request to get user location timed out."
                         break;
-
+                    case error.UNKNOWN_ERROR:
+                        errDiv.innerHTML = "An unknown error occurred."
+                        break;
                 }
-
             }
-
-            
-
-        })();
-
-    </script>
-</body>
+        </script>
+    </body>
 </html>
