@@ -9,43 +9,51 @@
     <body>
         <div id="contDiv">
             <h2> adding and removing elements </h2>
-            <p style="color: rgb(0, 183, 255);">
+            <div id="something" style="color: rgb(0, 183, 255);">
                 <b>adding elements</b><br/>
                 to add element : var.createElement(' element type ');<br/>
                 to add text : var.createTextNode(" ");<br/>
                 to connect element to this text : .appendChild();
-            </p>
-            <p style="color: orange;">
+                   
+            </div>
+            <div style="background-color:burlywood;">added content will show here</div>
+            <div id="paragraphs" style="background-color:greenyellow;">the other added content here</div>
+            <div style="color: orange;">
                 <b>deleting elements</b><br/>
-                .removeChild ( variable.children [number] ) ;<br/>
-            </p>
-            <p style="color:rgb(226, 10, 10);">
-                a paragraph to be removed
-            </p>
+                .removeChild ( variable.children [number] ) ;
+            </div>
+            <button onclick="removeThis();">delete</button>
+            <br/>
+            <button onclick="addThis();">Add</button>
+             <br/>
+            <button onclick="newAdd();">another addition</button>
         </div>
 
         <script>
-            /////// adding
-            
-            // var addP = document
-            //     .createElement('p');
-            // var myText = document
-            //     .createTextNode("here is a fourth added paragraph");
-            // addP.appendChild(myText);
-            // var myContainer = document.getElementById('contDiv');
-            // myContainer.appendChild(addP);
+            function addThis() {
+                var container = document
+                            .getElementById('something');
+                var addDiv = document
+                            .createElement('div');
+                var myText = document
+                            .createTextNode('here is an added div');
 
-            // another way to write this addition
-            var addP = document
+                addDiv.appendChild(myText);
+                container.appendChild(addDiv);
+            }
+            function removeThis() {
+                var container = document
+                            .getElementById('something');
+                    container.removeChild(container.children[1]);
+            }
+            function newAdd() {
+                var addP = document
                 .createElement('p')
                 .appendChild(document
                 .createTextNode("here is a fourth added paragraph")
                 );
-            document.getElementById('contDiv').appendChild(addP);
-
-            /////// removing
-            var myDiv = document.getElementById('contDiv');
-            myDiv.removeChild(myDiv.children[3]);
+            document.getElementById('paragraphs').appendChild(addP);
+            }
         </script>
     </body>
 </html>
