@@ -3,28 +3,44 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script defer>
-            var red = true;
-            var green = false;
-
-            if (red) {
-                console.log('red is true');
-            } else {
-                console.log('it is not red');
-            }
-        </script>
         <style>
-
+            button {
+                padding: 1px;
+                display: block;
+                margin: 5px;
+            }
+            .red {
+                color: red;
+            }
+            #result {
+                background-color: palevioletred;
+                color: white;
+                padding: 10px;
+            }
         </style>
+        <script defer>
+            function callMe() {
+
+                
+
+            }
+
+        </script>
+
         <title>Document</title>
     </head>
     <body>
         <main>
             <div id="something">
+                some basic information about this page
             </div>
-            <div id="paragraphs" style="color:red;">
+            <div id="paragraphs">
+                some basic information about this page
             </div>
-            
+
+
+            <button onclick="callMe();">call me</button>
+            <div id="result">object appears here</div>
         </main>
         <footer>
 

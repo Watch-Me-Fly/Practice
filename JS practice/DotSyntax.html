@@ -34,21 +34,6 @@
         <h1>Dot Syntax</h1>
 
         <div class="container">
-            <h2>.getElementById</h2>
-            <div class="innerBox">
-                <p id="coloring"> Text goes here </p>
-            </div> <!--innerBox-->
-        </div> <!-- container -->
-        
-        <div class="container">
-            <h2>.getElement<p id="red">s</p>ByTagName</h2>
-            <div class="innerBox">
-                <p>For multiple elements of same tag</p>
-                <p>To style multiple using js, must use a loop</p>
-            </div> <!--innerBox-->
-        </div> <!-- container -->
-
-        <div class="container">
             <h2>.getElement<p id="red">s</p>ByClassName</h2>
             <div class="innerBox">
                 <p class="byClass">text goes here</p>
@@ -59,29 +44,7 @@
         </div> <!-- container -->
 
         <div class="container">
-            <h2>querySelector();</h2>
-            <div class="innerBox">
-                <p class="aClass">gets elements from dom</p>
-                <p>it can get tags, classes, ids ...etc </p>
-                <p>uses CSS syntax .class #id</p>
-                <p>returns only 1 item (the 1st)even if multiple items exist</p>
-            </div> <!--innerBox-->
-        </div> <!-- container -->
-
-        <div class="container">
             <h2>.className = "value"</h2>
-            <div class="innerBox">
-                <p>give an element a class name</p>
-                <p>do not have parenthesis () as for methods and functions</p>
-            </div> <!--innerBox-->
-        </div> <!-- container -->
-
-        <div class="container">
-            <h2>.innerHTML</h2>
-            <div class="innerBox">
-                <p id="inH">text here</p>
-                <p>var.innerHTML = " html can be entered"</p>
-            </div> <!--innerBox-->
         </div> <!-- container -->
 
         <div class="container">
@@ -94,48 +57,26 @@
         </div> <!-- container -->
 
         <script>
-            // editing styles
-            document.getElementById("coloring").style.color="red";
-
             var ps = document.getElementsByTagName('div');
-                console.log(ps);
-                for(var i = 0; i < ps.length; i++) {
-                ps[i].style.border = "1px dashed teal";
-                // alert(`showing paragraph ${i}`); 
-                // in firefox : this notifies me before each change
+            console.log(ps);
+            for(var i = 0; i < ps.length; i++) {
+                ps[i].style.border = "1px dashed teal"; 
             }
 
-            var classy = document.getElementsByClassName('byClass');
-            for (var c = 0; c < classy.length; c++ ) {
-                classy[c].style.color = "blue";
-                console.log(`element ${c} ${classy[c]}`);
-            }
             // I can treat them as arrays and access items by number (0+)
             // in this example, second div (number 1 in array) should change
-            // background color
             ps[1].style.background = "pink";
-            
-            var myText = document.querySelector('.aClass');
-                myText.style.color = "teal";
-            // one way to use innerHTML
-                // var myInH = document.getElementById('inH');
-                // myInH.innerHTML = "Hello woaoh";
-            // another way is to treat the definition of the value as a value
-                document.getElementById('inH').innerHTML = "Hello woaoh";
             
             //.push (adds an item to an array)
             let guests = ['Ahmad', 'Mohammad'];
             guests.push('Aziz');
+            console.log(guests);
             // .unshift (adding an element to the beginning)
             guests.unshift('Noha');
             console.log(guests);
             // .pop (deletes the last element)
             guests.pop();
             console.log(guests);
-
-            var setAt = document.querySelector('.att');
-            setAt.setAttribute('attribute', 'value');
-            
         </script>
     </body>
 </html>

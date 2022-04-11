@@ -62,33 +62,20 @@
                 omnis, reiciendis explicabo, amet error, harum officiis vitae 
                 quae incidunt!</p>
 		</article>
-        <footer>
-			<p id="copyright">copyright info</p>
-		</footer>
+       
         <script>
-            // Ch 17 :  write a script that gets the text inside the paragraph 
-            // with the id set to "copyright" and use the color property to 
-            // change the color of the text to green
-                    document.getElementById('copyright')
-                    .style.color = "green";
-            // Ch 18 : get all the paragraphs on the page, assign them to a
-            // variable, then use that variable in a loop to set the style.
-            // color property to green.
+            // get all paragraphs on page assigned to a variable
                     var para = document.getElementsByTagName('p');
+                    // use that variable in a loop to set the style color property to green.
                     for (var g = 0; g < para.length; g++ ) {
                         para[g].style.color = "green";
                     }
+
                     // // or
                     // for (var eachP of para) {
                     //     eachP.style.color = "green"
                     // }
-            // Ch 19 : assign the class of .red (which is already defined
-            // inside the style tags at the top of the page) to the <h1> in the
-            // header and to the date in the second article.
-                    var rered = document.querySelector('h1');
-                    rered.className = "red";
-                    var reredp = document.getElementsByClassName('date');
-                    reredp[1].className = "red";
+
             // Ch 20 :  change the src attribute for the first picture in the 
             // first article to: "http://meadpoint.net/images/xmasajax.jpg" 
                     var img = document.querySelector('#one img');
@@ -98,9 +85,7 @@
                     for (var b = 0; b < blueee.length; b++) {
                         blueee[b].className = "blue";
                     }
-            // Ch 21 : get all the links, then check to see if one of them is 
-            // set to go to the wikipedia page on llamas, if it is, set the text
-            // of that link to "Llamas are cool!" 
+            // Ch 21 : get all the links, then check to see if one of them is set to go to the wikipedia page on llamas, if it is, set the text of that link to "Llamas are cool!" 
                    
                 //    getting all links
                    var anchors = document.getElementsByTagName('a') ;
