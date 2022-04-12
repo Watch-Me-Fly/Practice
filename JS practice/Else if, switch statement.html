@@ -15,27 +15,23 @@
         <script>
             var colors = ['red', 'green', 'blue', 'yellow'];
             var selectedColor = colors[3];
-            ////////////////////// Else if
-            if ( selectedColor == 'red' ) {
-                console.log("red");
-            } else if ( selectedColor == 'blue' ) { // else if adds another condition to -if- that is not as general as -else-
-                console.log("blue");
-            } else if ( selectedColor == 'green' ) {
-                console.log("green");
-            } else {
-                console.log("yellow");
-            }
+
             ////////////////////// Switch statement
             switch (selectedColor) {
             // takes a value and run it through a number of cases, and acts according to each
             // and we can add a default to indicate what to do in case non of the cases is true
-                case "red" : console.log("switch red is true");
+                case "red" : 
+                console.log("switch red is true");
                 break;
-                case "blue" : console.log("switch blue is true");
+                case "blue" : 
+                console.log("switch blue is true");
                 break;
-                case "green" : console.log("switch green is true");
+                case "green" : 
+                console.log("switch green is true");
                 break;
-                default : console.log("switch statement has another value"); // or we can make an error statement for example if the selection is outside the array number or values
+                default : 
+                console.log("switch statement has another value"); 
+                // or we can make an error statement for example if the selection is outside the array number or values
             }
 
         </script>

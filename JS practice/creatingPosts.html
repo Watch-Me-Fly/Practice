@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            h1, nav {
+                text-align: center;
+            }
+            .blueBTN {
+                background-color: blue;
+                color: white;
+            }
+            .yellowBTN {
+                background-color: yellow;
+                color: black;
+            }
+            .redBTN {
+                background-color: red;
+                color: white;
+            }
+            nav > button {
+                background-color: rgb(140, 135, 135, 0.3);
+                border: 0.25px solid grey;
+                padding: 10px;
+                border-radius: 3px;
+                text-decoration: none;
+                color:black;
+            }
+            main {
+                width: 50%;
+                margin:10px auto;
+                background-color: rgb(195, 220, 221);
+                padding: 20px;
+            }
+            article {
+                text-align: left;
+                border: 1px solid black;
+                background-color: white;
+                padding: 20px;
+            }
+            main > button {
+                margin: 30px;
+                float: right;
+            }
+        </style>
+        
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <h1> Allowing user to enter post using JS </h1>
+        </header>
+        <nav>
+            <button id="blueBTN">blue</button> |
+            <button id="yellowBTN">yellow</button> |
+            <button id="redBTN">red</button> |
+            <button id="noneBTN">none</button>
+        </nav>
+        <main>
+            <section>
+                <article>
+                    <h2>Allemagne. Mémoires d’une nation</h2>
+                    <p>Histoire d’un livre. L’historien britannique est fasciné par la culture germanique et par ce que lui doit l’Europe. Un étonnant beau livre en témoigne. </p>
+                </article>
+            </section>
+
+            <button id="remvPostbtn">Remove Post</button>
+            <button id="postbtn">Add Post</button>
+
+        </main>
+
+        <script>
+            let headTitre = document.querySelector('h1');
+            const addPostBtn= document.getElementById('postbtn');
+            const remvPostbtn = document.getElementById('remvPostbtn');
+            const motherTree= document.querySelector('section');
+
+            document.getElementById('blueBTN').addEventListener('click', () => {
+                headTitre.classList.remove('yellowBTN', 'redBTN');
+                headTitre.classList.add('blueBTN');
+            });
+            document.getElementById('yellowBTN').addEventListener('click', () => {
+                headTitre.classList.remove('blueBTN', 'redBTN');
+                headTitre.classList.add('yellowBTN');
+            });
+            document.getElementById('redBTN').addEventListener('click', () => {
+                headTitre.classList.remove('yellowBTN', 'blueBTN');
+                headTitre.classList.add('redBTN');
+            });
+            document.getElementById('noneBTN').addEventListener('click', () => {
+                headTitre.classList.remove('yellowBTN', 'blueBTN', 'redBTN');
+            });
+
+            addPostBtn.addEventListener('click', () => {
+                const newPost = createNewPost();
+                motherTree.appendChild(newPost);
+            });
+
+            remvPostbtn.addEventListener('click', () => {
+                // removing only if we have added articles to the page
+                articleCount = motherTree.childElementCount;
+                if (articleCount > 1) {
+                    // to remove the last element added without touching original
+                    motherTree.removeChild(motherTree.children[articleCount - 1]);
+                }
+
+            });
+
+            function createNewPost() {
+                let newArticle = document.createElement('article');
+                let newHeading = document.createElement('h2');
+                let newParagraph = document.createElement('p');
+
+                newHeading.textContent = "another blog post";
+                newParagraph.textContent = "lorem ipsum (dummy text goes here)";
+
+                newArticle.appendChild(newHeading);
+                newArticle.appendChild(newParagraph);
+                
+                return newArticle;
+            }
+        </script>
+    </body>
+</html>

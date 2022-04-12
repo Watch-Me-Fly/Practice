@@ -38,13 +38,6 @@
             <p>event.target refers to (which object triggered that event)</p>
             <button>do something!</button>
         </div>
-        
-        <div class="container">
-            <h2>preventing default behavior</h2>
-            <p>.preventDefault(); </p>
-            <p>to prevent the browser from doing its natural behavior</p>
-            <p><a href="https://google.com">google something</a></p>
-        </div>
 
         <div class="container">
             <h2>submit event</h2>
@@ -70,36 +63,21 @@
         </div>
 
         <script>
-                // var btn = document.querySelector('button');
-                // function somth() {
-                //     alert("hello !");
-                // }
-                // btn.onclick= somth;
-            // or
-                // document.querySelector('button').onclick= function () {
-                //     alert("hello !");
-                // }
+            // document.querySelector('button').onclick= function () {
+            //     alert("hello !");
+            // }
             // samething but w/ event listener method
             // adding the event object, than .target
             // the word event can have any desired name
                 document.querySelector('button')
                 .addEventListener('click', function (event) {
                     event.target.style.backgroundColor = "red";
-                    alert("hello !");
                     }
                 );
             
-            // preventing natural browser behavior
-                document.querySelector('a')
-                .addEventListener('click', function (event) {
-                    event.preventDefault();
-                    alert("don't leave !");
-                    }
-                );
-
             // sumbit event in forms
                 document.querySelector('form')
-                    .addEventListener('submit', function(e) {
+                        .addEventListener('submit', function(e) {
                         e.preventDefault();
                         // to retreive the value of the input
                         var nameEntered = document.querySelector('input').value;
@@ -130,8 +108,7 @@
                 );
             
             //scroll event
-                var pageTop; // defining it outside requires js to only update
-                // the value instead of recreating it w/ every scroll
+                var pageTop; // defining it outside requires js to only update the value instead of recreating it w/ every scroll
                 window.addEventListener('scroll', function() {
                     pageTop = window.pageYOffset;
                     console.log(pageTop);
