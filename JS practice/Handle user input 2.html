@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <title>Handle user input</title>
+</head>
+
+<body>
+    <div class="container">
+        <header id="page-header" class="bg-dark text-white col-sm-12">
+            <h1 id="main-heading" class="text-center">Handle user input</h1>
+        </header>
+        <div class="row">
+            <main class="col-sm-8">
+                <form id="comment-form">
+                    <h3>Hobbies</h3>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="sports-checkbox">
+                            <label class="form-check-label" for="sports-checkbox">
+                                Sports
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="games-checkbox">
+                            <label class="form-check-label" for="games-checkbox">
+                                Video games
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="music-checkbox">
+                            <label class="form-check-label" for="music-checkbox">
+                                Music
+                            </label>
+                        </div>
+                    </div>
+                    <h3>Favourite mode of transport</h3>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="car-radio" value="car"
+                                name="transport-method">
+                            <label class="form-check-label" for="car-radio">
+                                Car
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="bike-radio" value="bike"
+                                name="transport-method">
+                            <label class="form-check-label" for="bike-radio">
+                                Bike
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="other-radio" value="other"
+                                name="transport-method">
+                            <label class="form-check-label" for="other-radio">
+                                Other
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="music-preference">
+                            Favourite kind of music
+                        </label>
+                        <select class="form-control" id="music-preference">
+                            <option value="rock">Rock</option>
+                            <option value="jazz">Jazz</option>
+                            <option value="classical">Classical</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </form>
+            </main>
+            <aside id="sidebar" class="col-sm-4 bg-info text-white">
+                <p>
+                    You enjoy:
+                <ul id="hobbies-result">
+                    <li class="text-secondary">Sports</li>
+                    <li class="text-secondary">Video games</li>
+                    <li class="text-secondary">Music</li>
+                </ul>
+                </p>
+                <p>Your favourite mode of transport is:
+                    <span id="transport-result"></span>
+                </p>
+                <p>Your favourite kind of music is:
+                    <span id="music-result"></span>
+                </p>
+            </aside>
+        </div>
+    </div>
+    <script>
+        // DOM ELEMENT REFERENCES
+        const hobbiesResult = document
+            .getElementById('hobbies-result');
+        const transportResult = document
+            .getElementById('transport-result');
+        const musicResult = document.getElementById('music-result');
+        const radioButtons = document
+            .getElementsByName('transport-method');
+        const musicDropDown = document
+            .getElementById('music-preference');
+
+
+
+        /* checkboxes */
+        document.getElementById('sports-checkbox')
+            .addEventListener('change', (event) => {
+                // highlight the equivalent on the right.
+                // by removing the class that contains the grey style
+
+                /*
+                if (event.target.checked) {
+                    hobbiesResult.children[0].classList.remove('text-secondary');
+                } else {
+                    hobbiesResult.children[0].classList.add('text-secondary');
+                }
+                */
+
+                // another way to write the (if) statement
+                event.target.checked ?
+                    hobbiesResult.children[0].classList.remove('text-secondary') // if true
+                    : hobbiesResult.children[0].classList.add('text-secondary'); // if false
+            });
+        document.getElementById('games-checkbox').addEventListener('change', (event) => {
+            event.target.checked ?
+                hobbiesResult.children[1].classList.remove('text-secondary') // if true
+                : hobbiesResult.children[1].classList.add('text-secondary'); // if false
+        });
+        document.getElementById('music-checkbox').addEventListener('change', (event) => {
+            event.target.checked ?
+                hobbiesResult.children[2].classList.remove('text-secondary') // if true
+                : hobbiesResult.children[2].classList.add('text-secondary'); // if false
+        });
+
+
+        /* radio inputs */
+        for (let i = 0; i < radioButtons.length; i++) {
+            radioButtons[i].addEventListener('change', ($event) => {
+                transportResult.textContent = $event.target.value;
+            });
+        }
+
+        /* Select menu */
+        // adding a default text on the right for default selection
+        // without this line, no text will be written on the right.
+        musicResult.textContent = musicDropDown.value;
+
+        // to change written text on the right according to selection
+        musicDropDown.addEventListener('change', (event) => {
+            musicResult.textContent = event.target.value;
+            // chage color according to selection
+            if (event.target.value === 'jazz') {
+                musicResult.style.color = 'red';
+            } else if (event.target.value === 'rock') {
+                musicResult.style.color = 'black';
+            } else if (event.target.value === 'classical') {
+                musicResult.style.color = 'yellow';
+            } else {
+                musicResult.style.color = 'grey';
+            }
+
+        });
+    </script>
+
+</body>
+
+</html>
