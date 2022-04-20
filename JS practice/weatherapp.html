@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+        integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <style>
+        h1 {
+            text-align: center;
+            background-color: rgb(245, 245, 147);
+            margin: 20px;
+        }
+
+        button {
+            margin-top: 20px;
+            background-color: rgb(187, 147, 225) !important;
+            border: rgb(148, 108, 185) 2px solid !important;
+        }
+
+        #red {
+            color: red !important;
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="page-container" class="container">
+        <header>
+            <h1> Weather App Api </h1>
+        </header>
+        <main>
+            <div class="row">
+                <form class="col-sm-8 offset-sm-2" id="city-form">
+                    <div class="form-group">
+                        <label for="city">
+                            Enter your city here
+                        </label>
+                        <input type="text" id="city" class="form-control" required>
+                        <button class="btn btn-success" type="submit">
+                            Check the weather!
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="row">
+                <section id="weather-report" class="col-sm-8 offset-sm-2 text-center">
+
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Access DOM elements
+        const reportSection = document.getElementById('weather-report');
+        const cityForm = document.getElementById('city-form');
+        const cityInput = document.getElementById('city');
+
+        let apiRequest = new XMLHttpRequest();
+
+        cityForm.addEventListener('submit', (event) => {
+            // inhibit the submission of form
+            event.preventDefault();
+
+            // create a variable of the city entered by the user
+            const chosenCity = cityInput.value;
+
+            // call the open method first on the xml http request object
+            // this method sets the type of request to 'get'
+            // and it sets the URL of the api
+            apiRequest.open('GET', 'https://api.openweathermap.org/data/2.5/weather?q=' + chosenCity + '&APPID=b34fddd3dae4a2eb0ad363b62f98ba1e');
+
+            // once we create the object, we send the request
+            apiRequest.send();
+        });
+
+        // create 'onreadystatechange' function
+        apiRequest.onreadystatechange = () => {
+            // only execute the code, if the response is fully received
+            if (apiRequest.readyState === 4) {
+
+                if (apiRequest.status === 404) {
+                    return reportSection.textContent = 'City is not found';
+                }
+
+                /* 
+                the json of the weather api is an object,
+                    to be able to return as text, we need to parse the text as a json object
+                */
+
+                // const containing a json object containing all of the data returned by the api
+                const response = JSON.parse(apiRequest.response);
+
+                // innerText the returned data :
+                reportSection.textContent = 'the weather in ' + response.name + ' is ' + response.weather[0].main + '.';
+            }
+        }
+    </script>
+</body>
+
+</html>
