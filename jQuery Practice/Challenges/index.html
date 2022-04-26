@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1> JS / jQuery Challenges</h1>
+    </header>
+
+    <main>
+        <div class="challengeBox">
+            <h2>Challenge 1 - JS</h2>
+            <p id="paragraph">Use JavaScript to change the size of the text in
+                the paragraph to 24px.</p>
+            <p class="coding">
+                <code>
+                    document.getElementById('paragraph').style .fontSize = '24px';
+                </code>
+            </p>
+        </div>
+        <div class="challengeBox">
+            <h2>Challenge 2 - jQuery</h2>
+            <p id="paraquery">Use jQuery to change the size of the text in the paragraph to 24px.</p>
+            <p class="coding">
+                <code>
+                    $("#paragraph").css("font-size", "24px
+                </code>
+            </p>
+        </div>
+        <div class="challengeBox">
+            <h2>Challenge 3 - JS</h2>
+            <p>Use plain JavaScript to change the font size to
+                24 pixels and the color to red for the paragraphs
+                inside the div, but not the one outside the div
+            </p>
+            <div id="main">
+                <p>change this paragraph.</p>
+                <p>change this paragraph too.</p>
+                <p>And change this last paragraph.</p>
+            </div>
+            <p class="coding">
+                <code>
+                    var paraselect = document.querySelectorAll('#main p'); <br/>
+                    for (p of paraselect) {<br/>
+                        p.style.color = 'red';<br/>
+                        p.style.fontSize = '24px';<br/>
+                    }
+                </code>
+            </p>
+        </div>
+        <div class="challengeBox">
+            <h2>Challenge 4 - jQuery</h2>
+            <p>Use jQuery to change the font size to 24 pixels
+                and the color to red for the paragraphs inside the
+                div, but not the one outside the div.
+            </p>
+            <div id="mainquery">
+                <p>change this paragraph.</p>
+                <p>change this paragraph too.</p>
+                <p>And change this last paragraph.</p>
+            </div>
+            <p class="coding">
+                <code>
+                    $("#mainquery p").css({ <br/>
+                        "font-size": "24px",<br/>
+                        "color": "red" <br/>
+                    });
+                </code>
+            </p>
+        </div>
+        <div class="challengeBox">
+            <h2>Challenge 5 - JS</h2>
+            <p>Use JavaScript to change the font size and
+                color of the last paragraph in the div without
+                affecting any of the other paragraphs
+            </p>
+            <div id="ch5para">
+                <p>don't change this paragraph</p>
+                <p>don't change this paragraph</p>
+                <p>Change this last paragraph</p>
+            </div>
+            <p class="coding">
+                <code>
+                    var ch5para = document.querySelector('#ch5para p:last-of-type');<br/>
+                    ch5para.style.fontSize = "36px";<br/>
+                    ch5para.style.color = "red";
+                </code>
+            </p>
+        </div>
+        <div class="challengeBox">
+            <h2>Challenge 6 - jQuery</h2>
+            <p>Use jQuery to change the font size and
+                color of the last paragraph in the div without
+                affecting any of the other paragraphs.
+            </p>
+            <div id="ch6query">
+                <p>don't change this paragraph</p>
+                <p>don't change this paragraph</p>
+                <p>Change this last paragraph</p>
+            </div>
+            <p class="coding">
+                <code>
+                    $('#ch6query p').last().css({ <br/>"font-size": "36px", <br/>"color": "red" <br/>});
+                </code>
+            </p>
+        </div>
+        <div class="challengeBox">
+            <h2>Challenge 7 - JS</h2>
+            <p>Use JavaScript to change the color of every
+                other paragraph inside the div to red.
+            </p>
+            <div id="ch7paragraphs">
+                <p>Here is paragraph one</p>
+                <p>Here is paragraph two</p>
+                <p>Here is paragraph three</p>
+                <p>Here is paragraph four</p>
+                <p>Here is paragraph five</p>
+                <p>Here is paragraph six</p>
+                <p>Here is paragraph seven</p>
+                <p>Here is paragraph eight</p>
+                <p>Here is paragraph nine</p>
+                <p>Here is paragraph ten</p>
+                <p>Here is paragraph eleven</p>
+                <p>Here is paragraph twelve</p>
+            </div>
+            <p class="coding">
+                <code>
+                    var ch7paragraphs = <br/>document.querySelectorAll<br/>('#ch7paragraphs p:nth-child(even)');<br/><br/>
+                    for (x of ch7paragraphs) {<br/>
+                    x.style.color = 'red';<br/>
+                    }
+                </code>
+            </p>
+        </div>
+        <div class="challengeBox">
+            <h2>Challenge 8 - jQuer</h2>
+            <p>Use jQuery to change the color of every other
+                paragraph inside the div to red
+            </p>
+            <div id="ch8query">
+                <p>Here is paragraph one</p>
+                <p>Here is paragraph two</p>
+                <p>Here is paragraph three</p>
+                <p>Here is paragraph four</p>
+                <p>Here is paragraph five</p>
+                <p>Here is paragraph six</p>
+                <p>Here is paragraph seven</p>
+                <p>Here is paragraph eight</p>
+                <p>Here is paragraph nine</p>
+                <p>Here is paragraph ten</p>
+                <p>Here is paragraph eleven</p>
+                <p>Here is paragraph twelve</p>
+            </div>
+            <p class="coding">
+                <code>
+                    $('#ch8query p').even().css("color", "red");
+                </code>
+            </p>
+        </div>
+        <div class="challengeBox">
+            <h2>Challenge 9 - JS</h2>
+            <p>Use JavaScript to change the color of paragraph
+                that contains “Llamas and Chickens!” to red.
+            </p>
+            <div id="ch9js">
+                <p>Here is paragraph one</p>
+                <p>Here is paragraph two</p>
+                <p>Here is paragraph three</p>
+                <p>Here is paragraph four</p>
+                <p>Here is paragraph five</p>
+                <p>Llamas and Chickens!</p>
+                <p>Here is paragraph seven</p>
+                <p>Here is paragraph eight</p>
+                <p>Here is paragraph nine</p>
+                <p>Here is paragraph ten</p>
+                <p>Here is paragraph eleven</p>
+                <p>Here is paragraph twelve</p>
+            </div>
+            <p class="coding">
+                <code>
+                    var ch9js = document.querySelectorAll("#ch9js p"); <br/>
+                    for (var i = 0; i < ch9js.length; i++) {<br/>
+                        if (ch9js[i].innerHTML == "Llamas and Chickens!") {<br/>
+                            ch9js[i].style.color = "red";<br/>
+                        }<br/>
+                    }
+                </code>
+            </p>
+        </div>
+        <div class="challengeBox">
+            <h2>Challenge 10 - jQuery</h2>
+            <p>Use jQuery to change the color of paragraph that
+                contains “Llamas and Chickens!” to red.
+            </p>
+            <div id="ch10query">
+                <p>Here is paragraph one</p>
+                <p>Here is paragraph two</p>
+                <p>Here is paragraph three</p>
+                <p>Here is paragraph four</p>
+                <p>Here is paragraph five</p>
+                <p>Llamas and Chickens!</p>
+                <p>Here is paragraph seven</p>
+                <p>Here is paragraph eight</p>
+                <p>Here is paragraph nine</p>
+                <p>Here is paragraph ten</p>
+                <p>Here is paragraph eleven</p>
+                <p>Here is paragraph twelve</p>
+            </div>
+            <p class="coding">
+                <code>
+                    $('#ch10query p:contains(Llamas)').css("color", "red");
+                </code>
+            </p>
+        </div>
+        <div class="challengeBox">
+            <h2>Challenge 11 - JS</h2>
+            <p>Use JavaScript to put a click handler on the links
+                in the navigation.
+                When one of those links is clicked, an alert
+                should come up that says “clicked!”.
+                Use const/let instead of var to declare variables
+                for the rest of the challenges.
+                The link to google should be unaffected
+            </p>
+            <div id="ch11js">
+                <nav>
+                    <ul>
+                        <li><a href="#">link one</a></li>
+                        <li><a href="#">link two</a></li>
+                        <li><a href="#">link three</a></li>
+                        <li><a href="#">link four</a></li>
+                        <li><a href="#">link five</a></li>
+                    </ul>
+                </nav>
+                <p>Here is a paragraph with a
+                    <a href="http://google.com">link to google</a>
+                    in it
+                </p>
+            </div>
+            <p class="coding">
+                <code>
+                    var links = <br/>
+                    document.querySelectorAll('#ch11js nav li a'); <br/>
+                    for (l of links) {<br/>
+                        l.addEventListener('click', () => {<br/>
+                            alert('clicked');<br/>
+                        });<br/>
+                    }
+                </code>
+            </p>
+        </div>
+        <div class="challengeBox">
+            <h2>Challenge 12 - jQuery</h2>
+            <p>Use jQuery to put a click handler on the links in
+                the navigation.
+                When one of those links is clicked, an alert
+                should come up that says “clicked!”.
+                The link to google should be unaffected.
+            </p>
+            <div id="ch12query">
+                <nav>
+                    <ul>
+                        <li><a href="#">link one</a></li>
+                        <li><a href="#">link two</a></li>
+                        <li><a href="#">link three</a></li>
+                        <li><a href="#">link four</a></li>
+                        <li><a href="#">link five</a></li>
+                    </ul>
+                </nav>
+                <p>Here is a paragraph with a <a href="http://google.com">link to google</a> in it</p>
+            </div>
+            <p class="coding">
+                <code>
+                    $('#ch12query nav ul li a').click(function () {<br/>
+                        alert('clicked query');<br/>
+                    });
+                </code>
+            </p>
+        </div>
+        <div class="challengeBox">
+            <h2>Challenge 13 - JS</h2>
+            <p>Use JavaScript to put a click handler on the links
+                in the navigation.
+                When one of those links is clicked, an alert
+                should come up that has the text of the link
+                inside of it. For example, if you click link two, the
+                alert box should say “link two”.
+                The link to google should be unaffected.
+                Hint: use the “this” keyword.
+            </p>
+            <div id="ch13js">
+                <nav>
+                    <ul>
+                        <li><a href="#">link one</a></li>
+                        <li><a href="#">link two</a></li>
+                        <li><a href="#">link three</a></li>
+                        <li><a href="#">link four</a></li>
+                        <li><a href="#">link five</a></li>
+                    </ul>
+                </nav>
+                <p>Here is a paragraph with a
+                    <a href="http://google.com">link to google</a>
+                    in it
+                </p>
+            </div>
+            <p class="coding">
+                <code>
+                    var linky = <br/>
+                    document.querySelectorAll('#ch13js nav li a'); <br/>
+                    for (o of linky) {<br/>
+                        o.addEventListener('click', function () {<br/>
+                            alert(this.innerHTML);<br/>
+                        })<br/>
+                    }
+                </code>
+            </p>
+        </div>
+        <div class="challengeBox">
+            <h2>Challenge 14 - jQuery</h2>
+            <p>Use jQuery to put a click handler on the links in
+                the navigation.
+                When one of those links is clicked, an alert
+                should come up that has the text of the link
+                inside of it. For example, if you click link two, the
+                alert box should say “link two”.
+                The link to google should be unaffected.
+                Hint: use the “this” keyword.
+            </p>
+            <div id="ch14query">
+                <nav>
+                    <ul>
+                        <li><a href="#">link one</a></li>
+                        <li><a href="#">link two</a></li>
+                        <li><a href="#">link three</a></li>
+                        <li><a href="#">link four</a></li>
+                        <li><a href="#">link five</a></li>
+                    </ul>
+                </nav>
+                <p>Here is a paragraph with a
+                    <a href="http://google.com">link to google</a>
+                    in it
+                </p>
+            </div>
+            <p class="coding">
+                <code>
+                    $('#ch14query nav li a').click(function () {<br/>
+                        alert($(this).html());<br/>
+                    });
+                </code>
+            </p>
+        </div>
+        <div class="challengeBox">
+            <h2>Challenge 15 - JS</h2>
+            <p>Use JavaScript to put a click handler on the links
+                in the navigation.
+                When one of those links is clicked, change the
+                color of the text inside the link to red.
+                The link to google should be unaffected
+            </p>
+            <div id="ch15jss">
+                <nav>
+                    <ul>
+                        <li><a href="#">link one</a></li>
+                        <li><a href="#">link two</a></li>
+                        <li><a href="#">link three</a></li>
+                        <li><a href="#">link four</a></li>
+                        <li><a href="#">link five</a></li>
+                    </ul>
+                </nav>
+                <p>Here is a paragraph with a
+                    <a href="http://google.com">link to google</a>
+                    in it
+                </p>
+            </div>
+            <p class="coding">
+                <code>
+                    var fifteen = <br/>document.querySelectorAll('#ch15jss nav li a'); <br/>
+                    for (f of fifteen) {<br/>
+                        f.addEventListener('click', function () {<br/>
+                            this.style.color = 'red';<br/>
+                        });<br/>
+                    }
+                </code>
+            </p>
+        </div>
+        <div class="challengeBox">
+            <h2>Challenge 16 - jQuery</h2>
+            <p>Use jQuery to put a click handler on the links in
+                the navigation.
+                When one of those links is clicked, change the
+                color of the text inside the link to red.
+                The link to google should be unaffected</p>
+            <div id="ch16query">
+                <nav>
+                    <ul>
+                        <li><a href="#">link one</a></li>
+                        <li><a href="#">link two</a></li>
+                        <li><a href="#">link three</a></li>
+                        <li><a href="#">link four</a></li>
+                        <li><a href="#">link five</a></li>
+                    </ul>
+                </nav>
+                <p>Here is a paragraph with a
+                    <a href="http://google.com">link to google</a>
+                    in it
+                </p>
+            </div>
+            <p class="coding">
+                <code>
+                    $('#ch16query nav li a').click(function () {<br/>
+                        $(this).css('color', 'red');<br/>
+                    }<br/>
+                );
+                </code>
+            </p>
+        </div>
+        <div class="challengeBox">
+            <h2>Challenge 17 - JS</h2>
+            <p>Use JavaScript to put a click handler on the links
+                in the navigation.
+                When one of those links is clicked, change the
+                text in the paragraph below to say “You clicked”
+                and the text from the link.
+                So if link two were clicked, it would say “You
+                clicked link two”.</p>
+            <div id="ch17">
+                <nav>
+                    <ul>
+                        <li><a href="#">link one</a></li>
+                        <li><a href="#">link two</a></li>
+                        <li><a href="#">link three</a></li>
+                        <li><a href="#">link four</a></li>
+                        <li><a href="#">link five</a></li>
+                    </ul>
+                </nav>
+                <p id="linkGoogle">Here is a paragraph with a
+                    <a href="http://google.com">link to google</a>
+                    in it
+                </p>
+            </div>
+            <p class="coding">
+                <code>
+                    var seventeen = <br/>document.querySelectorAll('#ch17 nav ul li a');<br/>
+                    for (let i = 0; i < seventeen.length; i++) {<br/>
+                        seventeen[i].addEventListener("click", function () {<br/>
+                            const thisLink = this.innerHTML;<br/>
+                            document.getElementById('linkGoogle')<br/>.innerHTML =`You clicked ${thisLink}`;<br/>
+                        });<br/>
+                    }
+                </code>
+            </p>
+        </div>
+        <div class="challengeBox">
+            <h2>Challenge 18 - jQuery</h2>
+            <p>Use jQuery to put a click handler on the links in
+                the navigation.
+                When one of those links is clicked, change the
+                text in the paragraph below to say “You clicked”
+                and the text from the link.
+                So if link two were clicked, it would say “You
+                clicked link two”
+            </p>
+            <div id="ch18jq">
+                <nav>
+                    <ul>
+                        <li><a href="#">link one</a></li>
+                        <li><a href="#">link two</a></li>
+                        <li><a href="#">link three</a></li>
+                        <li><a href="#">link four</a></li>
+                        <li><a href="#">link five</a></li>
+                    </ul>
+                </nav>
+                <p>Here is a paragraph with a
+                    <a href="http://google.com">link to google</a>
+                    in it
+                </p>
+            </div>
+            <p class="coding">
+                <code>
+                    $("#ch18jq nav ul li a").click(function () {
+                        const thisssLink = $(this).html();
+                        $("#ch18jq #paragraph").html(`You clicked ${thisssLink}`);
+                    });
+                </code>
+            </p>
+        </div>
+        <div class="challengeBox">
+            <h2>Challenge 19 - JS</h2>
+            <p>When the user clicks a link,
+                have it turn the appropriate
+                paragraph below red. The
+                rest of the paragraphs should
+                be black.
+                Use JavaScrip</p>
+            <div id="ch19">
+                <nav>
+                    <ul>
+                        <li><a href="#" id="link1">link one</a></li>
+                        <li><a href="#" id="link2">link two</a></li>
+                        <li><a href="#" id="link3">link three</a></li>
+                        <li><a href="#" id="link4">link four</a></li>
+                        <li><a href="#" id="link5">link five</a></li>
+                    </ul>
+                </nav>
+                <p id="paralink1">Looks like you clicked the first link in the list</p>
+                <p id="paralink2">Looks like you clicked the second link in the list</p>
+                <p id="paralink3">Looks like you clicked the third link in the list</p>
+                <p id="paralink4">Looks like you clicked the fourth link in the list</p>
+                <p id="paralink5">Looks like you clicked the fifth link in the list
+            </div>
+            <p class="coding">
+                <code>
+                    var nineteen = <br/>document.querySelectorAll('#ch19 nav ul li a'); <br/>
+                    var nineteenPara = document.querySelectorAll('#ch19 p');<br/>
+                    for (paralink of nineteen) {<br/>
+                        paralink.addEventListener('click', function () {<br/>
+                            const paraNumber = "#para" + this.id;<br/>
+                            for (peas of nineteenPara) {<br/>
+                                peas.style.color = 'black';<br/>
+                            }<br/>
+                            const thisParagraph = document.querySelector(paraNumber);<br/>
+                            thisParagraph.style.color = 'red';<br/>
+                        });<br/>
+                    }
+
+                </code>
+            </p>
+        </div>
+        <div class="challengeBox">
+            <h2>Challenge 20 - jQuery</h2>
+            <p>When the user clicks a link,
+                have it turn the appropriate
+                paragraph below red. The
+                rest of the paragraphs should
+                be black.<br />
+                Use jQuery</p>
+            <div id="ch20">
+                <nav>
+                    <ul>
+                        <li><a href="#" id="link1">link one</a></li>
+                        <li><a href="#" id="link2">link two</a></li>
+                        <li><a href="#" id="link3">link three</a></li>
+                        <li><a href="#" id="link4">link four</a></li>
+                        <li><a href="#" id="link5">link five</a></li>
+                    </ul>
+                </nav>
+                <p id="paralink1">Looks like you clicked the first link in the list</p>
+                <p id="paralink2">Looks like you clicked the second link in the list</p>
+                <p id="paralink3">Looks like you clicked the third link in the list</p>
+                <p id="paralink4">Looks like you clicked the fourth link in the list</p>
+                <p id="paralink5">Looks like you clicked the fifth link in the list
+            </div>
+            <p class="coding">
+                <code>
+                    $('#ch20 nav ul li a').click(function () {<br />
+                        const paraNumber = "#para" + $(this).attr("id");<br /> 
+                        $("#ch20 p").css("color", "black");<br />
+                        $(paraNumber).css("color", "red");<br />
+                    });
+                </code>
+            </p>
+        </div>
+    </main>
+
+</body>
+
+</html>

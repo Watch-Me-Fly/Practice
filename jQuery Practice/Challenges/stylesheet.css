@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 60%;
+    margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(198, 169, 206);
+}
+
+.challengeBox {
+    background-color: rgb(198, 169, 206);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.challengeBox h2 {
+    color: white;
+}
+
+.coding {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: black;
+    color: rgb(216, 118, 243);
+}
