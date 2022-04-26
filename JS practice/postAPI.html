@@ -64,10 +64,10 @@
             return new Promise(
                 (resolve, reject) => {
                     let request = new XMLHttpRequest();
-                    request.open('POST', url + '/create-post');
+                    request.open('POST', api + '/create-post');
                     request.onreadystatechange = () => {
                         if (request.readyState === 4) {
-                            if (request.status === 201) {
+                            if (request.status === 200) {
                                 resolve(JSON.parse(request.response));
                             } else {
                                 reject(JSON.parse(request.response));
@@ -84,7 +84,11 @@
             try {
                 const requestPromise = makeRequest(post);
                 const response = await requestPromise;
-                responseMessage.textContent = response.message; responseTitle.textContent = response.post.title; responseId.textContent = response.post.id; responseContent.textContent = response.post.content;
+
+                responseMessage.textContent = response.message;
+                responseTitle.textContent = response.post.title;
+                responseContent.textContent = response.post.content;
+
             } catch (errorResponse) {
                 responseMessage.textContent = errorResponse.error;
             }
