@@ -1,9 +1,14 @@
-$('ul li ul').hide();
+(function () {
+	'use strict';
 
-$('.menulink').click(function () {
-	var thisMenu = $(this).next('ul');
+	$('ul li ul').hide();
 
-	$('ul li ul').not(thisMenu).hide();
+	$('.menulink').click(function () {
+		var thisMenu = $(this).next('ul');
 
-	thisMenu.toggle();
-});
+		$('ul li ul').not(thisMenu).hide();
+
+		thisMenu.toggle();
+	});
+
+})();

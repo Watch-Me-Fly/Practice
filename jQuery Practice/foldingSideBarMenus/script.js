@@ -1,4 +1,5 @@
 (function () {
+    'use strict';
     const submenus = document.querySelectorAll('ul li ul');
     const menulinks = document.querySelectorAll('.menulink');
 
