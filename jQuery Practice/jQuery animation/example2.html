@@ -77,8 +77,10 @@
             $('#box').slideDown('2000', 'swing');
         }); // swing allows for a change of speed
         $('#slidetogglebox').click(function () {
-            $('#box').slideToggle('500', 'easeOutBounce');
-        });  // obtained from https://gsgd.co.uk/sandbox/jquery/easing/
+            $('#box').slideToggle('500', 'easeOutBounce', function () {
+                console.log('ease in animation obtained from plugin : obtained from https://gsgd.co.uk/sandbox/jquery/easing/')
+            });
+        });
 
     </script>
 
