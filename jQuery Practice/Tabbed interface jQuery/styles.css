@@ -1,0 +1,57 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	padding: 100px 0;
+	background: #ccc;
+	font-family: Arial;
+	color: #333;
+}
+
+#tabs {
+	width: 400px;
+	margin: auto;
+	/* centers on the screen */
+}
+
+#tabs>ul {
+	display: flex;
+	list-style-type: none;
+}
+
+/* (>) to only select the direct descendant ul(s) of the #tabs */
+
+#tabs>ul>li>a {
+	display: block;
+	/* to make the entier area clickable not only the text */
+	height: 30px;
+	line-height: 30px;
+	/* puts text in vertical center because it has the same amount of pixels as the height */
+	margin-right: 2px;
+	background-color: #a2a2a2;
+	color: #cecece;
+	text-decoration: none;
+	padding: 0 15px;
+	border-radius: 3px 3px 0 0;
+	/* left and right tops only */
+}
+
+#tabs>div {
+	display: none;
+	/* hides all at the beginning */
+	padding: 15px;
+	background-color: #eaeaea;
+}
+
+#tabs>div:first-of-type {
+	display: block;
+	/* only displays the first one at the beginning */
+	background-color: #eaeaea;
+}
+
+p {
+	line-height: 1.5em;
+	margin-bottom: 1em;
+}
