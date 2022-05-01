@@ -1,0 +1,36 @@
+body {
+	padding: 100px;
+	background: #06113C;
+}
+
+#slider {
+	/* basic content & structure of page - affects js */
+	width: 400px;
+	overflow: hidden;
+	/* to keep the image inside the container */
+
+	border: 10px solid #DDDDDD;
+
+	/* basic content & structure of page - affects js */
+	height: 266px;
+	position: relative;
+
+	margin: auto;
+}
+
+#slider ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+	/* basic content & structure of page - affects js */
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	/* letting images stay in a row */
+}
+
+#slider ul li img {
+	display: block;
+}
