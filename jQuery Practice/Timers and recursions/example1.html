@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript Timers 1</title>
+	<style>
+		.red {
+			color: red;
+		}
+	</style>
+</head>
+
+<body>
+
+	<p>
+		<a href="#" id="stop">Stop the script</a>
+	</p>
+	<div id="thediv">Default Content</div>
+
+	<script>
+
+		/*
+			Two functions for timers in JS :
+				- setTimeout(function to run, amount of time);
+				- setInterval(function to run, amount of time);
+
+
+			to stop interval script from running :
+				- clearInterval('name of interval to stop');
+		*/
+
+		var presentDiv = document.getElementById('thediv');
+		var textToGenerate = "<p class='red'>New Text HERE !</p>";
+
+		// I name this in order to use it in clearInterval();
+		var timer = setInterval(function () {
+			// this will replace all contents and adding to existing
+			// instead of .append which will add w/o replacing
+			presentDiv.innerHTML += textToGenerate;
+		}, 500);
+
+		document.getElementById('stop')
+			.addEventListener('click', function () {
+				clearInterval(timer);
+			});
+	</script>
+
+</body>
+
+</html>
