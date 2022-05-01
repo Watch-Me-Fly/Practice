@@ -36,6 +36,7 @@ const imageCount = $('#slider ul li').length;
 // how wide the first image is
 const imageWidth = $('#slider ul li img').first().width();
 
+
 // total width of slider (take the total no of imgs and * by width of each img)
 const totalWidth = (imageCount * imageWidth) + "px";
 
@@ -50,25 +51,21 @@ let counter = 0;
 */
 $('#slider ul').css('width', totalWidth);
 
-function animation() {
-    leftPosition = `-${counter * imageCount}px`;
 
-    $('#slider ul').animate({ left: leftPosition }, 300, "easeInQuad");
-}
-console.log('leftPosition:', leftPosition);
-
-
-// Add a click handler for the "next" button
+// // Add a click handler for the "next" button
 $("#next").click(() => {
 
-    // counter goes up
+    //     // counter goes up
     counter++;
 
-    // to inhibit the slider from exceeding the number of photos on sides
+    //     // to inhibit the slider from exceeding the number of photos on sides
     if (counter === imageCount) {
         counter = 0;
     }
-    animation();
+    leftPosition = `-${counter * imageWidth}px`;
+    console.log('leftPosition:', leftPosition);
+
+    $('#slider ul').animate({ left: leftPosition }, 300, "easeInQuad");
 });
 
 $('#previous').click(() => {
@@ -81,7 +78,9 @@ $('#previous').click(() => {
         */
         counter = imageCount - 1;
     }
-    animation();
+    leftPosition = `-${counter * imageWidth}px`;
+
+    $('#slider ul').animate({ left: leftPosition }, 300, "easeInQuad");
 });
 
 /*

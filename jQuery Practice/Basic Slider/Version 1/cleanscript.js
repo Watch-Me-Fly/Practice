@@ -11,7 +11,7 @@ $('window').on('load', () => {
     $('#slider ul').css('width', totalWidth);
 
     function animation() {
-        leftPosition = `-${counter * imageCount}px`;
+        leftPosition = `-${counter * imageWidth}px`;
         $('#slider ul').animate({ left: leftPosition }, 300, "easeInQuad");
     }
     $("#next").click(() => {
@@ -25,7 +25,7 @@ $('window').on('load', () => {
     $('#previous').click(() => {
         counter--;
         if (counter < 0) {
-            counter = imageCount - 1;
+            counter = imageWidth - 1;
         }
         animation();
     });
