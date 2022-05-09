@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>Exchange Rates</title>
+</head>
+
+<body>
+    <header>
+        <h1> Exchange Rates </h1>
+    </header>
+
+    <main>
+        <form>
+            <div class="input-container">
+                <label for="amount">Amount</label>
+                <input type="text" name="amount" id="amount">
+            </div>
+            <div class="input-container">
+                <label for="fromCurrency">From</label>
+                <select name="fromCurrency" id="fromCurrency">
+                </select>
+                <label for="toCurrency">To</label>
+                <select name="toCurrency" id="toCurrency">
+                </select>
+            </div>
+            <div class="input-container">
+                <button type="submit">Convert</button>
+            </div>
+
+        </form>
+        <div id="results">
+
+        </div>
+        <div id="errorBox">
+
+        </div>
+    </main>
+
+</body>
+
+</html>
