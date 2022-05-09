@@ -2,7 +2,6 @@
 const currencyForm = document.querySelector('form');
 const results = document.getElementById('results');
 const errorBox = document.getElementById('errorBox');
-const amountToConvert = document.getElementById('amount').value;
 
 let newSelect = "";
 const dropdownFrom = document.getElementById('fromCurrency');
@@ -26,6 +25,8 @@ currencyForm.addEventListener('submit', function (event) {
 
     let currencyselected = dropdownFrom.value;
     let destination = dropdownTo.value;
+    let amountToConvert =
+        parseFloat(document.getElementById('amount').value);
 
     apiRequest.open('GET', apiURL + '&to=' + destination + '&from='
         + currencyselected + '&amount=' + amountToConvert);
@@ -42,10 +43,6 @@ apiRequest.onreadystatechange = () => {
         } else if (apiRequest.status === 401 || apiRequest.status === 402) {
             errorBox.style.display = 'block';
             return errorBox.textContent = 'access NOT authorized';
-        } else if (apiRequest.status === 101) {
-            errorBox.style.display = 'block';
-            return errorBox.textContent =
-                'No API Key was specified or an invalid API Key was specified';
         } else if (apiRequest.status === 104) {
             errorBox.style.display = 'block';
             return errorBox.textContent =
@@ -53,8 +50,11 @@ apiRequest.onreadystatechange = () => {
         }
 
         const response = JSON.parse(apiRequest.response);
+
         let currencyselected = dropdownFrom.value;
         let destination = dropdownTo.value;
+        let amountToConvert =
+            parseFloat(document.getElementById('amount').value);
 
         results.style.display = 'block';
         results.textContent = amountToConvert + ' ' + currencyselected +
