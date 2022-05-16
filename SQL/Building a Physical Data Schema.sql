@@ -58,6 +58,8 @@ CREATE TABLE Track (
         ON DELETE CASCADE ON UPDATE CASCADE,
     CONSTRAINT FOREIGN KEY (genre_id) REFERENCES Genre (genre_id)
         ON DELETE CASCADE ON UPDATE CASCADE
+        -- it means if the first row is updated/deleted, cascade the changes to the other table 
+        -- direction : from foreign key to primary key (many to one)
 ) ENGINE = InnoDB;
 
 --- --- --- --- --- --- --- --- --- ---
@@ -98,8 +100,6 @@ INSERT INTO Track (title, rating, len, count, album_id, genre_id) values ('whene
         - there can be more than one album for an artist : many-to-one
 */
 
-
-
 SELECT Album.title, Artist.name FROM Album JOIN Artist 
 ON Album.artist_id = Artist.artist_id;
 
@@ -115,3 +115,4 @@ ON Track.genre_id = Genre.genre_id -- how tables are linked 3 relationships
 AND Track.album_id = Album.album_id
 AND Album.artist_id = Artist.artist_id;
 
+DELETE FROM genre WHERE name = 'metal';
