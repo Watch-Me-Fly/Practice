@@ -89,7 +89,7 @@ INSERT INTO Track (title, rating, len, count, album_id, genre_id) values ('whene
             -- JOIN meaning we are getting info from both tables
 
         - must tell the JOIN 'how to use the keys' that make the connection between the tables using an 'ON clause'
-            -- ON says in the following case:
+            -- "ON" says in the following case:
                 when, Album.artist_id = Artist.artist_id is true => connect them;
             -- When there is no ON clause : we will see all combinations of all rows
 
