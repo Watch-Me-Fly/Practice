@@ -80,7 +80,8 @@
        * Call by reference: 
             - to point to the original parameter rather an alias
             - using (&) inside parenthesis
-            - the presence of ampersand (&) means it will change value of variable / array .. etc
+            - the presence of ampersand (&) means it will change value
+                of variable / array .. etc
     */
     function triple(&$realThing) {
         $realThing = $realThing * 3;
