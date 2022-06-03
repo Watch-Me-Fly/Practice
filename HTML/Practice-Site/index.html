@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Hello Coursera!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a name="top"></a>
+    <h1>Practice page</h1>
+
+    <h2>learned so far</h2>
+    <ul class="learn">
+        <li>basics of html</li>
+        <li>mid-way through CSS week</li>
+    </ul>
+
+    <h2>Lists</h2>
+    <section style="position:relative;">
+        <ul class="ul">&lt;Unorderly list&gt;
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ul>
+        <section>
+            <ol class="ol">&lt;Orderly list&gt;
+                <li id="firstStep">First step, add this &amp; add that</li>
+                <li>Second step</li>
+                <li>Third step</li>
+            </ol>
+        </section>
+    </section>
+
+    <h2>Paragraphs</h2>
+    <!--we can put p inside div for styling purposes and automatic page readers, but div cannont go inside p -->
+    <!-- P can only contain text -->
+    <p>Writing a paragraphe <mark>going down a line
+            <!-- to emphasise -->
+        </mark> using <br />Br</p>
+    <p>We can also go down a line by closing the paragraphe and reopening another, but will leave a space as it will be
+        treated as another paragraphe</p>
+    <div>A <em>great
+            <!-- to emphasise -->
+        </em> man once said : &quot;something <strong>wise
+            <!-- to emphasise -->
+        </strong>&quot;.</div>
+    <div>Going down a line succefully and failing a span element test.</div>
+
+    <h2>Internal links</h2>
+    <a class="link" href="page2.html" title="page 2">link on the same directory</a>
+    <a href="same-directory.html" title="also same directory">
+        <div>Link to the same directory but going down a line, because div can be included in anchor</div>
+    </a>
+
+    <h2>External links</h2>
+    <a href="https://www.linkedin.com/in/saja-alhayan/" target="_blank" title="See my profile">Linkedin page</a>
+
+    <h2 style="clear:both;">Sectioning the page</h2>
+    <Ol class="buttons">
+        <li><a href="#Book1" alt="Harry Potter and the Philosopher's Stone">Harry Potter and the Philosopher's Stone</a>
+        </li>
+        <li><a href="#Book2" alt="Harry Potter and the Chamber of Secrets">Harry Potter and the Chamber of Secrets</a>
+        </li>
+    </ol>
+
+    <div>
+        <img class="coverimage"
+            src="https://www.wizardingworld.com/_next/image?url=%2Fimages%2Fproducts%2Fbooks%2FUK%2Frectangle-1.jpg&w=1920&q=75"
+            width="294" height="456" alt="book cover">
+        <h3><a name="Book1">Harry Potter and the Philosopher's Stone</a></h3>
+        <p class="content">Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat
+            at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are
+            swiftly confiscated by his grisly aunt and uncle. Then, on Harry’s eleventh birthday, a great beetle-eyed
+            giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he
+            has a place at Hogwarts School of Witchcraft and Wizardry. An incredible adventure is about to begin!</p>
+    </div>
+
+    <section id="Book2" style="clear:both;">
+        <div>
+            <img class="coverimage"
+                src="https://www.wizardingworld.com/_next/image?url=%2Fimages%2Fproducts%2Fbooks%2FUK%2Frectangle-2.jpg&w=1920&q=75"
+                width="294" height="456" alt="book cover">image comment</img>
+            <h3>Harry Potter and the Chamber of Secrets</h3>
+            <p style="text-align: left;" class="content">Harry Potter’s summer has included the worst birthday ever,
+                doomy warnings from a house-elf called Dobby, and rescue from the Dursleys by his friend Ron Weasley in
+                a magical flying car! Back at Hogwarts School of Witchcraft And Wizardry for his second year, Harry
+                hears strange whispers echo through empty corridors – and then the attacks start. Students are found as
+                though turned to stone … Dobby’s sinister predictions seem to be coming true.</p>
+        </div>
+    </section>
+
+    <h2 style="clear:both;">Inserting an image</h2>
+    <p class="image">image is hidden by comment tag</p>
+    <!-- this is how to hide a comment <img src="https://images.unsplash.com/photo-1602044330256-33dcb6f75f2c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fGhhcnJ5JTIwcG90dGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" width="600" height="400" alt="Harry Potter's hogwarts letter"> -->
+
+    <section>
+        <H2>Positioning Elements by Floating</H2>
+        <div>
+            <p id="p1"></p>
+            <p id="p2"></p>
+            <p id="p3"></p>
+            <p id="p4"></p>
+        </div>
+    </section>
+
+    <section style="clear:both;">
+        <H2>Two column layout</H2>
+        <div style="background-color: rgb(128, 122, 102);">
+            <p id="p5">Quirinus Quirrell was a timid and nervous person, but he was also highly intelligent and gifted.
+                At school he was most likely teased because of his shy nature and made to feel inadequate by others. To
+                try and prove that he wasn’t a nobody, he developed an interest (theoretical at first) in the Dark Arts.
+                That, coupled with his desire to make people take notice of him was what led him to seek out Voldemort.
+            </p>
+            <p id="p6">However, Quirrell was immature, arrogant and underestimated Voldemort. He was no match for what
+                remained of the Dark Lord and was possessed by him. While Quirrell still had his soul, he was weakened
+                by having to share his body with an evil, more powerful one.</p>
+            <section style="clear:both;">section</section>
+        </div>
+    </section>
+
+    <section>
+        <H2>Relative and absolute positioning</H2>
+        <div style="position: relative;">
+            <p id="p7">1</p>
+            <p id="p8">2</p>
+            <p id="p9">3</p>
+            <p id="p10">4</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Responsive designing</h2>
+
+    </section>
+    <footer>
+        <div id="CR">&copy; Copyrights reserved.</div>
+
+        <p stlye="clear:both;">Back to top: <a href="#top">Back to top</a></p>
+        <button id="printButton" type="button" onclick="window.print()">Print</button>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

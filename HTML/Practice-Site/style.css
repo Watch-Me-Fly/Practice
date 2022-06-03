@@ -1,10 +1,19 @@
 /* This is how to write hidden comments in CSS, the exclamation point thing works in html */
 * {
-    box-sizing: border-box;}
+    box-sizing: border-box;
+}
 
-a:link {color:rgb(14, 85, 151);}
-a:visited {color:rgb(126, 152, 187)}
-a:hover {color:rgb(101, 71, 112)}
+a:link {
+    color: rgb(14, 85, 151);
+}
+
+a:visited {
+    color: rgb(126, 152, 187)
+}
+
+a:hover {
+    color: rgb(101, 71, 112)
+}
 
 body {
     background-image: url("https://www.vyopta.com/wp-content/uploads/2020/03/iStock-1145586421.jpg");
@@ -14,16 +23,17 @@ body {
     /* to not allow tiling photos on bg */
     background-repeat: no-repeat;
     /* to have the background not moving */
-    background-position:fixed;
+    background-position: fixed;
     background-color: white;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     /* choosing the width in percentage renders the website size interactive */
     width: 75%;
     /* to center things, use the following two lines*/
     margin-left: auto;
     margin-right: auto;
     border: 0.5px dashed grey;
-    padding:20px;}
+    padding: 20px;
+}
 
 h1 {
     text-align: center;
@@ -34,10 +44,12 @@ h1 {
     margin-bottom: 40px;
     padding: 0px;
     border: 2px solid white;
-    width: 800px;}
-  
+    width: 800px;
+}
+
 .learn {
-    color:rgb(101, 71, 112);}
+    color: rgb(101, 71, 112);
+}
 
 h2 {
     background-color: rgb(14, 85, 151);
@@ -45,50 +57,66 @@ h2 {
     /* adding inside padding if wanted */
     padding: 2px;
     border: 0.5px solid black;
-    font-weight: bold; margin: 5px;}
+    font-weight: bold;
+    margin: 5px;
+}
 
 /* All (h2) --descendants-- of (body) will have this rule applied  */
 body h2 {
-    font-family:Arial, Helvetica, sans-serif;}
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 ul li:nth-child(3) {
     /*nth child pseudo selector allows to target a particular element within a list*/
     /*in this example we are targeting the third link of the list to make it bigger*/
-    font-size: 1.5em; /* em is a relative sizing tool, comparing element's size to default doc size */}
+    font-size: 1.5em;
+    /* em is a relative sizing tool, comparing element's size to default doc size */
+}
 
 .ul {
-    position: absolute; right:0; top:0; margin: 0;}
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+}
 
 /* This is how to --group selectors-- */
-ol, ul {
+ol,
+ul {
     font-weight: bold;
     background-color: white;
-    border: 0.25px dotted grey; 
-    width: 30%;}
+    border: 0.25px dotted grey;
+    width: 30%;
+}
 
-Ol > li {
+Ol>li {
     /* This is a --child selector--, meaning it applies to all (li) items included in (ol) */
     color: rgb(102, 102, 102);
     font-size: 20px;
-    width: 100%;}
+    width: 100%;
+}
 
 /*making (ol) items appear as a list with change of color and use of nth-child*/
 .ol li:nth-child(odd) {
-    background-color: rgb(204, 203, 203);}
+    background-color: rgb(204, 203, 203);
+}
 
 Li {
-    font-style: oblique; }
+    font-style: oblique;
+}
 
 section li:nth-child(1):hover {
-        background-color: rgb(14, 85, 151); 
-        cursor: pointer;
-        color: white;}
-    
+    background-color: rgb(14, 85, 151);
+    cursor: pointer;
+    color: white;
+}
+
 body .buttons {
     /*making buttons out of ol list (books)*/
     /*we are turning a list of links to buttons, grouping link and visited will keep same presentation for a link visited or not*/
-    /*removing numbering or bullet points*/ 
-    list-style: none; }
+    /*removing numbering or bullet points*/
+    list-style: none;
+}
 
 /* styling paragraphs of books only, using a class selector */
 .content {
@@ -96,89 +124,169 @@ body .buttons {
     /* choosing overflow --hidden-- clips the content  */
     /* choosing overflow --auto-- adds vertical scroll */
     /* choosing overflow --scroll-- adds V and H scrolls */
-    height:80px;
-    overflow:auto;
-    float:right;}
+    height: 80px;
+    overflow: auto;
+    float: right;
+}
 
-    /*pseudo selectors can be combined just like regular selectors*/
+/*pseudo selectors can be combined just like regular selectors*/
 /*changing the hover behavior of the first element of div list*/
 /* i need to specifiy class for links or else it will apply to ALL links of the doc  */
-.buttons a:link, .buttons a:visited {
-/*removing underline from links*/ 
-Text-decoration: none;
-/*giving a highlight*/ 
-background-color: rgb(42, 165, 93);
-/*should define type of border (solid vs pointed for ex)*/ 
-Border: 3px solid black;
-/*text*/ color: white;
-/*a element is inline+blockline element, default: inline, we want buttons to be as block level elements filling up the space as much as they can*/
-display: block;
-/*constraining button size to 200px*/ 
-width: 200px;
-/* to center menu text */ 
-text-align: center;
-/*separating menu buttons from each other*/ 
-margin-bottom: 1px; }
+.buttons a:link,
+.buttons a:visited {
+    /*removing underline from links*/
+    Text-decoration: none;
+    /*giving a highlight*/
+    background-color: rgb(42, 165, 93);
+    /*should define type of border (solid vs pointed for ex)*/
+    Border: 3px solid black;
+    /*text*/
+    color: white;
+    /*a element is inline+blockline element, default: inline, we want buttons to be as block level elements filling up the space as much as they can*/
+    display: block;
+    /*constraining button size to 200px*/
+    width: 200px;
+    /* to center menu text */
+    text-align: center;
+    /*separating menu buttons from each other*/
+    margin-bottom: 1px;
+}
 
 /*creating different styles for hovering (when user passes on), and active (when clicking, but hasn't released the click)*/
-.buttons a:hover, a:active {
+.buttons a:hover,
+a:active {
     background-color: black;
-    color: rgb(14, 85, 151); }
+    color: rgb(14, 85, 151);
+}
 
-.image {color:rgb(210, 30, 54)}
+.image {
+    color: rgb(210, 30, 54)
+}
 
 /****** Base style to use media queries ******/
 p {
     background-color: white;
     border: 0.25px dotted grey;
-    margin:0;
-    width: 70%;}
+    margin: 0;
+    width: 70%;
+}
 
 /****** medium devices media queries ******/
 @media (min-width:992px) and (max-width:1199px) {
-    p {width:45%;}
+    p {
+        width: 45%;
+    }
 }
 
 /****** small devices media queries ******/
 @media (max-width: 991px) {
-p {width:30%;}
+    p {
+        width: 30%;
+    }
 }
 
 .coverimage {
-margin:10px;
-float:left;}
+    margin: 10px;
+    float: left;
+}
 
 /* --element with class selector-- to choose all (p) with a class name (image) */
-p.image {font-style: italic;}
+p.image {
+    font-style: italic;
+}
 
-#p1, #p2, #p3, #p4 {width:100px; height:20px; margin: 10px; border: 0.1px solid black; float:left;}
-#p1 {background-color: rgb(4, 68, 63);}
-#p2 {background-color: rgb(36, 131, 91);}
-#p3 {background-color:rgb(88, 177, 184); clear:left}
-#p4 {background-color: white;}
+#p1,
+#p2,
+#p3,
+#p4 {
+    width: 100px;
+    height: 20px;
+    margin: 10px;
+    border: 0.1px solid black;
+    float: left;
+}
 
-#p5, #p6 {
+#p1 {
+    background-color: rgb(4, 68, 63);
+}
+
+#p2 {
+    background-color: rgb(36, 131, 91);
+}
+
+#p3 {
+    background-color: rgb(88, 177, 184);
+    clear: left
+}
+
+#p4 {
+    background-color: white;
+}
+
+#p5,
+#p6 {
     /* div is a block level element, so it will try to fill in the entire width of its containing element which in this case is the body */
     /* so we are asking here for paragraphs to take up 50% of its view port since they are included inside */
     /* boxes will be able to float side by side regardless of border, thanks to box-sizing:border-box applied to the "*" */
     /* using percentage renders it interactive to change in size of browser */
     /* columns here are also flexible because we didn't specify them with a prticular pixel size */
-        width:50%; 
+    width: 50%;
     /* removing border to make it appear like a 2 column layout */
-    border:0px dotted grey; float:left; 
-    padding:10px} 
+    border: 0px dotted grey;
+    float: left;
+    padding: 10px
+}
 
 /* top and left actually meaning the space to be left from the top or from the left */
-#p7 {background-color: orange; width:50px; height:50px; margin:0; position: relative; top: 50px; left: 50px; }
-#p8 {background-color: rgb(37, 175, 2); width:50px; height:50px; margin:0;}
-#p9 {background-color: rgb(201, 3, 112); width:50px; height:50px; margin:0; position:absolute; top:0; left:0;}
+#p7 {
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+#p8 {
+    background-color: rgb(37, 175, 2);
+    width: 50px;
+    height: 50px;
+    margin: 0;
+}
+
+#p9 {
+    background-color: rgb(201, 3, 112);
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 /* setting offsets to an absolute position makes the element jumps to the properties of its nearest ancestor, then climbs up the tree, until it arrives to html which has a relative position by default, so it will be relative to html page and not its container div */
 /* the solution to this is to set its ancestor to relative, so that it stays in its container */
 /* check html doc for div styling to relative position */
-#p10 {background-color: rgb(3, 171, 201); width:50px; height:50px; margin:0;}
+#p10 {
+    background-color: rgb(3, 171, 201);
+    width: 50px;
+    height: 50px;
+    margin: 0;
+}
 
 /* CR is the ID of copyrights, id is worth at least 100 points on styling score */
-#CR {text-align: right; clear: both;}
+#CR {
+    text-align: right;
+    clear: both;
+}
 
-footer {position: relative;}
-#printButton {position: absolute; right: 0px; bottom: 0px;}
+footer {
+    position: relative;
+}
+
+#printButton {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
