@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="compo"> Hello World ! 🖐 </h1>
+    </header>
+
+    <div>
+        For react to work properly :
+        <ul> Add :
+            <li>React</li>
+            <li>ReactDOM</li>
+            <li>Babel</li>
+        </ul>
+    </div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <!-- Load Babel (goes after react) -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        /**============================================
+        *       SECTION create react component
+        *=============================================**/
+
+        /** TODO : 
+            1. modify script tag so that it uses babel (type="text/babel").
+            2. to create a react component : 
+                use ReactDOM.render(replacement, what's to replace) method :
+                    --- its content will be a div that will replace the original content
+                    --- to replace the content : give it an id for it to be accessible by js 
+                    --- the content to be replaced must be stated
+        */
+
+        //* Console.log(React);
+
+        ReactDOM.render(
+            <div>My react element replaces the original content</div>,
+
+            document.querySelector('header')
+        );
+        /**============================================
+        *   SECTION Create a reusable React component
+        *=============================================**/
+        /** TODO :
+            1. put the created component in a function (classes are less used)
+            2. call it inside a render function
+        */
+        const reusableComponent = () => {
+            return (<div>my component looks good</div>)
+        }
+        ReactDOM.render(
+            <reusableComponent />,
+            document.querySelector('div')
+        );
+    </script>
+</body>
+
+</html>
