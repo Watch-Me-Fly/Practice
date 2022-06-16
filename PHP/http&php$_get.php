@@ -1,6 +1,3 @@
-<!-- <?php
-?> -->
-
 <h1>Contents of $_GET array</h1>
 <p>using print_r:</p>
 <pre>
@@ -21,5 +18,3 @@
     it includes what is after ?, 
     add another parameter by adding & 
 -->
-
-<!-- shuffle()  is used to rearrange an array in random order. -->

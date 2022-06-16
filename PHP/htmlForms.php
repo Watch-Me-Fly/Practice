@@ -13,7 +13,8 @@
             ! --- not secure as it shows informations
             * --- used when reading or searching for things
             ! --- avoid using when things should not be modifiable
-            ! --- because GET urls are idempotent (meaning if i hit the button i will get the same thing back)
+            ! --- because GET urls are idempotent 
+            ! --- (meaning if i hit the button i will get the same thing back)
             --- web search spiders follow GET URLs but not POST
             --- length limit is unkown (depending on browsers, servers.. etc)
             --- URLs tend to get very long
