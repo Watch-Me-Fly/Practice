@@ -142,6 +142,7 @@
     echo "</pre>";
 
     // comment connecter 3 class ?? 
+    // parent::__construct()
 ?>
 
 <head>
