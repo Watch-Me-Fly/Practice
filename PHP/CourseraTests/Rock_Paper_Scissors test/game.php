@@ -1,97 +1,136 @@
 <?php
 
-// Demand a GET parameter
-if ( ! isset($_GET['name']) || strlen($_GET['name']) < 1  ) {
-    die('Name parameter missing');
-}
+// ---------------------- TODO : block access to page if not logged in
+    // Demand a GET parameter for username ( not set or is empty)
 
-// If the user requested logout go back to index.php
-if ( isset($_POST['logout']) ) {
-    header('Location: index.php');
-    return;
-}
-
-// Set up the values for the game...
-// 0 is Rock, 1 is Paper, and 2 is Scissors
-$names = array('Rock', 'Paper', 'Scissors');
-$human = isset($_POST["human"]) ? $_POST['human']+0 : -1;
-
-$computer = 0; // Hard code the computer to rock
-// TODO: Make the computer be random
-$computer = rand(0,2);
-
-// This function takes as its input the computer and human play
-// and returns "Tie", "You Lose", "You Win" depending on play
-// where "You" is the human being addressed by the computer
-function check($computer, $human) {
-    // For now this is a rock-savant checking function
-    // TODO: Fix this
-    if ( $human == $computer ) {
-        return "Tie";
-    } else if ( $human == 'Rock' && $computer = 'Scissors' ) {     
-        return "You Win";
-    } else if ( $human == 'Scissors' && $computer = 'Rock' ) {
-        return "You Lose";
-    } else if ( $human == 'Paper' && $computer = 'Rock') {
-        return "You Win";
-    } else if ( $human == 'Rock' && $computer = 'Paper') {
-        return "You Lose";
-    } else if ( $human == 'Scissors' && $computer = 'Paper') {
-        return "You Win";
-    } else if ( $human == 'Paper' && $computer = 'Scissors') {
-        return "You Lose";
+    if ( ! isset($_GET['username']) || strlen($_GET['username']) < 1)
+    {
+        // NOTE putting die at the top of the code stops the process of the rest of it
+        die('Log in is required to play'); 
     }
-    return false;
-}
 
-// Check to see how the play happenned
-$result = check($computer, $human);
+// ---------------------- TODO : Set up values of the game
+    // 0 is Rock, 1 is Paper, and 2 is Scissors
 
-?>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Saja ALHAYAN, Paper, Scissors Game</title>
-    <?php require_once "bootstrap.php"; ?>
-</head>
-<body>
-    <div class="container">
-    <h1>Rock Paper Scissors</h1>
-    <?php
-        if ( isset($_REQUEST['name']) ) {
-            echo "<p>Welcome: ";
-            echo htmlentities($_REQUEST['name']);
-            echo "</p>\n";
+    $choices = array('Rock', 'Paper', 'Scissors');
+    $human = isset($_POST['human']) ? $_POST['human'] : null;
+// ---------------------- TODO : Randomize computer choices
+    $computer = 0; // computer is hardcoded to 'Rock'
+    $computer = rand(0, 2);  
+
+// ---------------------- TODO : game result
+    function check ($computer, $human)
+    {
+        if ( $human == $computer)
+        {
+            return "---- Tie 🤝🏼 ----";
         }
-    ?>
-    <form method="post">
-        <select name="human">
-            <option value="-1">Select</option>
-            <option value="0">Rock</option>
-            <option value="1">Paper</option>
-            <option value="2">Scissors</option>
-            <option value="3">Test</option>
-        </select>
-        <input type="submit" value="Play">
-        <input type="submit" name="logout" value="Logout">
-    </form>
+        else if ( $human == 'Rock' && $computer = 'Scissors' )
+        {
+            return "---- You win ! 🥳 ----";
+        }
+        else if ( $human == 'Paper' && $computer = 'Rock' )
+        {
+            return "---- You win ! 🥳 ----";
+        }
+        else if ( $human == 'Scissors' && $computer = 'Paper' )
+        {
+            return "---- You win ! 🥳 ----";
+        }
+        else if ( $human == 'Rock' && $computer == 1 )
+        {
+            return "---- You lose 😢 ----";
+        }
+        else if ( $human == 'Scissors' && $computer = 'Rock' )
+        {
+            return "---- You lose 😢 ----";
+        }
+        else if ( $human == 'Paper' && $computer = 'Scissors' )
+        {
+            return "---- You lose 😢 ----";
+        }
+        else if ($human == null)
+        {
+            return "please choose one";
+        }
+        return false;
+    }
+    $result = check($computer, $human);
 
-    <pre>
-        <?php
-            if ( $human == -1 ) {
-                print "Please select a strategy and press Play.\n";
-            } else if ( $human == 3 ) {
-                for( $c=0 ; $c < 3 ; $c++ ) {
-                    for( $h=0 ; $h < 3 ; $h++ ) {
-                        $r = check($c, $h);
-                        print "Human=$names[$h] Computer=$names[$c] Result=$r\n";
+// ---------------------- TODO : logout
+    if ( isset($_POST['logout']) )
+    {
+        header('location: index.php?user_logged_out');
+        return;
+    }
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <?php require_once('bootstrap.php')?>
+        <link rel="stylesheet" href="starter-template.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Rock Paper Scissors</h1>
+            <form method="post">
+                <?php
+                    // $_REQUEST = $_GET, $_POST, & $_COOKIE
+                    if ( isset($_REQUEST['username'] ) )
+                    {
+                        echo "<div id=\"wlcm\">Welcome : " 
+                        . htmlentities($_REQUEST['username']) 
+                        . "</div><br />";
                     }
-                }
-            } else {
-                print "Your Play=$names[$human] Computer Play=$names[$computer] Result=$result\n";
-            }
-            ?>
-    </pre>
-    </div>
-</body>
+                ?>
+                <select name="human" class="form-select">
+                    <option value="">Select</option>
+                    <option value="0">Rock</option>
+                    <option value="1">Paper</option>
+                    <option value="2">Scissors</option>
+                    <option value="test">Test</option>
+                </select>
+                <div class="form-group" id="btnCenter">
+                    <input type="submit" value="Play" name="play"
+                            class="btn btn-primary">
+                    <button class="btn btn-primary" name="logout">
+                        log out
+                    </button>
+                </div>
+            </form>
+            <div id="result">
+                <?php
+                    if ( $human == null )
+                    {
+                        print "Please select a strategy and press Play.\n";
+                    }
+                    else if ( $human == 'test' )
+                    {
+                        // 3 = 3 options values (computer entries)
+                        for ( $a = 0; $a < 3; $a++ )
+                        {
+                            // 3 = 3 options values (human entries)
+                            for ( $b = 0; $b < 3; $b++ )
+                            {
+                                $compare = check($a, $b);
+                                print "Human = $choices[$b], 
+                                    Computer = $choices[$a].
+                                    Results = $compare<br />
+                                ";
+                            }
+                        }
+                    }
+                    else // if chosen option and is not empty test
+                    { 
+                        print "You played : $choices[$human], 
+                                Computer played = $choices[$computer].
+                                <br/>
+                                result = $result <br />";
+                    }
+                ?>
+            </div>
+        </div>
+    </body>
 </html>

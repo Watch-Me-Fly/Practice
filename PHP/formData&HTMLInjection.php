@@ -69,8 +69,10 @@
                     FIXME : //* the way to fix this :
                         TODO : htmlentities() function
                             <?= htmlentities($oldGuess) ?>
-                            --- Convert all applicable characters to HTML entities (ex. &lt; for >)
-                            --- allows to escape html injection by  manipulators.
+                            --- Convert all applicable characters to 
+                                HTML entities (ex. &lt; for >)
+                            --- allows to escape html injection by 
+                                manipulators.
           -->
     </div>
     <div class="form-group">

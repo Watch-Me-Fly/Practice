@@ -1,7 +1,7 @@
 <?php
 
 /**==================================================================
-                SECTION - in server data validation
+                SECTION : in-server data validation
                 ------------------------------------
     
  *  = (the moment when I'm receiving the data)
@@ -23,6 +23,7 @@
          **/
 
 ?>
+
 
 <html>
     <head>
@@ -57,8 +58,6 @@
              4.  is it a number?
              5.  is the number higher, lower, or equal?
              *=============================================**/
-
-
                 if ( ! isset($_GET['guess']) )
                 {
                     // If i don't have a parameter (null or undecalred)

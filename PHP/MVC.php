@@ -15,7 +15,6 @@
 
   * MVC is a model that defines the elements of a web application and how they interact
   * MVC is interpreted differently with different frameworks.
-  * 
   */
   
 /** NOTE : one way to interpret MVC ((easy way, short, single page))

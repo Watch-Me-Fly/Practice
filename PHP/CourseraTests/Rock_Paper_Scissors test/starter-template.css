@@ -1,7 +1,42 @@
 body {
   padding-top: 50px;
 }
+
 .starter-template {
   padding: 40px 15px;
   text-align: center;
+}
+
+form {
+  width: 50%;
+  margin: auto;
+}
+
+h1,
+#result {
+  width: 100%;
+  text-align: center;
+}
+
+.form-group {
+  margin-top: 20px;
+}
+
+.error-message {
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  color: red;
+}
+
+#btnCenter {
+  width: 30%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#wlcm {
+  margin: 20px auto;
+  color: rgb(82, 82, 253);
 }

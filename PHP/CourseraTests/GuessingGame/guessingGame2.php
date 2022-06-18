@@ -1,7 +1,7 @@
 <!-- NOTE : DIFFERENCE between both files :-------------------------
-        * value is added to input field
+        * value is added to input field.
         * $_GET['guess'] is registered in a variable $_POST['guess']
-        * $message is added as echo variable
+        * $message is added as echo variable.
 -------------------------------------------------------------------->
 
 <!-- TODO : --------------------------------------------------------
@@ -38,7 +38,6 @@
     }
 
 ?>
-
 
 <html>
     <head>

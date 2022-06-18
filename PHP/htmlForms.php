@@ -9,11 +9,11 @@
          * $_GET : a super global variable
          *==================================**/
             /*
-            --- adds to the link : ?nameOfTheField=valueEntered
+            --- adds to the link : ?(nameOfTheField)=(valueEntered)
             ! --- not secure as it shows informations
             * --- used when reading or searching for things
             ! --- avoid using when things should not be modifiable
-            ! --- because GET urls are idempotent 
+            ! --- because GET urls are idempotent
             ! --- (meaning if i hit the button i will get the same thing back)
             --- web search spiders follow GET URLs but not POST
             --- length limit is unkown (depending on browsers, servers.. etc)
@@ -52,19 +52,19 @@
 <!----------------------------------------------
                 SECTION Super Globals
 ------------------------------------------------>
-<form method="post">
-    <!-- 
-        NOTE : method="POST" :
-                when submit is hit, send the data via POST method.
-                it comes in the post array not the get array on the bottom
-    -->
-    <h3>Guessing game</h3>
-    <div>
-        <label for="guess">Input guess</label>
-        <input type="text" name="guess" size="40" id="guess">
-        <input type="submit" value="Submit">
-    </div>
-</form>
+    <form method="post">
+        <!-- 
+            NOTE : method="POST" :
+                    when submit is hit, send the data via POST method.
+                    it comes in the post array not the get array on the bottom
+        -->
+        <h3>Guessing game</h3>
+        <div>
+            <label for="guess">Input guess</label>
+            <input type="text" name="guess" size="40" id="guess">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
 
 <!----------------------------------------------
                 SECTION Input types 
@@ -99,7 +99,8 @@
             NOTE : radio buttons : 
                     --- as soon one is pushed, the other is turned off
                     --- so it will appear in the array of $_POST : when => pm
-                    --- are associated, not by proximity on the code, but with "name" value (in this case : when)
+                    --- are associated, not by proximity on the code, 
+                        but with "name" value (in this case : when)
         -->
     </div>
     <div class="form-group">
@@ -138,9 +139,11 @@
         </select>
         <!--
             NOTE : SELECT and OPTIONS #2
-                    --- I can have a default other than the first one (peanuts selected)
+                    --- I can have a default other than the first one 
+                        (peanuts selected)
                     --- can use strings as in this case
-                    --- choosing the first empty value, results in an empty dump
+                    --- choosing the first empty value, results in an 
+                        empty dump
         -->
     </div>
     <div class="form-group">
@@ -197,21 +200,28 @@
                     // TODO instead :
                         * isset()
                             --- to verify the existence of the key
-                            --- if i have multiple buttons : better give different names (regardless of value and appearance on html view), rather than different values and same name.
+                            --- if i have multiple buttons : 
+                                better give different names 
+                                (regardless of value and appearance 
+                                on html view), 
+                                rather than different values and 
+                                same name.
 
-                    //* redirecting towards another link goes by adding : (location.href='....')
-                    --- if i don't add "http://" ==> will change to default url + added text
+                    //* redirecting towards another link goes by adding 
+                        //* : (location.href='....')
+                    --- if i don't add "http://" ==> 
+                        will change to default url + added text
         -->
     </div>
     <!---------------- SECTION : Other input types ----------------->
-    
-    <!-- 
-        //* date : 
-            --- also prints value according to default value setting yy-mm-dd for ex.
-        //* number :
-            --- adding min and max to limit
-    -->
-    
+        <!-- 
+            //* date : 
+                --- also prints value according to default value 
+                    setting yy-mm-dd for ex.
+            //* number :
+                --- adding min and max to limit
+        -->
+        
 </form>
 
 <pre>
