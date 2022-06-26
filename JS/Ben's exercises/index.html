@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        summary {
+            font-weight: bold;
+        }
+
+        .red {
+            color: red;
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <details>
+        <summary>get all teams with challenge id = PremierChallenge</summary>
+        <div id="challengeId"></div>
+    </details>
+    <br />
+    <details>
+        <summary>teams that are not complete</summary>
+        <div id="notComplete"></div>
+    </details>
+    <br />
+    <details class="red">
+        <summary>array with sorted team names a-z</summary>
+        <div id="arrayAZ"></div>
+    </details>
+    <br />
+    <details>
+        <summary>True for 3k points</summary>
+        <div id="threethousand"></div>
+    </details>
+    <br />
+    <details>
+        <summary>all the teams have at least 10 points</summary>
+        <div id="min10"></div>
+    </details>
+    <br />
+    <details>
+        <summary>teams that have &gt; 3000 points </summary>
+        <div id="allteamspoints"></div>
+    </details>
+    <br />
+    <details>
+        <summary>Add team</summary>
+        <div id="teamadded"></div>
+        <button id="addTeam">Add Team</button>
+    </details>
+    <br />
+    <details>
+        <summary>add followers</summary>
+        <div id="followersAdded"></div>
+        <button id="addFollowers">Add Followers</button>
+    </details>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

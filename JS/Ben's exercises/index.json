@@ -1,0 +1,65 @@
+[
+  {
+    "challengeId": "PremierChallenge",
+    "points": 432,
+    "administratorId": "0543br234",
+    "defaultColor": "#FF6633",
+    "teamId": "equipeDeux",
+    "invitations": [
+      "personne@test.com"
+    ],
+    "maximumMembers": 10,
+    "name": "Equipe Deux",
+    "userCount": 10
+  },
+  {
+    "challengeId": "PremierChallenge",
+    "points": 54,
+    "administratorId": "ZREGZ2345",
+    "defaultColor": "#00cccc",
+    "teamId": "bestTeam",
+    "invitations": [
+      "antoine@test.com"
+    ],
+    "maximumMembers": 100,
+    "name": "BEST TEAM",
+    "userCount": 20
+  },
+  {
+    "challengeId": "DeuxiemeChallenge",
+    "points": 3453,
+    "administratorId": "ERGSER5",
+    "defaultColor": "#FF6633",
+    "teamId": "lesWinners",
+    "invitations": [],
+    "maximumMembers": 10,
+    "name": "Les Winners",
+    "userCount": 1
+  },
+  {
+    "challengeId": "DeuxiemeChallenge",
+    "points": 3452,
+    "administratorId": "2345EZRGH",
+    "defaultColor": "#FFFFFF",
+    "teamId": "whiteTeam",
+    "invitations": [
+      "ben@ouigroup.co"
+    ],
+    "maximumMembers": 5,
+    "name": "White team",
+    "userCount": 5
+  },
+  {
+    "challengeId": "DeuxiemeChallenge",
+    "points": 100,
+    "administratorId": "ERTFQERGIJAER",
+    "defaultColor": "#FFFFFF",
+    "teamId": "emptyTeam",
+    "invitations": [
+      "antoine@test.com"
+    ],
+    "maximumMembers": 10,
+    "name": "Empty team",
+    "userCount": 0
+  }
+]

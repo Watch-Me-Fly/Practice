@@ -8,7 +8,8 @@
             ---  methods (associated procedures).
         * Objects :
             --- are normally instances of classes
-            --- are used to interact with one another to design applications and computer programs 
+            --- are used to interact with one another to
+                design applications and computer programs 
      */
     /** ANCHOR Encapsulation / Isloation :
         * Drawing boundaries around objects that are sets of functions and sets of variables / data.

@@ -46,17 +46,20 @@
 
     // at the end, variables will get destroyed since it's at the end of the program.
     /* 
-        Because at the end of a request response cycle, when this file is all done, then it's going to garbage collect and get rid of all these things.
+        Because at the end of a request response cycle, 
+        when this file is all done, then it's going to garbage collect
+         and get rid of all these things.
         And so it's going to call our destructor.
     */
     /**--------------------------------------------
      *               ANCHOR .?
      *---------------------------------------------**/
     /*
-    	Setting a variable in rhe constructor that is going to change the behavior of the application.
+    	Setting a variable in the constructor that is going to change 
+        the behavior of the application.
         TODO : 
             1. pass a constructor parameter in
-            2. 
+            
     */
     class Hello {
         protected $lang; //(only accessible inside the class)
@@ -71,7 +74,7 @@
             {
                 return 'Bonjour';
             }
-            elseif ( $this->lang == 'en' )
+            else if ( $this->lang == 'en' )
             {
                 return 'Hello'; //if none of the above
             }

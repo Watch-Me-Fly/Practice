@@ -38,7 +38,7 @@
             {
                 return 'Au revoir';
             }
-            else if ( $this->lang == 'es' )
+            elseif ( $this->lang == 'es' )
             {
                 return 'Adios';
             }

@@ -65,18 +65,63 @@
         <summary class="mark">React.createElement()</summary>
         <p>React first creates elements in the virtual DOM and then warns the DOM when it is being created</p>
     </details>
+    <details>
+        <summary>
+            <h2>JSX</h2>
+        </summary>
+        <div>
+            <details>
+                <summary>is a JavaScript extension created by React</summary>
+                <p>which means you can use syntax in the form of tags directly in the JavaScript code</p>
+            </details>
+            <details>
+                <summary>the most easy-understandable way of writing React components in an application</summary>
+                <p>so this method is used almost exclusively. <br />JSX allows to mix HTML and JS</p>
+            </details>
+            <details>
+                <summary>It’s crucial to use a capital letter for the JSX component</summary>
+                <p>otherwise, React won’t recognize it and will think it’s an HTML tag.</p>
+            </details>
+            <details>
+                <summary>TODO :</summary>
+                <p>
+                <ul>
+                    <li>add that to the render</li>
+                    <li>add elements to one parent element like 'div'</li>
+                    <li>In JSX, all tags must be closed, including self-closing ones like input.</li>
+                </ul>
+                </p>
+            </details>
+            <details>
+                <summary>Fragements</summary>
+                <p>Use this if you want to wrap two components in a single parent without the parent appearing in the
+                    DOM</p>
+            </details>
+        </div>
+    </details>
+    <div id="root">
+
+    </div>
 
     <script>
-        /**============================================
-         *               SECTION Components
-         *=============================================**/
-        /**==============================================
-        * *                   INFO
-        *   
-        *   
-        *   
-        *
-        *=============================================**/
+
+        function Header() {
+            return (<div><h1>Jungle House</h1></div>)
+        }
+        function Description() {
+            return (<p>The place to buy all the plants you've ever wanted 🌵🌱🎍</p>)
+        }
+
+        ReactDOM.render(<div><Header /><Description /></div>, document.getElementById("root"))
+
+        /*--================= Fragments ================--*/
+
+        ReactDOM.render(
+            <React.Fragment>
+                <Header />
+                <Description />
+            </React.Fragment>, document.getElementById("root"))
+
 
     </script>
 </body>
