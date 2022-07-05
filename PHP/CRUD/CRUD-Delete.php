@@ -1,5 +1,5 @@
 <?php
-//! do not do delete on a get, always delete on a post
+//! do not do DELETE on a $_GET, always delete on a $_POST
 
 require_once 'pdo.php';
 
@@ -7,7 +7,7 @@ if ( isset( $_POST['user_id'] ) )
 {
     $sql = "DELETE FROM users where user_id = :user_id";
 
-    // show me the request
+    // show me the request (use double quotes because it supports variables)
     echo "<pre> $sql </pre>";
 
     $statement = $pdo->prepare($sql);

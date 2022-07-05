@@ -1,13 +1,16 @@
 <?php
+// include our connection
 require_once 'pdo.php';
 
+// only if fields are entered
 if ( isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password']) ) 
 {
+    // create data
     $sql = "INSERT INTO users
             (name, email, password) 
             VALUES
             (:name, :email, :password)";
-            // :placeholder (can be named any name as if they are variables)
+            // (:) = "placeholder" : (can be named any name as if they are variables)
 
     // see what was inserted into the database
         echo "<pre><br/> $sql </pre><br/>";
@@ -21,7 +24,6 @@ if ( isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password']
             ':email' => $_POST['email'],
             ':password' => $_POST['password']
         ));
-    
 }
     
 ?>
