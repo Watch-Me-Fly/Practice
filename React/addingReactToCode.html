@@ -17,13 +17,13 @@
         <ul> Add :
             <li>React</li>
             <li>ReactDOM</li>
-            <li>Babel</li>
+            <li>Babel (to use modern ES6 syntax)</li>
         </ul>
     </div>
 
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    <!-- Load Babel (goes after react) -->
+    <!-- Loading Babel (goes after react) -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel">
         /**============================================
@@ -53,12 +53,17 @@
             1. put the created component in a function (classes are less used)
             2. call it inside a render function
         */
+        /*
+            function myReactComponent() {
+                return <div>My react component</div>;
+            } 
+        */
         const reusableComponent = () => {
             return (<div>my component looks good</div>)
         }
         ReactDOM.render(
             <reusableComponent />,
-            document.querySelector('div')
+            document.querySelector('#compo')
         );
     </script>
 </body>
