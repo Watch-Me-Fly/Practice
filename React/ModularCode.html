@@ -27,6 +27,9 @@
         .mark {
             color: orangered;
         }
+        #root {
+            background-color: yellow;
+        }
     </style>
     <title>Components</title>
 </head>
@@ -43,12 +46,7 @@
             correctly: <b>structure, styles, and behavior</b>.
         </p>
     </details>
-    <details>
-        <summary>Components mean you can reuse the same data structure</summary>
-        <p>
-            filling it out with different datasets.
-        </p>
-    </details>
+
     <details>
         <summary>It is every React developer's mission</summary>
         <p>
@@ -67,7 +65,7 @@
     </details>
     <details>
         <summary>
-            <h2>JSX</h2>
+            JSX
         </summary>
         <div>
             <details>
@@ -93,35 +91,81 @@
                 </p>
             </details>
             <details>
-                <summary>Fragements</summary>
-                <p>Use this if you want to wrap two components in a single parent without the parent appearing in the
-                    DOM</p>
+                <summary>React Fragements Tool</summary>
+                <p>Use this if you want to wrap two components in a single parent (without the parent appearing in the
+                    DOM)</p>
+            </details>
+            <details>
+                <summary>React wants me to reuse components</summary>
+                <p>must structure your interface in component trees.</p>
+                <p>also possible to encapsulate components and use as many times as I want as in parent>child*3</p>
+            </details>
+            <details>
+                <summary>curly braces in js</summary>
+                <div>allow to apply js expressions directly to jsx for :
+                    <ul>
+                        <li>doing math {6*7}</li>
+                        <li>Modify strings {alexia.toUpperCase() }</li>
+                        <li>Using Ternaries {2 > 0 ? 'greater than 0' : 'less'}</li>
+                        <li>Rending a JS variable for a string {myTitle}</li>
+                        <li>Rending a JS variable for a number {42}</li>
+                        <li></li>
+                    </ul>
+                </div>
             </details>
         </div>
     </details>
     <div id="root">
+        <!-- #code  -->
 
     </div>
 
-    <script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <!-- Loading Babel (goes after react) -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
 
         function Header() {
             return (<div><h1>Jungle House</h1></div>)
         }
         function Description() {
-            return (<p>The place to buy all the plants you've ever wanted 🌵🌱🎍</p>)
+            // either return paragraph directly, or put inside variable then return
+            const text = "The place to buy all the plants you've ever wanted 🌵🌱🎍";
+            return (<p>{text}</p>);
         }
-
-        ReactDOM.render(<div><Header /><Description /></div>, document.getElementById("root"))
-
-        /*--================= Fragments ================--*/
-
+        function Description2() {
+            const text = "The place to buy all the plants you've ever wanted";
+            const emojis = "😀😀😀";
+            return (<p>{text.slice(0,10) + emojis}</p>);
+        }
+    // render() :
+        // The purpose of the function is to display the specified HTML code inside the specified HTML element.
         ReactDOM.render(
-            <React.Fragment>
-                <Header />
-                <Description />
-            </React.Fragment>, document.getElementById("root"))
+            <div><Header /><Description /><Description2 /></div>, 
+            document.getElementById("root")
+            );
 
+        /*--================= Fragments Tool ================--*/
+            // replacing div in the previous example
+            /*
+                ReactDOM.render(
+                    <React.Fragment>
+                        <Header />
+                        <Description />
+                    </React.Fragment>, 
+                    document.getElementById("root"));
+            */
+
+        // grouping components
+        function Banner () {
+            return (
+                <div>
+                    <Header />
+                    <Description />
+                </div>
+            )
+        }
 
     </script>
 </body>
