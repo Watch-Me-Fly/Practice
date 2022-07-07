@@ -3,11 +3,43 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="stylesheet.css">
-        <script src="script.js" defer></script>
+        <style>
+            code {
+                color: blue;
+            }
+        </style>
         <title>Document</title>
     </head>
     <body>
+        
+        <details>
+            <summary>looping through content</summary>
+                <ul>
+                    <code>map()</code>method
+                    <li>passes over each element of an array</li>
+                    <li>returns a new array by applying a function and returning its results</li>
+                    <li>can be used to transform a list of data into a list of components</li>
+                    <li>same as <code>forEach()</code> and <code>filter()</code></li>
+                    <li>keys should be given <a href="https://reactjs.org/docs/lists-and-keys.html">as explined</a>to stabilize looped items</li>
+                </ul>
+        </details>
 
+        <details>
+            <summary>Contextualize Component Content
+            </summary>
+            <ul>
+
+            </ul>
+        </details>
+        <script>
+            //------- map method
+            const numbers = [1, 2, 3, 4];
+            const doubles = numbers.map(number => number * 2); // [2, 4, 6, 8]
+            console.log(doubles);
+
+            //------ forEach((element, index, array))
+            //------ filter((element, index, array))
+
+        </script>
     </body>
 </html>
