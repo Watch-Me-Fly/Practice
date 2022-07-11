@@ -9,6 +9,7 @@ function App() {
       <Banner />
       <Cart />
       <ShoppingList />
+      <GetPlant />
     </div>
   );
 }
