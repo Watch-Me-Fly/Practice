@@ -3,6 +3,7 @@ import Cart from './components/cart.js';
 import ShoppingList from './components/shoppingList.js';
 import GetPlant from './components/plantsOrganized.js';
 
+
 function App() {
   return (
     <div>

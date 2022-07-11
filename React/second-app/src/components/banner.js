@@ -11,6 +11,17 @@ function Banner() {
         </div>
     )
 }
+// can also be written as such :
+    /*
+        <Banner>
+            <img src={logo} alt='Jungle House' className='jh-logo' />
+            <h1 className='jh-title'>{title}</h1>
+        </Banner>
+
+        function Banner ({children}) {
+            return <div className='jh-banner'>{children}</div>;
+        }
+    */
 // export default is a syntax in ES6 that means 
 // I don't have to use curly brackets when importing
 export default Banner;
