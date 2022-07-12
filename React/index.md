@@ -6,7 +6,7 @@
     <li><a href="increaseEfficiency.html">Increase Your Efficiency Using Lists and Conditional Rendering</a></li>
     <li><a href="reuseComponents.html">Reusing components</a></li>
     <li><a href="interactWithComponents.html">interacting with components</a></li>
-    <li><a href=""></a></li>
+    <li><a href="localState.html">setting up local state</a></li>
     <li><a href=""></a></li>
     <li><a href=""></a></li>
     <li><a href=""></a></li>

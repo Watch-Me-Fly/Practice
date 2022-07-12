@@ -2,6 +2,7 @@ import CareScale from './CareScale.js';
 
 const plantsOrg = [
     {
+        id: 1,
         name: 'Monstera',
         category: 'Classic',
         id: '1st',
@@ -10,6 +11,7 @@ const plantsOrg = [
         water: 1
     },
     {
+        id: 2,
         name: 'Ficus Lyrata',
         category: 'Other',
         id: '2nd',
@@ -18,6 +20,7 @@ const plantsOrg = [
         water: 3
     },
     {
+        id: 3,
         name: 'Palm',
         category: 'Other',
         id: '3rd',

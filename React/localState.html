@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local state</title>
+</head>
+<body>
+    <ul>
+        <li>local state :
+            <ul>
+            <li>present within components</li>
+            <li>holding their value even if the application re-renders</li>
+            </ul>
+        </li>
+    </ul>
+    <ol>example is applied in cart.js
+        <li>import {useState}</li>
+        <li>create a cart state</li>
+        <li>set inital value to 0</li>
+        <li>create buttons increasing / decreasing value</li>
+        <li>a header to show the amount to pay using the variables</li>
+    </ol>
+    <ul><b>Hooks</b>
+        <li><code>useState</code>is a hook</li>
+        <li>are functions that allow hooking into react functionalities</li>
+        <li>imported directly from react</li>
+        <li><code>useEffect</code>is another hook</li>
+        <li>[] hooks (same as destructuring) are called decomposition (cuz we're dealing with arrays rather than objects)</li>
+        <li>decomposition is applied on useState (this is how we got 2 values in one line instead of 2 different declarations)</li>
+    </ul>
+    <ol> <b>show/hide cart (see in cart.js)</b>
+        <li>to create another state :
+            <ul>
+                <li>use several state variables</li>
+                <li>change variable names in the other state variables</li>
+            </ul>
+        </li>
+        <li>
+            <h3>Changing how a component react to the state in another component /<br/> lifting state up & updating from child components</h3>
+            <ul>
+                <li>local state is local : parent and children do not modify</li>
+                <li>better keep statement in parent component (cleaner)</li>
+                <li>children render elements as props</li>
+                <li>in some cases => keep in children</li>
+                <li>to share a state element : <ol>
+                    <li>lift the data up to local state if the closest common ancestor</li>
+                    <li>keep the state there</li>
+                    <li>from there: pass info down in props to comonents</li>
+                    <li>lift up update requests in props</li>
+                    </ol>
+                </li>
+            </ul>
+        </li>
+    </ol>
+    <ul>
+        <h3>conditional components</h3>
+        <p>to be found in Banner.js</p>
+        <li></li>
+    </ul>
+</body>
+</html>

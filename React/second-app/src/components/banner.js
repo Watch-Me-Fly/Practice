@@ -1,13 +1,28 @@
 import logo from "./../assets/logo.png";
 import './../styles/banner.css';
+import Recommendation from "./recommendation";
 
 // 1st comonent of the app
 function Banner() {
-    const title = 'Jungle House'
+    const title = 'Jungle House';
+    // const currentMonth = new Date().getMonth();
+    // // getMonth() starts from 0
+    // const isSpring = currentMonth >= 2 && currentMonth <= 5;
+
+    // const recommendation = isSpring ? 
+    // (<div className='jh-container'>🌺 it's spring, time to repot !</div>) 
+    // : (<div className='jh-container'>⛔ it's not time yet</div>)
+    
     return (
-        <div className='jh-banner'>
-            <img src={logo} alt='Jungle House' className='jh-logo' />
-            <h1 className='jh-title'>{title}</h1>
+        <div>
+            <div className='jh-banner'>
+                <img src={logo} alt='Jungle House' className='jh-logo' />
+                <h1 className='jh-title'>{title}</h1>
+                
+            </div>
+            <br/>
+            {/* {recommendation} */}
+            <Recommendation />
         </div>
     )
 }

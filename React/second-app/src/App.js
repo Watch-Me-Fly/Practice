@@ -1,3 +1,4 @@
+import {useState} from 'react';
 import Banner from './components/banner.js';
 import Cart from './components/cart.js';
 import ShoppingList from './components/shoppingList.js';
@@ -9,11 +10,19 @@ function handleSubmit(e) {
   console.log(e.target['my_input'].value); 
 }
 function App() {
+  const [cart, updatedCart] = useState([]); 
+  // harbor (lifting up child to parent)
+
   return (
     <div>
       <Banner />
-      <Cart />
-      <ShoppingList />
+      {/* linking Cart and ShoppingList, passing states as props
+      get props from cart.js by destructuring them overthere*/}
+      <div>
+        <Cart cart={cart} updatedCart={updatedCart} />
+        <ShoppingList cart={cart} updateCart={updatedCart} />
+      </div>
+
       <GetPlant />
       <QuestionForm />
       <form onSubmit={handleSubmit}>
