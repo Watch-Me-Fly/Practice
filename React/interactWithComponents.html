@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>interact with components</title>
+    </head>
+    <body>
+        <h3>Events in React</h3>
+        <ul>
+            <li>are written in camelCase</li>
+            <li>declaring them to be used is between {}</li>
+            <li>unlike in js : no addEventListener</li>
+        </ul>
+        <h3>Use Synthetic Events</h3>
+        <ul>
+            <li>preventDefault can also be passed as in :
+                <code>e.preventDefault()</code>
+            </li>
+        </ul>
+        <h3 style="color:red;">Create forms in React</h3>
+        <ul>
+            <li>Two main ways to manage forms : controlled & uncontrolled
+                <ul>
+                    <li>uncontrolled : the value of the input is not managed by the component 
+                        <ul>
+                            <li>easier as there is less involvement from react</li>
+                            <li>has its limitations</li>
+                        </ul>
+                    </li>
+                    <li>controlled : the value of the input is managed by the component
+                        <ul>
+                            <li>local state : holds specific component info, and comes from interaction between user and component</li>
+                            <li><code>useState</code> is a react function that changes values in the local state</li>
+                            <li>good when checks need to be done on input</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <code>event.target['HTMLname'].value </code><br/>
+                => to find out which element triggered the event
+            </li>
+            <li>
+                <code>useState()</code> (example in questionForms.js)
+                <ul>
+                    <li>sets the initial value / state for inputValue,</li>
+                    <li>indicates the corresponding function to modify it</li>
+                    <li>set default value : ask your question here</li>
+                </ul>
+            </li>
+        </ul>
+        <h3>The benefits of controlled forms</h3>
+        <ul>
+            <li>interact directly with user's info</li>
+            <li>display an error message if data is invalid</li>
+            <li>filter data</li>
+        </ul>
+        <ol>Example : letter F is prohibited
+            <li><code>const isInputError = inputValue.includes('f')</code></li>
+            <li><code><pre>function checkValue(value) {
+                if(!value.includes('a'))
+                {
+                    setInputValue(value);
+                }
+            }</pre></code></li>
+        </ol>
+        <a href="https://react-hook-form.com">a form library for react that can be installed with npm</a>
+    </body>
+</html>

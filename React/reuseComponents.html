@@ -3,11 +3,53 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="stylesheet.css">
-        <script src="script.js" defer></script>
+        <style>
+            summary {
+                margin: 5px;
+            }
+            code {
+                padding: 5px;
+                background-color: black;
+                color: white;
+            }
+        </style>
         <title>Document</title>
     </head>
     <body>
 
+        <h2>Components with values</h2>
+        <div>
+            <code>&lt; Component propName={value} /&gt;</code>
+            <ol>
+                <li>create a component with props</li>
+                <li>specify a type prop for the component</li>
+                <li>resue the component</li>
+                <li>using a scale made available by ES6:
+                    <ul><mark>"DESTRUCTURING"</mark>
+                    <li>used to declare a variable directly</li>
+                    <li>and assign it the value of a property of an object</li>
+                    </ul>
+                </li>
+            </ol>
+            <ul>in practice, i can give a prop any possible value in JS, but in jsx :
+                <li><code>string literals</code> marked by quotes</li>
+                <li><code>{}</code> for everything else : boolean, number, JS expressions</li>
+            </ul>
+        </div>
+        <h2>Children technical props</h2>
+        <div>
+            some react props behave in a particular manner (technical props)
+            <p>this is useful when I don't know the children yet</p>
+            <p>example : sidebars</p>
+            <code>
+                &lt;Banner&gt;<br/>
+                &lt;img src={logo} alt='Jungle House' className='jh-logo' /><br/>
+                &lt;h1 className='jh-title'>{title}</h1><br/>
+                    &lt;/Banner&gt;<br/>
+                function Banner ({children}) {<br/>
+                    return &lt;div className='jh-banner'>{children}&lt;/div&gt;<br/>
+                }
+            </code>
+        </div>
     </body>
 </html>
