@@ -1,37 +1,6 @@
-import CareScale from './CareScale.js';
+import CareScale from './CareScale.js.js';
 
-const plantsOrg = [
-    {
-        id: 1,
-        name: 'Monstera',
-        category: 'Classic',
-        id: '1st',
-        isBestSale: true,
-        light: 3,
-        water: 1
-    },
-    {
-        id: 2,
-        name: 'Ficus Lyrata',
-        category: 'Other',
-        id: '2nd',
-        isBestSale: false,
-        light: 2,
-        water: 3
-    },
-    {
-        id: 3,
-        name: 'Palm',
-        category: 'Other',
-        id: '3rd',
-        isBestSale: true,
-        light: 3,
-        water: 2
-    }
-]
-function handleClick(plantName) {
-    console.log(`✨This is a click of ${plantName} ✨`)
-}
+// need to have (isBestSale for plantItem)
 function GetPlant() {
     return (
         plantsOrg.map((plant) =>

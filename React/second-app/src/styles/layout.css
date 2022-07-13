@@ -1,0 +1,14 @@
+.jh-layout-inner {
+	display: flex;
+	justify-content: space-between;
+}
+form {
+	display: flex;
+	justify-content: center;
+	background-color: rgb(174, 208, 174);
+	padding: 20px;
+}
+.jh-recommend
+{
+	text-align: center;
+}

@@ -3,46 +3,41 @@
         <CareScale scaleValue={plant.light} />
         see 'reuseComponents.html' for more details
 */
-/*
-function CareScale(props) {
 
-    const scaleValue = props.value;
-    // the following allows declaring 2 vars directly and
-        // avoids multiple declarations :
-            // const scaleValue = props.scaleValue;
-            // const careType = props.careType;
-    const {scaleValue, careType} = props;
+// ------------- one way of doing this
+const quantityLabel = {
+    1: 'little',
+    2: 'moderate',
+    3: 'much'
+}
 
-    // Array => to go for a list (scale from 1-3)
-    const range = [1, 2, 3]; 
-
+function CareScale (props)
+{
+    // to avoid flooding the () in function : create a variable
+        const {scaleValue, careType} = props;
+    // create a range for the care
+        const range = [1, 2, 3];
+    // define what to show for each type
+        const scaleType =
+            careType === 'light' ? (
+                <span>🔆</span>
+            ) : (
+                <span>💧</span>
+            )
+    
     return (
-        <div>
-            {range.map( (rangeElement) => 
-                scaleValue >= rangeElement ? 
-                <span key={rangeElement.toString()}>☀️</span> : null
+        <div onClick={() =>
+            alert(`This plant requires 
+                ${quantityLabel[scaleValue]}
+                ${careType === 'light' ? 'light' : 'watering'}
+                `)
+        }>
+            {range.map((rangeElement) =>
+                scaleValue >= rangeElement ? (
+                    <span key={rangeElement.toString()}>{scaleType}</span>
+                ) : null
             )}
         </div>
     )
 }
-*/
-
-function CareScale({scaleValue, careType}) {
-
-    const range =  [1, 2, 3];
-
-    const typeIcons = careType === 'light' ? '☀️' : '💧';
-
-    return (
-        <div>
-            {range.map(
-                (rangeElement) => scaleValue >= rangeElement ?
-                <span key={rangeElement.toString()}>{typeIcons}</span> : null
-            )}
-        </div>
-    )
-}
-
-
-
 export default CareScale;
