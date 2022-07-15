@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import './../styles/cart.css';
 
 // create cart state (local use) 
@@ -12,6 +12,15 @@ function Cart ({cart, updateCart})
             (accumulator, plantType) => 
             accumulator + plantType.amount * plantType.price, 0
         );
+
+    // first parameter to pass to useEffect is a function function 
+        // (the effect to be run)
+    // second is dependencies
+        // accepts a list between square brackets (list of dependencies)
+    useEffect(() => {
+       // alert(`${total} € to pay`);
+       document.title = `${total} € to pay`
+    }, [total]); // only display the alert when cart total changed
 
     return isOpen ? ( // is cart open?
         <div className='jh-cart'>

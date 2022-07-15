@@ -1,9 +1,35 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import './../styles/footer.css';
 
-function Footer()
+function Footer(cart)
 {
     const [inputValue, setInputValue] = useState('Your email');
+
+    // useEffect(() => {
+    //     console.log(`whenever element rerenders (so typing additional text is a rerender)`);
+    // })
+
+    // useEffect(() => {
+    //     console.log(`
+    // empty dependency array [], 
+    // only displyed when the footer is first rendered
+    // does not change`);
+    // }, []);
+
+    // useEffect(() => {
+    //     console.log(`displayed when the footer is first rendered, 
+    //     and also when the cart is updated, cart was passed as an argument to the function`);
+    // }, [cart]);
+
+    useEffect(() => {
+        return () => 
+        console.log(`
+        displayed when the footer is removed, 
+        must have a useState to show/hide footer, 
+        useful when doing a clean up,
+        ex : setInterval in useEffect => to avoid memory leaks
+        `)
+    }, [cart]);
 
     function handleInput(e) // receiving information from input 
     {

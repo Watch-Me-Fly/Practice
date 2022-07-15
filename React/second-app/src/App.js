@@ -16,6 +16,7 @@ function App()
     const title = 'Jungle House';
     const [cart, updateCart] = useState([]);
     // [] = harboring : lifting child up to parent
+    const [isFooterShown, updateIsFooterShown ] = useState(true);
 
     return (
         <><div>
@@ -36,7 +37,11 @@ function App()
                 <Cart cart={cart} updateCart={updateCart} />
                 <ShoppingList cart={cart} updateCart={updateCart} />
             </div>
-        </div><Footer /></>
+            <button onClick={() => updateIsFooterShown(!isFooterShown)}>
+                toggle footer
+            </button>
+            {isFooterShown && <Footer cart={cart} />} 
+        </div></>
     )
 }
 export default App;
