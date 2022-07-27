@@ -1,0 +1,28 @@
+{
+  "unversionedId": "tuto-whatsapp/step15",
+  "id": "version-1.0.0/tuto-whatsapp/step15",
+  "title": "Step 15: Using a REST API",
+  "description": "[//]: # (head-end)",
+  "source": "@site/versioned_docs/version-1.0.0/tuto-whatsapp/step15.md",
+  "sourceDirName": "tuto-whatsapp",
+  "slug": "/tuto-whatsapp/step15",
+  "permalink": "/docs/1.0.0/tuto-whatsapp/step15",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.0.0/tuto-whatsapp/step15.md",
+  "tags": [],
+  "version": "1.0.0",
+  "sidebarPosition": 15,
+  "frontMatter": {
+    "sidebar_label": "Step 15: Using a REST API",
+    "sidebar_position": 15
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Step 14: Migrating to PostgreSQL",
+    "permalink": "/docs/1.0.0/tuto-whatsapp/step14"
+  },
+  "next": {
+    "title": "Step 16: Modularity",
+    "permalink": "/docs/1.0.0/tuto-whatsapp/step16"
+  }
+}

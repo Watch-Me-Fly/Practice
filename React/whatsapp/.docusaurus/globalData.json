@@ -1,0 +1,284 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": false,
+          "path": "/docs/next",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "intro",
+              "path": "/docs/next/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step1",
+              "path": "/docs/next/tuto-whatsapp/step1",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step10",
+              "path": "/docs/next/tuto-whatsapp/step10",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step11",
+              "path": "/docs/next/tuto-whatsapp/step11",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step12",
+              "path": "/docs/next/tuto-whatsapp/step12",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step2",
+              "path": "/docs/next/tuto-whatsapp/step2",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step3",
+              "path": "/docs/next/tuto-whatsapp/step3",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step4",
+              "path": "/docs/next/tuto-whatsapp/step4",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step5",
+              "path": "/docs/next/tuto-whatsapp/step5",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step6",
+              "path": "/docs/next/tuto-whatsapp/step6",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step7",
+              "path": "/docs/next/tuto-whatsapp/step7",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step8",
+              "path": "/docs/next/tuto-whatsapp/step8",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step9",
+              "path": "/docs/next/tuto-whatsapp/step9",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/next/intro",
+                "label": "Introduction"
+              }
+            }
+          }
+        },
+        {
+          "name": "1.1.0",
+          "label": "1.1.0",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step1",
+              "path": "/docs/tuto-whatsapp/step1",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step10",
+              "path": "/docs/tuto-whatsapp/step10",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step11",
+              "path": "/docs/tuto-whatsapp/step11",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step12",
+              "path": "/docs/tuto-whatsapp/step12",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step2",
+              "path": "/docs/tuto-whatsapp/step2",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step3",
+              "path": "/docs/tuto-whatsapp/step3",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step4",
+              "path": "/docs/tuto-whatsapp/step4",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step5",
+              "path": "/docs/tuto-whatsapp/step5",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step6",
+              "path": "/docs/tuto-whatsapp/step6",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step7",
+              "path": "/docs/tuto-whatsapp/step7",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step8",
+              "path": "/docs/tuto-whatsapp/step8",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step9",
+              "path": "/docs/tuto-whatsapp/step9",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/intro",
+                "label": "Introduction"
+              }
+            }
+          }
+        },
+        {
+          "name": "1.0.0",
+          "label": "1.0.0",
+          "isLast": false,
+          "path": "/docs/1.0.0",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "intro",
+              "path": "/docs/1.0.0/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step1",
+              "path": "/docs/1.0.0/tuto-whatsapp/step1",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step10",
+              "path": "/docs/1.0.0/tuto-whatsapp/step10",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step11",
+              "path": "/docs/1.0.0/tuto-whatsapp/step11",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step12",
+              "path": "/docs/1.0.0/tuto-whatsapp/step12",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step13",
+              "path": "/docs/1.0.0/tuto-whatsapp/step13",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step14",
+              "path": "/docs/1.0.0/tuto-whatsapp/step14",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step15",
+              "path": "/docs/1.0.0/tuto-whatsapp/step15",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step16",
+              "path": "/docs/1.0.0/tuto-whatsapp/step16",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step17",
+              "path": "/docs/1.0.0/tuto-whatsapp/step17",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step2",
+              "path": "/docs/1.0.0/tuto-whatsapp/step2",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step3",
+              "path": "/docs/1.0.0/tuto-whatsapp/step3",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step4",
+              "path": "/docs/1.0.0/tuto-whatsapp/step4",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step5",
+              "path": "/docs/1.0.0/tuto-whatsapp/step5",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step6",
+              "path": "/docs/1.0.0/tuto-whatsapp/step6",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step7",
+              "path": "/docs/1.0.0/tuto-whatsapp/step7",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step8",
+              "path": "/docs/1.0.0/tuto-whatsapp/step8",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tuto-whatsapp/step9",
+              "path": "/docs/1.0.0/tuto-whatsapp/step9",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/1.0.0/intro",
+                "label": "Introduction"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

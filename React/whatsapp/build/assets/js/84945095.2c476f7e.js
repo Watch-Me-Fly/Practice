@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkovrsea_whatsapp_tuto=self.webpackChunkovrsea_whatsapp_tuto||[]).push([[7137],{5745:s=>{s.exports=JSON.parse('{"name":"docusaurus-plugin-content-pages","id":"default"}')}}]);

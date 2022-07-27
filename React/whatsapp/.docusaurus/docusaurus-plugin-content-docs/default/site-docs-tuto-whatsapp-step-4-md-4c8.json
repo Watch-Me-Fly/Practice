@@ -1,0 +1,28 @@
+{
+  "unversionedId": "tuto-whatsapp/step4",
+  "id": "tuto-whatsapp/step4",
+  "title": "Step 4: Transition to GraphQL",
+  "description": "[//]: # (head-end)",
+  "source": "@site/docs/tuto-whatsapp/step4.md",
+  "sourceDirName": "tuto-whatsapp",
+  "slug": "/tuto-whatsapp/step4",
+  "permalink": "/docs/next/tuto-whatsapp/step4",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tuto-whatsapp/step4.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_label": "Step 4: Transition to GraphQL",
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Step 3: Setup a basic Node.JS server with a basic REST endpoint",
+    "permalink": "/docs/next/tuto-whatsapp/step3"
+  },
+  "next": {
+    "title": "Step 5: Testing",
+    "permalink": "/docs/next/tuto-whatsapp/step5"
+  }
+}

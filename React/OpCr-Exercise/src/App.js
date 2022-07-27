@@ -14,7 +14,15 @@ function handleSubmit(e) {
 function App()
 {
     const title = 'Jungle House';
+    // everytime the code is updated, re-rendering will happen
+    // JS : values of arrays are not saved.
+        // let cart = [];
+        // cart.append();
+    // React useState() : allows saving/concatination of values even if rerendering happens
+    // useEffect() : giving a condition to when the component can be changed
     const [cart, updateCart] = useState([]);
+    // the following will creat an object as in cart.cart
+    // const nomValue = {cart};
     // [] = harboring : lifting child up to parent
     const [isFooterShown, updateIsFooterShown ] = useState(true);
 
@@ -34,6 +42,7 @@ function App()
                 {/* link to Cart and ShoppingList, 
                     passing states as props
                     get props from cart.js by destructuring them overthere */}
+                {/* props are passed as variables and as values (syntax) */}
                 <Cart cart={cart} updateCart={updateCart} />
                 <ShoppingList cart={cart} updateCart={updateCart} />
             </div>

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "tuto-whatsapp/step1",
+  "id": "version-1.0.0/tuto-whatsapp/step1",
+  "title": "Step 1: Creating a basic React APP with a basic view",
+  "description": "[//]: # (head-end)",
+  "source": "@site/versioned_docs/version-1.0.0/tuto-whatsapp/step1.md",
+  "sourceDirName": "tuto-whatsapp",
+  "slug": "/tuto-whatsapp/step1",
+  "permalink": "/docs/1.0.0/tuto-whatsapp/step1",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.0.0/tuto-whatsapp/step1.md",
+  "tags": [],
+  "version": "1.0.0",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_label": "Step 1: Creating a basic React APP with a basic view",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/docs/1.0.0/intro"
+  },
+  "next": {
+    "title": "Step 2: Styling with Material UI and styled-components",
+    "permalink": "/docs/1.0.0/tuto-whatsapp/step2"
+  }
+}

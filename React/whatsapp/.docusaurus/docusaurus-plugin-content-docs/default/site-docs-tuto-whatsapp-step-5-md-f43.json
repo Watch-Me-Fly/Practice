@@ -1,0 +1,28 @@
+{
+  "unversionedId": "tuto-whatsapp/step5",
+  "id": "tuto-whatsapp/step5",
+  "title": "Step 5: Testing",
+  "description": "[//]: # (head-end)",
+  "source": "@site/docs/tuto-whatsapp/step5.md",
+  "sourceDirName": "tuto-whatsapp",
+  "slug": "/tuto-whatsapp/step5",
+  "permalink": "/docs/next/tuto-whatsapp/step5",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tuto-whatsapp/step5.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_label": "Step 5: Testing",
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Step 4: Transition to GraphQL",
+    "permalink": "/docs/next/tuto-whatsapp/step4"
+  },
+  "next": {
+    "title": "Step 6: Creating an app router and implementing a chat room",
+    "permalink": "/docs/next/tuto-whatsapp/step6"
+  }
+}

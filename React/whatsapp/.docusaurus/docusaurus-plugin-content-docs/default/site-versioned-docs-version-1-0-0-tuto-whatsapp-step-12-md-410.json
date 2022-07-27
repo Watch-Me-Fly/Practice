@@ -1,0 +1,28 @@
+{
+  "unversionedId": "tuto-whatsapp/step12",
+  "id": "version-1.0.0/tuto-whatsapp/step12",
+  "title": "Step 12: Adding and removing chats",
+  "description": "[//]: # (head-end)",
+  "source": "@site/versioned_docs/version-1.0.0/tuto-whatsapp/step12.md",
+  "sourceDirName": "tuto-whatsapp",
+  "slug": "/tuto-whatsapp/step12",
+  "permalink": "/docs/1.0.0/tuto-whatsapp/step12",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.0.0/tuto-whatsapp/step12.md",
+  "tags": [],
+  "version": "1.0.0",
+  "sidebarPosition": 12,
+  "frontMatter": {
+    "sidebar_label": "Step 12: Adding and removing chats",
+    "sidebar_position": 12
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Step 11: Users",
+    "permalink": "/docs/1.0.0/tuto-whatsapp/step11"
+  },
+  "next": {
+    "title": "Step 13: Authentication",
+    "permalink": "/docs/1.0.0/tuto-whatsapp/step13"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "tuto-whatsapp/step6",
+  "id": "tuto-whatsapp/step6",
+  "title": "Step 6: Creating an app router and implementing a chat room",
+  "description": "[//]: # (head-end)",
+  "source": "@site/docs/tuto-whatsapp/step6.md",
+  "sourceDirName": "tuto-whatsapp",
+  "slug": "/tuto-whatsapp/step6",
+  "permalink": "/docs/next/tuto-whatsapp/step6",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tuto-whatsapp/step6.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_label": "Step 6: Creating an app router and implementing a chat room",
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Step 5: Testing",
+    "permalink": "/docs/next/tuto-whatsapp/step5"
+  },
+  "next": {
+    "title": "Step 7: Caching with Apollo-Client",
+    "permalink": "/docs/next/tuto-whatsapp/step7"
+  }
+}

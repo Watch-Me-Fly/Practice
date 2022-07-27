@@ -1,0 +1,1985 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "label": "Next",
+          "banner": "unreleased",
+          "badge": true,
+          "className": "docs-version-current",
+          "path": "/docs/next",
+          "tagsPath": "/docs/next/tags",
+          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs",
+          "editUrlLocalized": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/i18n/en/docusaurus-plugin-content-docs/current",
+          "isLast": false,
+          "sidebarFilePath": "/Users/sajaalhayan/Desktop/whatsapp/sidebars.js",
+          "contentPath": "/Users/sajaalhayan/Desktop/whatsapp/docs",
+          "contentPathLocalized": "/Users/sajaalhayan/Desktop/whatsapp/i18n/en/docusaurus-plugin-content-docs/current",
+          "docs": [
+            {
+              "unversionedId": "intro",
+              "id": "intro",
+              "title": "Whatsapp Clone Tutorial",
+              "description": "[//]: # (head-end)",
+              "source": "@site/docs/intro.md",
+              "sourceDirName": ".",
+              "slug": "/intro",
+              "permalink": "/docs/next/intro",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/intro.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_label": "Introduction",
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "next": {
+                "title": "Step 1: Creating a basic React APP with a basic view",
+                "permalink": "/docs/next/tuto-whatsapp/step1"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step1",
+              "id": "tuto-whatsapp/step1",
+              "title": "Step 1: Creating a basic React APP with a basic view",
+              "description": "[//]: # (head-end)",
+              "source": "@site/docs/tuto-whatsapp/step1.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step1",
+              "permalink": "/docs/next/tuto-whatsapp/step1",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tuto-whatsapp/step1.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_label": "Step 1: Creating a basic React APP with a basic view",
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Introduction",
+                "permalink": "/docs/next/intro"
+              },
+              "next": {
+                "title": "Step 2: Styling with Material UI and styled-components",
+                "permalink": "/docs/next/tuto-whatsapp/step2"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step10",
+              "id": "tuto-whatsapp/step10",
+              "title": "Step 10: Live updates with GraphQL subscriptions",
+              "description": "[//]: # (head-end)",
+              "source": "@site/docs/tuto-whatsapp/step10.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step10",
+              "permalink": "/docs/next/tuto-whatsapp/step10",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tuto-whatsapp/step10.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 10,
+              "frontMatter": {
+                "sidebar_label": "Step 10: Live updates with GraphQL subscriptions",
+                "sidebar_position": 10
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 9: Type safety with GraphQL Code Generator",
+                "permalink": "/docs/next/tuto-whatsapp/step9"
+              },
+              "next": {
+                "title": "Step 11: Users",
+                "permalink": "/docs/next/tuto-whatsapp/step11"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step11",
+              "id": "tuto-whatsapp/step11",
+              "title": "Step 11: Users",
+              "description": "[//]: # (head-end)",
+              "source": "@site/docs/tuto-whatsapp/step11.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step11",
+              "permalink": "/docs/next/tuto-whatsapp/step11",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tuto-whatsapp/step11.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 11,
+              "frontMatter": {
+                "sidebar_label": "Step 11: Users",
+                "sidebar_position": 11
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 10: Live updates with GraphQL subscriptions",
+                "permalink": "/docs/next/tuto-whatsapp/step10"
+              },
+              "next": {
+                "title": "Step 12: Adding and removing chats",
+                "permalink": "/docs/next/tuto-whatsapp/step12"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step12",
+              "id": "tuto-whatsapp/step12",
+              "title": "Step 12: Adding and removing chats",
+              "description": "[//]: # (head-end)",
+              "source": "@site/docs/tuto-whatsapp/step12.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step12",
+              "permalink": "/docs/next/tuto-whatsapp/step12",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tuto-whatsapp/step12.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 12,
+              "frontMatter": {
+                "sidebar_label": "Step 12: Adding and removing chats",
+                "sidebar_position": 12
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 11: Users",
+                "permalink": "/docs/next/tuto-whatsapp/step11"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step2",
+              "id": "tuto-whatsapp/step2",
+              "title": "Step 2: Styling with Material UI and styled-components",
+              "description": "[//]: # (head-end)",
+              "source": "@site/docs/tuto-whatsapp/step2.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step2",
+              "permalink": "/docs/next/tuto-whatsapp/step2",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tuto-whatsapp/step2.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_label": "Step 2: Styling with Material UI and styled-components",
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 1: Creating a basic React APP with a basic view",
+                "permalink": "/docs/next/tuto-whatsapp/step1"
+              },
+              "next": {
+                "title": "Step 3: Setup a basic Node.JS server with a basic REST endpoint",
+                "permalink": "/docs/next/tuto-whatsapp/step3"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step3",
+              "id": "tuto-whatsapp/step3",
+              "title": "Step 3: Setup a basic Node.JS server with a basic REST endpoint",
+              "description": "[//]: # (head-end)",
+              "source": "@site/docs/tuto-whatsapp/step3.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step3",
+              "permalink": "/docs/next/tuto-whatsapp/step3",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tuto-whatsapp/step3.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_label": "Step 3: Setup a basic Node.JS server with a basic REST endpoint",
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 2: Styling with Material UI and styled-components",
+                "permalink": "/docs/next/tuto-whatsapp/step2"
+              },
+              "next": {
+                "title": "Step 4: Transition to GraphQL",
+                "permalink": "/docs/next/tuto-whatsapp/step4"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step4",
+              "id": "tuto-whatsapp/step4",
+              "title": "Step 4: Transition to GraphQL",
+              "description": "[//]: # (head-end)",
+              "source": "@site/docs/tuto-whatsapp/step4.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step4",
+              "permalink": "/docs/next/tuto-whatsapp/step4",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tuto-whatsapp/step4.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "sidebar_label": "Step 4: Transition to GraphQL",
+                "sidebar_position": 4
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 3: Setup a basic Node.JS server with a basic REST endpoint",
+                "permalink": "/docs/next/tuto-whatsapp/step3"
+              },
+              "next": {
+                "title": "Step 5: Testing",
+                "permalink": "/docs/next/tuto-whatsapp/step5"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step5",
+              "id": "tuto-whatsapp/step5",
+              "title": "Step 5: Testing",
+              "description": "[//]: # (head-end)",
+              "source": "@site/docs/tuto-whatsapp/step5.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step5",
+              "permalink": "/docs/next/tuto-whatsapp/step5",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tuto-whatsapp/step5.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "sidebar_label": "Step 5: Testing",
+                "sidebar_position": 5
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 4: Transition to GraphQL",
+                "permalink": "/docs/next/tuto-whatsapp/step4"
+              },
+              "next": {
+                "title": "Step 6: Creating an app router and implementing a chat room",
+                "permalink": "/docs/next/tuto-whatsapp/step6"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step6",
+              "id": "tuto-whatsapp/step6",
+              "title": "Step 6: Creating an app router and implementing a chat room",
+              "description": "[//]: # (head-end)",
+              "source": "@site/docs/tuto-whatsapp/step6.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step6",
+              "permalink": "/docs/next/tuto-whatsapp/step6",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tuto-whatsapp/step6.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 6,
+              "frontMatter": {
+                "sidebar_label": "Step 6: Creating an app router and implementing a chat room",
+                "sidebar_position": 6
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 5: Testing",
+                "permalink": "/docs/next/tuto-whatsapp/step5"
+              },
+              "next": {
+                "title": "Step 7: Caching with Apollo-Client",
+                "permalink": "/docs/next/tuto-whatsapp/step7"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step7",
+              "id": "tuto-whatsapp/step7",
+              "title": "Step 7: Caching with Apollo-Client",
+              "description": "[//]: # (head-end)",
+              "source": "@site/docs/tuto-whatsapp/step7.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step7",
+              "permalink": "/docs/next/tuto-whatsapp/step7",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tuto-whatsapp/step7.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 7,
+              "frontMatter": {
+                "sidebar_label": "Step 7: Caching with Apollo-Client",
+                "sidebar_position": 7
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 6: Creating an app router and implementing a chat room",
+                "permalink": "/docs/next/tuto-whatsapp/step6"
+              },
+              "next": {
+                "title": "Step 8: Sending messages with GraphQL mutations",
+                "permalink": "/docs/next/tuto-whatsapp/step8"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step8",
+              "id": "tuto-whatsapp/step8",
+              "title": "Step 8: Sending messages with GraphQL mutations",
+              "description": "[//]: # (head-end)",
+              "source": "@site/docs/tuto-whatsapp/step8.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step8",
+              "permalink": "/docs/next/tuto-whatsapp/step8",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tuto-whatsapp/step8.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 8,
+              "frontMatter": {
+                "sidebar_label": "Step 8: Sending messages with GraphQL mutations",
+                "sidebar_position": 8
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 7: Caching with Apollo-Client",
+                "permalink": "/docs/next/tuto-whatsapp/step7"
+              },
+              "next": {
+                "title": "Step 9: Type safety with GraphQL Code Generator",
+                "permalink": "/docs/next/tuto-whatsapp/step9"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step9",
+              "id": "tuto-whatsapp/step9",
+              "title": "Step 9: Type safety with GraphQL Code Generator",
+              "description": "[//]: # (head-end)",
+              "source": "@site/docs/tuto-whatsapp/step9.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step9",
+              "permalink": "/docs/next/tuto-whatsapp/step9",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tuto-whatsapp/step9.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 9,
+              "frontMatter": {
+                "sidebar_label": "Step 9: Type safety with GraphQL Code Generator",
+                "sidebar_position": 9
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 8: Sending messages with GraphQL mutations",
+                "permalink": "/docs/next/tuto-whatsapp/step8"
+              },
+              "next": {
+                "title": "Step 10: Live updates with GraphQL subscriptions",
+                "permalink": "/docs/next/tuto-whatsapp/step10"
+              }
+            }
+          ],
+          "drafts": [],
+          "sidebars": {
+            "tutorialSidebar": [
+              {
+                "type": "doc",
+                "id": "intro",
+                "label": "Introduction"
+              },
+              {
+                "type": "category",
+                "label": "Steps",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "tuto-whatsapp/step1",
+                    "label": "Step 1: Creating a basic React APP with a basic view"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tuto-whatsapp/step2",
+                    "label": "Step 2: Styling with Material UI and styled-components"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tuto-whatsapp/step3",
+                    "label": "Step 3: Setup a basic Node.JS server with a basic REST endpoint"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tuto-whatsapp/step4",
+                    "label": "Step 4: Transition to GraphQL"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tuto-whatsapp/step5",
+                    "label": "Step 5: Testing"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tuto-whatsapp/step6",
+                    "label": "Step 6: Creating an app router and implementing a chat room"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tuto-whatsapp/step7",
+                    "label": "Step 7: Caching with Apollo-Client"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tuto-whatsapp/step8",
+                    "label": "Step 8: Sending messages with GraphQL mutations"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tuto-whatsapp/step9",
+                    "label": "Step 9: Type safety with GraphQL Code Generator"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tuto-whatsapp/step10",
+                    "label": "Step 10: Live updates with GraphQL subscriptions"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tuto-whatsapp/step11",
+                    "label": "Step 11: Users"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tuto-whatsapp/step12",
+                    "label": "Step 12: Adding and removing chats"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "versionName": "1.1.0",
+          "label": "1.1.0",
+          "banner": null,
+          "badge": true,
+          "className": "docs-version-1.1.0",
+          "path": "/docs",
+          "tagsPath": "/docs/tags",
+          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.1.0",
+          "editUrlLocalized": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/i18n/en/docusaurus-plugin-content-docs/version-1.1.0",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "/Users/sajaalhayan/Desktop/whatsapp/versioned_sidebars/version-1.1.0-sidebars.json",
+          "contentPath": "/Users/sajaalhayan/Desktop/whatsapp/versioned_docs/version-1.1.0",
+          "contentPathLocalized": "/Users/sajaalhayan/Desktop/whatsapp/i18n/en/docusaurus-plugin-content-docs/version-1.1.0",
+          "docs": [
+            {
+              "unversionedId": "intro",
+              "id": "version-1.1.0/intro",
+              "title": "Whatsapp Clone Tutorial",
+              "description": "[//]: # (head-end)",
+              "source": "@site/versioned_docs/version-1.1.0/intro.md",
+              "sourceDirName": ".",
+              "slug": "/intro",
+              "permalink": "/docs/intro",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.1.0/intro.md",
+              "tags": [],
+              "version": "1.1.0",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_label": "Introduction",
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "next": {
+                "title": "Step 1: Creating a basic React APP with a basic view",
+                "permalink": "/docs/tuto-whatsapp/step1"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step1",
+              "id": "version-1.1.0/tuto-whatsapp/step1",
+              "title": "Step 1: Creating a basic React APP with a basic view",
+              "description": "[//]: # (head-end)",
+              "source": "@site/versioned_docs/version-1.1.0/tuto-whatsapp/step1.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step1",
+              "permalink": "/docs/tuto-whatsapp/step1",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.1.0/tuto-whatsapp/step1.md",
+              "tags": [],
+              "version": "1.1.0",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_label": "Step 1: Creating a basic React APP with a basic view",
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Introduction",
+                "permalink": "/docs/intro"
+              },
+              "next": {
+                "title": "Step 2: Styling with Material UI and styled-components",
+                "permalink": "/docs/tuto-whatsapp/step2"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step10",
+              "id": "version-1.1.0/tuto-whatsapp/step10",
+              "title": "Step 10: Live updates with GraphQL subscriptions",
+              "description": "[//]: # (head-end)",
+              "source": "@site/versioned_docs/version-1.1.0/tuto-whatsapp/step10.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step10",
+              "permalink": "/docs/tuto-whatsapp/step10",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.1.0/tuto-whatsapp/step10.md",
+              "tags": [],
+              "version": "1.1.0",
+              "sidebarPosition": 10,
+              "frontMatter": {
+                "sidebar_label": "Step 10: Live updates with GraphQL subscriptions",
+                "sidebar_position": 10
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 9: Type safety with GraphQL Code Generator",
+                "permalink": "/docs/tuto-whatsapp/step9"
+              },
+              "next": {
+                "title": "Step 11: Users",
+                "permalink": "/docs/tuto-whatsapp/step11"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step11",
+              "id": "version-1.1.0/tuto-whatsapp/step11",
+              "title": "Step 11: Users",
+              "description": "[//]: # (head-end)",
+              "source": "@site/versioned_docs/version-1.1.0/tuto-whatsapp/step11.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step11",
+              "permalink": "/docs/tuto-whatsapp/step11",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.1.0/tuto-whatsapp/step11.md",
+              "tags": [],
+              "version": "1.1.0",
+              "sidebarPosition": 11,
+              "frontMatter": {
+                "sidebar_label": "Step 11: Users",
+                "sidebar_position": 11
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 10: Live updates with GraphQL subscriptions",
+                "permalink": "/docs/tuto-whatsapp/step10"
+              },
+              "next": {
+                "title": "Step 12: Adding and removing chats",
+                "permalink": "/docs/tuto-whatsapp/step12"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step12",
+              "id": "version-1.1.0/tuto-whatsapp/step12",
+              "title": "Step 12: Adding and removing chats",
+              "description": "[//]: # (head-end)",
+              "source": "@site/versioned_docs/version-1.1.0/tuto-whatsapp/step12.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step12",
+              "permalink": "/docs/tuto-whatsapp/step12",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.1.0/tuto-whatsapp/step12.md",
+              "tags": [],
+              "version": "1.1.0",
+              "sidebarPosition": 12,
+              "frontMatter": {
+                "sidebar_label": "Step 12: Adding and removing chats",
+                "sidebar_position": 12
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 11: Users",
+                "permalink": "/docs/tuto-whatsapp/step11"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step2",
+              "id": "version-1.1.0/tuto-whatsapp/step2",
+              "title": "Step 2: Styling with Material UI and styled-components",
+              "description": "[//]: # (head-end)",
+              "source": "@site/versioned_docs/version-1.1.0/tuto-whatsapp/step2.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step2",
+              "permalink": "/docs/tuto-whatsapp/step2",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.1.0/tuto-whatsapp/step2.md",
+              "tags": [],
+              "version": "1.1.0",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_label": "Step 2: Styling with Material UI and styled-components",
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 1: Creating a basic React APP with a basic view",
+                "permalink": "/docs/tuto-whatsapp/step1"
+              },
+              "next": {
+                "title": "Step 3: Setup a basic Node.JS server with a basic REST endpoint",
+                "permalink": "/docs/tuto-whatsapp/step3"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step3",
+              "id": "version-1.1.0/tuto-whatsapp/step3",
+              "title": "Step 3: Setup a basic Node.JS server with a basic REST endpoint",
+              "description": "[//]: # (head-end)",
+              "source": "@site/versioned_docs/version-1.1.0/tuto-whatsapp/step3.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step3",
+              "permalink": "/docs/tuto-whatsapp/step3",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.1.0/tuto-whatsapp/step3.md",
+              "tags": [],
+              "version": "1.1.0",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_label": "Step 3: Setup a basic Node.JS server with a basic REST endpoint",
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 2: Styling with Material UI and styled-components",
+                "permalink": "/docs/tuto-whatsapp/step2"
+              },
+              "next": {
+                "title": "Step 4: Transition to GraphQL",
+                "permalink": "/docs/tuto-whatsapp/step4"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step4",
+              "id": "version-1.1.0/tuto-whatsapp/step4",
+              "title": "Step 4: Transition to GraphQL",
+              "description": "[//]: # (head-end)",
+              "source": "@site/versioned_docs/version-1.1.0/tuto-whatsapp/step4.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step4",
+              "permalink": "/docs/tuto-whatsapp/step4",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.1.0/tuto-whatsapp/step4.md",
+              "tags": [],
+              "version": "1.1.0",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "sidebar_label": "Step 4: Transition to GraphQL",
+                "sidebar_position": 4
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 3: Setup a basic Node.JS server with a basic REST endpoint",
+                "permalink": "/docs/tuto-whatsapp/step3"
+              },
+              "next": {
+                "title": "Step 5: Testing",
+                "permalink": "/docs/tuto-whatsapp/step5"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step5",
+              "id": "version-1.1.0/tuto-whatsapp/step5",
+              "title": "Step 5: Testing",
+              "description": "[//]: # (head-end)",
+              "source": "@site/versioned_docs/version-1.1.0/tuto-whatsapp/step5.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step5",
+              "permalink": "/docs/tuto-whatsapp/step5",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.1.0/tuto-whatsapp/step5.md",
+              "tags": [],
+              "version": "1.1.0",
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "sidebar_label": "Step 5: Testing",
+                "sidebar_position": 5
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 4: Transition to GraphQL",
+                "permalink": "/docs/tuto-whatsapp/step4"
+              },
+              "next": {
+                "title": "Step 6: Creating an app router and implementing a chat room",
+                "permalink": "/docs/tuto-whatsapp/step6"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step6",
+              "id": "version-1.1.0/tuto-whatsapp/step6",
+              "title": "Step 6: Creating an app router and implementing a chat room",
+              "description": "[//]: # (head-end)",
+              "source": "@site/versioned_docs/version-1.1.0/tuto-whatsapp/step6.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step6",
+              "permalink": "/docs/tuto-whatsapp/step6",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.1.0/tuto-whatsapp/step6.md",
+              "tags": [],
+              "version": "1.1.0",
+              "sidebarPosition": 6,
+              "frontMatter": {
+                "sidebar_label": "Step 6: Creating an app router and implementing a chat room",
+                "sidebar_position": 6
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 5: Testing",
+                "permalink": "/docs/tuto-whatsapp/step5"
+              },
+              "next": {
+                "title": "Step 7: Caching with Apollo-Client",
+                "permalink": "/docs/tuto-whatsapp/step7"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step7",
+              "id": "version-1.1.0/tuto-whatsapp/step7",
+              "title": "Step 7: Caching with Apollo-Client",
+              "description": "[//]: # (head-end)",
+              "source": "@site/versioned_docs/version-1.1.0/tuto-whatsapp/step7.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step7",
+              "permalink": "/docs/tuto-whatsapp/step7",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.1.0/tuto-whatsapp/step7.md",
+              "tags": [],
+              "version": "1.1.0",
+              "sidebarPosition": 7,
+              "frontMatter": {
+                "sidebar_label": "Step 7: Caching with Apollo-Client",
+                "sidebar_position": 7
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 6: Creating an app router and implementing a chat room",
+                "permalink": "/docs/tuto-whatsapp/step6"
+              },
+              "next": {
+                "title": "Step 8: Sending messages with GraphQL mutations",
+                "permalink": "/docs/tuto-whatsapp/step8"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step8",
+              "id": "version-1.1.0/tuto-whatsapp/step8",
+              "title": "Step 8: Sending messages with GraphQL mutations",
+              "description": "[//]: # (head-end)",
+              "source": "@site/versioned_docs/version-1.1.0/tuto-whatsapp/step8.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step8",
+              "permalink": "/docs/tuto-whatsapp/step8",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.1.0/tuto-whatsapp/step8.md",
+              "tags": [],
+              "version": "1.1.0",
+              "sidebarPosition": 8,
+              "frontMatter": {
+                "sidebar_label": "Step 8: Sending messages with GraphQL mutations",
+                "sidebar_position": 8
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 7: Caching with Apollo-Client",
+                "permalink": "/docs/tuto-whatsapp/step7"
+              },
+              "next": {
+                "title": "Step 9: Type safety with GraphQL Code Generator",
+                "permalink": "/docs/tuto-whatsapp/step9"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step9",
+              "id": "version-1.1.0/tuto-whatsapp/step9",
+              "title": "Step 9: Type safety with GraphQL Code Generator",
+              "description": "[//]: # (head-end)",
+              "source": "@site/versioned_docs/version-1.1.0/tuto-whatsapp/step9.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step9",
+              "permalink": "/docs/tuto-whatsapp/step9",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.1.0/tuto-whatsapp/step9.md",
+              "tags": [],
+              "version": "1.1.0",
+              "sidebarPosition": 9,
+              "frontMatter": {
+                "sidebar_label": "Step 9: Type safety with GraphQL Code Generator",
+                "sidebar_position": 9
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 8: Sending messages with GraphQL mutations",
+                "permalink": "/docs/tuto-whatsapp/step8"
+              },
+              "next": {
+                "title": "Step 10: Live updates with GraphQL subscriptions",
+                "permalink": "/docs/tuto-whatsapp/step10"
+              }
+            }
+          ],
+          "drafts": [],
+          "sidebars": {
+            "tutorialSidebar": [
+              {
+                "type": "doc",
+                "id": "version-1.1.0/intro",
+                "label": "Introduction"
+              },
+              {
+                "type": "category",
+                "label": "Steps",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "version-1.1.0/tuto-whatsapp/step1",
+                    "label": "Step 1: Creating a basic React APP with a basic view"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "version-1.1.0/tuto-whatsapp/step2",
+                    "label": "Step 2: Styling with Material UI and styled-components"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "version-1.1.0/tuto-whatsapp/step3",
+                    "label": "Step 3: Setup a basic Node.JS server with a basic REST endpoint"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "version-1.1.0/tuto-whatsapp/step4",
+                    "label": "Step 4: Transition to GraphQL"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "version-1.1.0/tuto-whatsapp/step5",
+                    "label": "Step 5: Testing"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "version-1.1.0/tuto-whatsapp/step6",
+                    "label": "Step 6: Creating an app router and implementing a chat room"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "version-1.1.0/tuto-whatsapp/step7",
+                    "label": "Step 7: Caching with Apollo-Client"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "version-1.1.0/tuto-whatsapp/step8",
+                    "label": "Step 8: Sending messages with GraphQL mutations"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "version-1.1.0/tuto-whatsapp/step9",
+                    "label": "Step 9: Type safety with GraphQL Code Generator"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "version-1.1.0/tuto-whatsapp/step10",
+                    "label": "Step 10: Live updates with GraphQL subscriptions"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "version-1.1.0/tuto-whatsapp/step11",
+                    "label": "Step 11: Users"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "version-1.1.0/tuto-whatsapp/step12",
+                    "label": "Step 12: Adding and removing chats"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "versionName": "1.0.0",
+          "label": "1.0.0",
+          "banner": "unmaintained",
+          "badge": true,
+          "className": "docs-version-1.0.0",
+          "path": "/docs/1.0.0",
+          "tagsPath": "/docs/1.0.0/tags",
+          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.0.0",
+          "editUrlLocalized": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/i18n/en/docusaurus-plugin-content-docs/version-1.0.0",
+          "isLast": false,
+          "sidebarFilePath": "/Users/sajaalhayan/Desktop/whatsapp/versioned_sidebars/version-1.0.0-sidebars.json",
+          "contentPath": "/Users/sajaalhayan/Desktop/whatsapp/versioned_docs/version-1.0.0",
+          "contentPathLocalized": "/Users/sajaalhayan/Desktop/whatsapp/i18n/en/docusaurus-plugin-content-docs/version-1.0.0",
+          "docs": [
+            {
+              "unversionedId": "intro",
+              "id": "version-1.0.0/intro",
+              "title": "Whatsapp Clone Tutorial",
+              "description": "[//]: # (head-end)",
+              "source": "@site/versioned_docs/version-1.0.0/intro.md",
+              "sourceDirName": ".",
+              "slug": "/intro",
+              "permalink": "/docs/1.0.0/intro",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.0.0/intro.md",
+              "tags": [],
+              "version": "1.0.0",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_label": "Introduction",
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "next": {
+                "title": "Step 1: Creating a basic React APP with a basic view",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step1"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step1",
+              "id": "version-1.0.0/tuto-whatsapp/step1",
+              "title": "Step 1: Creating a basic React APP with a basic view",
+              "description": "[//]: # (head-end)",
+              "source": "@site/versioned_docs/version-1.0.0/tuto-whatsapp/step1.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step1",
+              "permalink": "/docs/1.0.0/tuto-whatsapp/step1",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.0.0/tuto-whatsapp/step1.md",
+              "tags": [],
+              "version": "1.0.0",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_label": "Step 1: Creating a basic React APP with a basic view",
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Introduction",
+                "permalink": "/docs/1.0.0/intro"
+              },
+              "next": {
+                "title": "Step 2: Styling with Material UI and styled-components",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step2"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step10",
+              "id": "version-1.0.0/tuto-whatsapp/step10",
+              "title": "Step 10: Live updates with GraphQL subscriptions",
+              "description": "[//]: # (head-end)",
+              "source": "@site/versioned_docs/version-1.0.0/tuto-whatsapp/step10.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step10",
+              "permalink": "/docs/1.0.0/tuto-whatsapp/step10",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.0.0/tuto-whatsapp/step10.md",
+              "tags": [],
+              "version": "1.0.0",
+              "sidebarPosition": 10,
+              "frontMatter": {
+                "sidebar_label": "Step 10: Live updates with GraphQL subscriptions",
+                "sidebar_position": 10
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 9: Type safety with GraphQL Code Generator",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step9"
+              },
+              "next": {
+                "title": "Step 11: Users",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step11"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step11",
+              "id": "version-1.0.0/tuto-whatsapp/step11",
+              "title": "Step 11: Users",
+              "description": "[//]: # (head-end)",
+              "source": "@site/versioned_docs/version-1.0.0/tuto-whatsapp/step11.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step11",
+              "permalink": "/docs/1.0.0/tuto-whatsapp/step11",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.0.0/tuto-whatsapp/step11.md",
+              "tags": [],
+              "version": "1.0.0",
+              "sidebarPosition": 11,
+              "frontMatter": {
+                "sidebar_label": "Step 11: Users",
+                "sidebar_position": 11
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 10: Live updates with GraphQL subscriptions",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step10"
+              },
+              "next": {
+                "title": "Step 12: Adding and removing chats",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step12"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step12",
+              "id": "version-1.0.0/tuto-whatsapp/step12",
+              "title": "Step 12: Adding and removing chats",
+              "description": "[//]: # (head-end)",
+              "source": "@site/versioned_docs/version-1.0.0/tuto-whatsapp/step12.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step12",
+              "permalink": "/docs/1.0.0/tuto-whatsapp/step12",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.0.0/tuto-whatsapp/step12.md",
+              "tags": [],
+              "version": "1.0.0",
+              "sidebarPosition": 12,
+              "frontMatter": {
+                "sidebar_label": "Step 12: Adding and removing chats",
+                "sidebar_position": 12
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 11: Users",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step11"
+              },
+              "next": {
+                "title": "Step 13: Authentication",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step13"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step13",
+              "id": "version-1.0.0/tuto-whatsapp/step13",
+              "title": "Step 13: Authentication",
+              "description": "[//]: # (head-end)",
+              "source": "@site/versioned_docs/version-1.0.0/tuto-whatsapp/step13.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step13",
+              "permalink": "/docs/1.0.0/tuto-whatsapp/step13",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.0.0/tuto-whatsapp/step13.md",
+              "tags": [],
+              "version": "1.0.0",
+              "sidebarPosition": 13,
+              "frontMatter": {
+                "sidebar_label": "Step 13: Authentication",
+                "sidebar_position": 13
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 12: Adding and removing chats",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step12"
+              },
+              "next": {
+                "title": "Step 14: Migrating to PostgreSQL",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step14"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step14",
+              "id": "version-1.0.0/tuto-whatsapp/step14",
+              "title": "Step 14: Migrating to PostgreSQL",
+              "description": "[//]: # (head-end)",
+              "source": "@site/versioned_docs/version-1.0.0/tuto-whatsapp/step14.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step14",
+              "permalink": "/docs/1.0.0/tuto-whatsapp/step14",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.0.0/tuto-whatsapp/step14.md",
+              "tags": [],
+              "version": "1.0.0",
+              "sidebarPosition": 14,
+              "frontMatter": {
+                "sidebar_label": "Step 14: Migrating to PostgreSQL",
+                "sidebar_position": 14
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 13: Authentication",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step13"
+              },
+              "next": {
+                "title": "Step 15: Using a REST API",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step15"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step15",
+              "id": "version-1.0.0/tuto-whatsapp/step15",
+              "title": "Step 15: Using a REST API",
+              "description": "[//]: # (head-end)",
+              "source": "@site/versioned_docs/version-1.0.0/tuto-whatsapp/step15.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step15",
+              "permalink": "/docs/1.0.0/tuto-whatsapp/step15",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.0.0/tuto-whatsapp/step15.md",
+              "tags": [],
+              "version": "1.0.0",
+              "sidebarPosition": 15,
+              "frontMatter": {
+                "sidebar_label": "Step 15: Using a REST API",
+                "sidebar_position": 15
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 14: Migrating to PostgreSQL",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step14"
+              },
+              "next": {
+                "title": "Step 16: Modularity",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step16"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step16",
+              "id": "version-1.0.0/tuto-whatsapp/step16",
+              "title": "Step 16: Modularity",
+              "description": "[//]: # (head-end)",
+              "source": "@site/versioned_docs/version-1.0.0/tuto-whatsapp/step16.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step16",
+              "permalink": "/docs/1.0.0/tuto-whatsapp/step16",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.0.0/tuto-whatsapp/step16.md",
+              "tags": [],
+              "version": "1.0.0",
+              "sidebarPosition": 16,
+              "frontMatter": {
+                "sidebar_label": "Step 16: Modularity",
+                "sidebar_position": 16
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 15: Using a REST API",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step15"
+              },
+              "next": {
+                "title": "Step 17: Performance",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step17"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step17",
+              "id": "version-1.0.0/tuto-whatsapp/step17",
+              "title": "Step 17: Performance",
+              "description": "[//]: # (head-end)",
+              "source": "@site/versioned_docs/version-1.0.0/tuto-whatsapp/step17.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step17",
+              "permalink": "/docs/1.0.0/tuto-whatsapp/step17",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.0.0/tuto-whatsapp/step17.md",
+              "tags": [],
+              "version": "1.0.0",
+              "sidebarPosition": 17,
+              "frontMatter": {
+                "sidebar_label": "Step 17: Performance",
+                "sidebar_position": 17
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 16: Modularity",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step16"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step2",
+              "id": "version-1.0.0/tuto-whatsapp/step2",
+              "title": "Step 2: Styling with Material UI and styled-components",
+              "description": "[//]: # (head-end)",
+              "source": "@site/versioned_docs/version-1.0.0/tuto-whatsapp/step2.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step2",
+              "permalink": "/docs/1.0.0/tuto-whatsapp/step2",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.0.0/tuto-whatsapp/step2.md",
+              "tags": [],
+              "version": "1.0.0",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_label": "Step 2: Styling with Material UI and styled-components",
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 1: Creating a basic React APP with a basic view",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step1"
+              },
+              "next": {
+                "title": "Step 3: Setup a basic Node.JS server with a basic REST endpoint",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step3"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step3",
+              "id": "version-1.0.0/tuto-whatsapp/step3",
+              "title": "Step 3: Setup a basic Node.JS server with a basic REST endpoint",
+              "description": "[//]: # (head-end)",
+              "source": "@site/versioned_docs/version-1.0.0/tuto-whatsapp/step3.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step3",
+              "permalink": "/docs/1.0.0/tuto-whatsapp/step3",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.0.0/tuto-whatsapp/step3.md",
+              "tags": [],
+              "version": "1.0.0",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_label": "Step 3: Setup a basic Node.JS server with a basic REST endpoint",
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 2: Styling with Material UI and styled-components",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step2"
+              },
+              "next": {
+                "title": "Step 4: Transition to GraphQL",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step4"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step4",
+              "id": "version-1.0.0/tuto-whatsapp/step4",
+              "title": "Step 4: Transition to GraphQL",
+              "description": "[//]: # (head-end)",
+              "source": "@site/versioned_docs/version-1.0.0/tuto-whatsapp/step4.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step4",
+              "permalink": "/docs/1.0.0/tuto-whatsapp/step4",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.0.0/tuto-whatsapp/step4.md",
+              "tags": [],
+              "version": "1.0.0",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "sidebar_label": "Step 4: Transition to GraphQL",
+                "sidebar_position": 4
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 3: Setup a basic Node.JS server with a basic REST endpoint",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step3"
+              },
+              "next": {
+                "title": "Step 5: Testing",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step5"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step5",
+              "id": "version-1.0.0/tuto-whatsapp/step5",
+              "title": "Step 5: Testing",
+              "description": "[//]: # (head-end)",
+              "source": "@site/versioned_docs/version-1.0.0/tuto-whatsapp/step5.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step5",
+              "permalink": "/docs/1.0.0/tuto-whatsapp/step5",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.0.0/tuto-whatsapp/step5.md",
+              "tags": [],
+              "version": "1.0.0",
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "sidebar_label": "Step 5: Testing",
+                "sidebar_position": 5
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 4: Transition to GraphQL",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step4"
+              },
+              "next": {
+                "title": "Step 6: Creating an app router and implementing a chat room",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step6"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step6",
+              "id": "version-1.0.0/tuto-whatsapp/step6",
+              "title": "Step 6: Creating an app router and implementing a chat room",
+              "description": "[//]: # (head-end)",
+              "source": "@site/versioned_docs/version-1.0.0/tuto-whatsapp/step6.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step6",
+              "permalink": "/docs/1.0.0/tuto-whatsapp/step6",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.0.0/tuto-whatsapp/step6.md",
+              "tags": [],
+              "version": "1.0.0",
+              "sidebarPosition": 6,
+              "frontMatter": {
+                "sidebar_label": "Step 6: Creating an app router and implementing a chat room",
+                "sidebar_position": 6
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 5: Testing",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step5"
+              },
+              "next": {
+                "title": "Step 7: Caching with Apollo-Client",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step7"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step7",
+              "id": "version-1.0.0/tuto-whatsapp/step7",
+              "title": "Step 7: Caching with Apollo-Client",
+              "description": "[//]: # (head-end)",
+              "source": "@site/versioned_docs/version-1.0.0/tuto-whatsapp/step7.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step7",
+              "permalink": "/docs/1.0.0/tuto-whatsapp/step7",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.0.0/tuto-whatsapp/step7.md",
+              "tags": [],
+              "version": "1.0.0",
+              "sidebarPosition": 7,
+              "frontMatter": {
+                "sidebar_label": "Step 7: Caching with Apollo-Client",
+                "sidebar_position": 7
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 6: Creating an app router and implementing a chat room",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step6"
+              },
+              "next": {
+                "title": "Step 8: Sending messages with GraphQL mutations",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step8"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step8",
+              "id": "version-1.0.0/tuto-whatsapp/step8",
+              "title": "Step 8: Sending messages with GraphQL mutations",
+              "description": "[//]: # (head-end)",
+              "source": "@site/versioned_docs/version-1.0.0/tuto-whatsapp/step8.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step8",
+              "permalink": "/docs/1.0.0/tuto-whatsapp/step8",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.0.0/tuto-whatsapp/step8.md",
+              "tags": [],
+              "version": "1.0.0",
+              "sidebarPosition": 8,
+              "frontMatter": {
+                "sidebar_label": "Step 8: Sending messages with GraphQL mutations",
+                "sidebar_position": 8
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 7: Caching with Apollo-Client",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step7"
+              },
+              "next": {
+                "title": "Step 9: Type safety with GraphQL Code Generator",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step9"
+              }
+            },
+            {
+              "unversionedId": "tuto-whatsapp/step9",
+              "id": "version-1.0.0/tuto-whatsapp/step9",
+              "title": "Step 9: Type safety with GraphQL Code Generator",
+              "description": "[//]: # (head-end)",
+              "source": "@site/versioned_docs/version-1.0.0/tuto-whatsapp/step9.md",
+              "sourceDirName": "tuto-whatsapp",
+              "slug": "/tuto-whatsapp/step9",
+              "permalink": "/docs/1.0.0/tuto-whatsapp/step9",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/versioned_docs/version-1.0.0/tuto-whatsapp/step9.md",
+              "tags": [],
+              "version": "1.0.0",
+              "sidebarPosition": 9,
+              "frontMatter": {
+                "sidebar_label": "Step 9: Type safety with GraphQL Code Generator",
+                "sidebar_position": 9
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Step 8: Sending messages with GraphQL mutations",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step8"
+              },
+              "next": {
+                "title": "Step 10: Live updates with GraphQL subscriptions",
+                "permalink": "/docs/1.0.0/tuto-whatsapp/step10"
+              }
+            }
+          ],
+          "drafts": [],
+          "sidebars": {
+            "tutorialSidebar": [
+              {
+                "type": "doc",
+                "id": "version-1.0.0/intro",
+                "label": "Introduction"
+              },
+              {
+                "type": "category",
+                "label": "Steps",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "version-1.0.0/tuto-whatsapp/step1",
+                    "label": "Step 1: Creating a basic React APP with a basic view"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "version-1.0.0/tuto-whatsapp/step2",
+                    "label": "Step 2: Styling with Material UI and styled-components"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "version-1.0.0/tuto-whatsapp/step3",
+                    "label": "Step 3: Setup a basic Node.JS server with a basic REST endpoint"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "version-1.0.0/tuto-whatsapp/step4",
+                    "label": "Step 4: Transition to GraphQL"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "version-1.0.0/tuto-whatsapp/step5",
+                    "label": "Step 5: Testing"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "version-1.0.0/tuto-whatsapp/step6",
+                    "label": "Step 6: Creating an app router and implementing a chat room"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "version-1.0.0/tuto-whatsapp/step7",
+                    "label": "Step 7: Caching with Apollo-Client"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "version-1.0.0/tuto-whatsapp/step8",
+                    "label": "Step 8: Sending messages with GraphQL mutations"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "version-1.0.0/tuto-whatsapp/step9",
+                    "label": "Step 9: Type safety with GraphQL Code Generator"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "version-1.0.0/tuto-whatsapp/step10",
+                    "label": "Step 10: Live updates with GraphQL subscriptions"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "version-1.0.0/tuto-whatsapp/step11",
+                    "label": "Step 11: Users"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "version-1.0.0/tuto-whatsapp/step12",
+                    "label": "Step 12: Adding and removing chats"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "version-1.0.0/tuto-whatsapp/step13",
+                    "label": "Step 13: Authentication"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "version-1.0.0/tuto-whatsapp/step14",
+                    "label": "Step 14: Migrating to PostgreSQL"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "version-1.0.0/tuto-whatsapp/step15",
+                    "label": "Step 15: Using a REST API"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "version-1.0.0/tuto-whatsapp/step16",
+                    "label": "Step 16: Modularity"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "version-1.0.0/tuto-whatsapp/step17",
+                    "label": "Step 17: Performance"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": {
+      "blogSidebarTitle": "Recent posts",
+      "blogPosts": [
+        {
+          "id": "welcome",
+          "metadata": {
+            "permalink": "/blog/welcome",
+            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2021-08-26-welcome/index.md",
+            "source": "@site/blog/2021-08-26-welcome/index.md",
+            "title": "Welcome",
+            "description": "Docusaurus blogging features are powered by the blog plugin.",
+            "date": "2021-08-26T00:00:00.000Z",
+            "formattedDate": "August 26, 2021",
+            "tags": [
+              {
+                "label": "facebook",
+                "permalink": "/blog/tags/facebook"
+              },
+              {
+                "label": "hello",
+                "permalink": "/blog/tags/hello"
+              },
+              {
+                "label": "docusaurus",
+                "permalink": "/blog/tags/docusaurus"
+              }
+            ],
+            "readingTime": 0.405,
+            "truncated": false,
+            "authors": [
+              {
+                "name": "Sébastien Lorber",
+                "title": "Docusaurus maintainer",
+                "url": "https://sebastienlorber.com",
+                "imageURL": "https://github.com/slorber.png",
+                "key": "slorber"
+              },
+              {
+                "name": "Yangshun Tay",
+                "title": "Front End Engineer @ Facebook",
+                "url": "https://github.com/yangshun",
+                "imageURL": "https://github.com/yangshun.png",
+                "key": "yangshun"
+              }
+            ],
+            "frontMatter": {
+              "slug": "welcome",
+              "title": "Welcome",
+              "authors": [
+                "slorber",
+                "yangshun"
+              ],
+              "tags": [
+                "facebook",
+                "hello",
+                "docusaurus"
+              ]
+            },
+            "nextItem": {
+              "title": "MDX Blog Post",
+              "permalink": "/blog/mdx-blog-post"
+            }
+          },
+          "content": "[Docusaurus blogging features](https://docusaurus.io/docs/blog) are powered by the [blog plugin](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).\n\nSimply add Markdown files (or folders) to the `blog` directory.\n\nRegular blog authors can be added to `authors.yml`.\n\nThe blog post date can be extracted from filenames, such as:\n\n- `2019-05-30-welcome.md`\n- `2019-05-30-welcome/index.md`\n\nA blog post folder can be convenient to co-locate blog post images:\n\n![Docusaurus Plushie](./docusaurus-plushie-banner.jpeg)\n\nThe blog supports tags as well!\n\n**And if you don't want a blog**: just delete this directory, and use `blog: false` in your Docusaurus config."
+        },
+        {
+          "id": "mdx-blog-post",
+          "metadata": {
+            "permalink": "/blog/mdx-blog-post",
+            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2021-08-01-mdx-blog-post.mdx",
+            "source": "@site/blog/2021-08-01-mdx-blog-post.mdx",
+            "title": "MDX Blog Post",
+            "description": "Blog posts support Docusaurus Markdown features, such as MDX.",
+            "date": "2021-08-01T00:00:00.000Z",
+            "formattedDate": "August 1, 2021",
+            "tags": [
+              {
+                "label": "docusaurus",
+                "permalink": "/blog/tags/docusaurus"
+              }
+            ],
+            "readingTime": 0.175,
+            "truncated": false,
+            "authors": [
+              {
+                "name": "Sébastien Lorber",
+                "title": "Docusaurus maintainer",
+                "url": "https://sebastienlorber.com",
+                "imageURL": "https://github.com/slorber.png",
+                "key": "slorber"
+              }
+            ],
+            "frontMatter": {
+              "slug": "mdx-blog-post",
+              "title": "MDX Blog Post",
+              "authors": [
+                "slorber"
+              ],
+              "tags": [
+                "docusaurus"
+              ]
+            },
+            "prevItem": {
+              "title": "Welcome",
+              "permalink": "/blog/welcome"
+            },
+            "nextItem": {
+              "title": "Greetings!",
+              "permalink": "/blog/greetings"
+            }
+          },
+          "content": "Blog posts support [Docusaurus Markdown features](https://docusaurus.io/docs/markdown-features), such as [MDX](https://mdxjs.com/).\n\n:::tip\n\nUse the power of React to create interactive blog posts.\n\n```js\n<button onClick={() => alert('button clicked!')}>Click me!</button>\n```\n\n<button onClick={() => alert('button clicked!')}>Click me!</button>\n\n:::"
+        },
+        {
+          "id": "greetings",
+          "metadata": {
+            "permalink": "/blog/greetings",
+            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2021-02-28-greetings.md",
+            "source": "@site/blog/2021-02-28-greetings.md",
+            "title": "Greetings!",
+            "description": "Congratulations, you have made your first post!",
+            "date": "2021-02-28T00:00:00.000Z",
+            "formattedDate": "February 28, 2021",
+            "tags": [
+              {
+                "label": "greetings",
+                "permalink": "/blog/tags/greetings"
+              }
+            ],
+            "readingTime": 0.1,
+            "truncated": false,
+            "authors": [
+              {
+                "name": "Joel Marcey",
+                "title": "Co-creator of Docusaurus 1",
+                "url": "https://github.com/JoelMarcey",
+                "image_url": "https://github.com/JoelMarcey.png",
+                "imageURL": "https://github.com/JoelMarcey.png"
+              },
+              {
+                "name": "Sébastien Lorber",
+                "title": "Docusaurus maintainer",
+                "url": "https://sebastienlorber.com",
+                "image_url": "https://github.com/slorber.png",
+                "imageURL": "https://github.com/slorber.png"
+              }
+            ],
+            "frontMatter": {
+              "slug": "greetings",
+              "title": "Greetings!",
+              "authors": [
+                {
+                  "name": "Joel Marcey",
+                  "title": "Co-creator of Docusaurus 1",
+                  "url": "https://github.com/JoelMarcey",
+                  "image_url": "https://github.com/JoelMarcey.png",
+                  "imageURL": "https://github.com/JoelMarcey.png"
+                },
+                {
+                  "name": "Sébastien Lorber",
+                  "title": "Docusaurus maintainer",
+                  "url": "https://sebastienlorber.com",
+                  "image_url": "https://github.com/slorber.png",
+                  "imageURL": "https://github.com/slorber.png"
+                }
+              ],
+              "tags": [
+                "greetings"
+              ]
+            },
+            "prevItem": {
+              "title": "MDX Blog Post",
+              "permalink": "/blog/mdx-blog-post"
+            },
+            "nextItem": {
+              "title": "Long Blog Post",
+              "permalink": "/blog/long-blog-post"
+            }
+          },
+          "content": "Congratulations, you have made your first post!\n\nFeel free to play around and edit this post as much you like."
+        },
+        {
+          "id": "long-blog-post",
+          "metadata": {
+            "permalink": "/blog/long-blog-post",
+            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2019-05-29-long-blog-post.md",
+            "source": "@site/blog/2019-05-29-long-blog-post.md",
+            "title": "Long Blog Post",
+            "description": "This is the summary of a very long blog post,",
+            "date": "2019-05-29T00:00:00.000Z",
+            "formattedDate": "May 29, 2019",
+            "tags": [
+              {
+                "label": "hello",
+                "permalink": "/blog/tags/hello"
+              },
+              {
+                "label": "docusaurus",
+                "permalink": "/blog/tags/docusaurus"
+              }
+            ],
+            "readingTime": 2.05,
+            "truncated": true,
+            "authors": [
+              {
+                "name": "Endilie Yacop Sucipto",
+                "title": "Maintainer of Docusaurus",
+                "url": "https://github.com/endiliey",
+                "imageURL": "https://github.com/endiliey.png",
+                "key": "endi"
+              }
+            ],
+            "frontMatter": {
+              "slug": "long-blog-post",
+              "title": "Long Blog Post",
+              "authors": "endi",
+              "tags": [
+                "hello",
+                "docusaurus"
+              ]
+            },
+            "prevItem": {
+              "title": "Greetings!",
+              "permalink": "/blog/greetings"
+            },
+            "nextItem": {
+              "title": "First Blog Post",
+              "permalink": "/blog/first-blog-post"
+            }
+          },
+          "content": "This is the summary of a very long blog post,\n\nUse a `<!--` `truncate` `-->` comment to limit blog post size in the list view.\n\n<!--truncate-->\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet"
+        },
+        {
+          "id": "first-blog-post",
+          "metadata": {
+            "permalink": "/blog/first-blog-post",
+            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2019-05-28-first-blog-post.md",
+            "source": "@site/blog/2019-05-28-first-blog-post.md",
+            "title": "First Blog Post",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet",
+            "date": "2019-05-28T00:00:00.000Z",
+            "formattedDate": "May 28, 2019",
+            "tags": [
+              {
+                "label": "hola",
+                "permalink": "/blog/tags/hola"
+              },
+              {
+                "label": "docusaurus",
+                "permalink": "/blog/tags/docusaurus"
+              }
+            ],
+            "readingTime": 0.12,
+            "truncated": false,
+            "authors": [
+              {
+                "name": "Gao Wei",
+                "title": "Docusaurus Core Team",
+                "url": "https://github.com/wgao19",
+                "image_url": "https://github.com/wgao19.png",
+                "imageURL": "https://github.com/wgao19.png"
+              }
+            ],
+            "frontMatter": {
+              "slug": "first-blog-post",
+              "title": "First Blog Post",
+              "authors": {
+                "name": "Gao Wei",
+                "title": "Docusaurus Core Team",
+                "url": "https://github.com/wgao19",
+                "image_url": "https://github.com/wgao19.png",
+                "imageURL": "https://github.com/wgao19.png"
+              },
+              "tags": [
+                "hola",
+                "docusaurus"
+              ]
+            },
+            "prevItem": {
+              "title": "Long Blog Post",
+              "permalink": "/blog/long-blog-post"
+            }
+          },
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet"
+        }
+      ],
+      "blogListPaginated": [
+        {
+          "items": [
+            "welcome",
+            "mdx-blog-post",
+            "greetings",
+            "long-blog-post",
+            "first-blog-post"
+          ],
+          "metadata": {
+            "permalink": "/blog",
+            "page": 1,
+            "postsPerPage": 10,
+            "totalPages": 1,
+            "totalCount": 5,
+            "blogDescription": "Blog",
+            "blogTitle": "Blog"
+          }
+        }
+      ],
+      "blogTags": {
+        "/blog/tags/facebook": {
+          "label": "facebook",
+          "items": [
+            "welcome"
+          ],
+          "permalink": "/blog/tags/facebook",
+          "pages": [
+            {
+              "items": [
+                "welcome"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/facebook",
+                "page": 1,
+                "postsPerPage": 10,
+                "totalPages": 1,
+                "totalCount": 1,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/hello": {
+          "label": "hello",
+          "items": [
+            "welcome",
+            "long-blog-post"
+          ],
+          "permalink": "/blog/tags/hello",
+          "pages": [
+            {
+              "items": [
+                "welcome",
+                "long-blog-post"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/hello",
+                "page": 1,
+                "postsPerPage": 10,
+                "totalPages": 1,
+                "totalCount": 2,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/docusaurus": {
+          "label": "docusaurus",
+          "items": [
+            "welcome",
+            "mdx-blog-post",
+            "long-blog-post",
+            "first-blog-post"
+          ],
+          "permalink": "/blog/tags/docusaurus",
+          "pages": [
+            {
+              "items": [
+                "welcome",
+                "mdx-blog-post",
+                "long-blog-post",
+                "first-blog-post"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/docusaurus",
+                "page": 1,
+                "postsPerPage": 10,
+                "totalPages": 1,
+                "totalCount": 4,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/greetings": {
+          "label": "greetings",
+          "items": [
+            "greetings"
+          ],
+          "permalink": "/blog/tags/greetings",
+          "pages": [
+            {
+              "items": [
+                "greetings"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/greetings",
+                "page": 1,
+                "postsPerPage": 10,
+                "totalPages": 1,
+                "totalCount": 1,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/hola": {
+          "label": "hola",
+          "items": [
+            "first-blog-post"
+          ],
+          "permalink": "/blog/tags/hola",
+          "pages": [
+            {
+              "items": [
+                "first-blog-post"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/hola",
+                "page": 1,
+                "postsPerPage": 10,
+                "totalPages": 1,
+                "totalCount": 1,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        }
+      },
+      "blogTagsListPath": "/blog/tags"
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "jsx",
+        "permalink": "/",
+        "source": "@site/src/pages/index.js"
+      },
+      {
+        "type": "mdx",
+        "permalink": "/markdown-page",
+        "source": "@site/src/pages/markdown-page.md",
+        "title": "Markdown page example",
+        "description": "You don't need React to write simple standalone pages.",
+        "frontMatter": {
+          "title": "Markdown page example"
+        }
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {},
+  "docusaurus-theme-classic": {},
+  "docusaurus-bootstrap-plugin": {},
+  "docusaurus-mdx-fallback-plugin": {}
+}
