@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkovrsea_whatsapp_tuto=self.webpackChunkovrsea_whatsapp_tuto||[]).push([[9942],{5688:a=>{a.exports=JSON.parse('{"label":"hola","permalink":"/blog/tags/hola","allTagsPath":"/blog/tags","count":1}')}}]);
